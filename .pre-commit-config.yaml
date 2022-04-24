@@ -15,4 +15,4 @@ repos:
     rev: v8.8.2
     hooks:
       - id: gitleaks
-        args: ["--config", ".github/config/.gitleaks.toml", "--verbose"]
+        args: ["--config", ".gitleaks.toml", "--verbose"]
