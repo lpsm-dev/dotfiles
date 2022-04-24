@@ -2,7 +2,7 @@
 
 <img alt="gif-header" src="_assets/logo.png" width="350px"/>
 
-<h2 align="center">✨ Dotfiles ✨</h2>
+<h2 align="center">✨ 🏠 [Setup] My personal MacOS dotfiles  ✨</h2>
 
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://gitlab.com/dry-group/cluster-management)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://gitlab.com/dry-group/cluster-management)
@@ -11,8 +11,6 @@
 ---
 
 <img alt="gif-about" src="https://thumbs.gfycat.com/GrizzledRemoteHornet-small.gif" width="450px" float="center"/>
-
-<p>✨ 🏠 [Setup] My personal MacOS dotfiles ✨</p>
 
 <p>
   <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
