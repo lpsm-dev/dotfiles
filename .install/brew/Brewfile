@@ -1,0 +1,7 @@
+brew "curl"
+brew "exa"
+brew "git"
+brew "git-lfs"
+brew "jq"
+brew "wget"
+brew "tree"

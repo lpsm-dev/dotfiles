@@ -1,0 +1,33 @@
+# Artifacts
+bin
+dist
+obj
+out
+target
+
+# Git
+.git
+
+# Haskell
+dist-newstyle
+
+# Jetbrains
+.idea
+
+# Jekyll
+.jekyll-cache
+_site
+
+# macOS
+.DS_Store
+
+# Node.js
+node_modules
+
+# Python
+.ipynb_checkpoints
+__pycache__
+venv
+
+# VSCode
+.vscode
