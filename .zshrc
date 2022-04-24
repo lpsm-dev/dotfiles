@@ -39,9 +39,9 @@ plugins=(git macos)
 [ -f "$ZSH/oh-my-zsh.sh" ] && source $ZSH/oh-my-zsh.sh
 
 # Load dotfiles if existent.
-[ -f "$HOME/.dotfiles/zsh/env.zsh" ] && source ~/.dotfiles/zsh/env.zsh
 [ -f "$HOME/.dotfiles/zsh/zinit.zsh" ] && source ~/.dotfiles/zsh/zinit.zsh
 [ -f "$HOME/.dotfiles/zsh/alias.zsh" ] && source ~/.dotfiles/zsh/alias.zsh
+[ -f "$HOME/.dotfiles/zsh/exports.zsh" ] && source ~/.dotfiles/zsh/exports.zsh
 [ -f "$HOME/.dotfiles/zsh/options.zsh" ] && source ~/.dotfiles/zsh/options.zsh
 [ -f "$HOME/.dotfiles/zsh/functions/git.zsh" ] && source ~/.dotfiles/zsh/functions/git.zsh
 [ -f "$HOME/.dotfiles/zsh/functions/common.zsh" ] && source ~/.dotfiles/zsh/functions/common.zsh

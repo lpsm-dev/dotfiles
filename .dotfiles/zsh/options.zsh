@@ -1,3 +1,12 @@
+#!/usr/bin/env zsh
+
+#  ██████╗ ██████╗ ████████╗██╗ ██████╗ ███╗   ██╗███████╗
+# ██╔═══██╗██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║██╔════╝
+# ██║   ██║██████╔╝   ██║   ██║██║   ██║██╔██╗ ██║███████╗
+# ██║   ██║██╔═══╝    ██║   ██║██║   ██║██║╚██╗██║╚════██║
+# ╚██████╔╝██║        ██║   ██║╚██████╔╝██║ ╚████║███████║
+#  ╚═════╝ ╚═╝        ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝
+
 # Hide % on start
 unsetopt PROMPT_SP
 
@@ -9,9 +18,9 @@ HISTFILE=~/.zsh_history # Where to save history to disk
 HISTDUP=erase # Erase duplicates in the history file
 
 # Options `man zshoptions`
-# setopt append_history # Append history to the history file (no overwriting)
-# setopt share_history # Share history across terminals
-# setopt inc_append_history # Immediately append to the history file, not just when a term is killed
+setopt append_history # Append history to the history file (no overwriting)
+setopt share_history # Share history across terminals
+setopt inc_append_history # Immediately append to the history file, not just when a term is killed
 setopt extended_glob # Use extended globbing syntax
 setopt auto_cd # Auto change to a dir without typing cd
 setopt hist_ignore_dups # Ignore duplicates

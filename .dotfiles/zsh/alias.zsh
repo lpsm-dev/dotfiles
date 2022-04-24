@@ -1,8 +1,11 @@
-# Alias
-alias pip="pip3"
-alias python="python3"
-alias k="kubectl"
-alias h="helm"
+#!/usr/bin/env zsh
+
+#  █████╗ ██╗     ██╗ █████╗ ███████╗███████╗███████╗
+# ██╔══██╗██║     ██║██╔══██╗██╔════╝██╔════╝██╔════╝
+# ███████║██║     ██║███████║███████╗█████╗  ███████╗
+# ██╔══██║██║     ██║██╔══██║╚════██║██╔══╝  ╚════██║
+# ██║  ██║███████╗██║██║  ██║███████║███████╗███████║
+# ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
 
 # Navigation
 alias -- -="cd -"
@@ -26,6 +29,12 @@ alias cpu="top -o cpu"
 alias mem="top -o rsize"
 alias now="date +'%Y-%m-%d %T'"
 alias grep="grep --color"
+
+# Tools
+alias pip="pip3"
+alias python="python3"
+alias k="kubectl"
+alias h="helm"
 
 # Git
 alias gs="git status"
