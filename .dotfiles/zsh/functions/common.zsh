@@ -1,5 +1,5 @@
-## Extract function.
-#
+#!/usr/bin/env zsh
+
 extract(){
   if [ -f $1 ]; then
     case $1 in
@@ -21,33 +21,23 @@ extract(){
   fi
 }
 
-## Make a Directory and cd into it.
-#
 mcd(){
   mkdir -pv "$@"
   cd "$@"
 }
 
-## Save a file to tmp.
-#
 saveit() {
   cp $1 ${HOME}/tmp/${1}.saved
 }
 
-## Move a content to tmp.
-#
 mvtmp(){
   mv $1 ~/tmp/
 }
 
-## Copy a content to tmp.
-#
 cptmp(){
   cp -r $1 ~/tmp/
 }
 
-## View most commonly used commands. Depends on your history output format.
-#
 used(){
   if [ $1 ]
   then
@@ -57,8 +47,6 @@ used(){
   fi
 }
 
-## Running setup pre-commit
-#
 precommit(){
   pre-commit install
   pre-commit install --hook-type commit-msg
