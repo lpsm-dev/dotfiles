@@ -20,6 +20,11 @@
 
 ---
 
+## ➤ Links <a name = "links"></a>
+
+- [MacOs Security-Privacy](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
+- [MacOs Hardening](https://www.bejarano.io/hardening-macos/)
+
 ## ➤ Versioning <a name = "versioning"></a>
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
