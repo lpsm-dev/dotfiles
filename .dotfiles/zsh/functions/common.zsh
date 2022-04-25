@@ -52,3 +52,15 @@ precommit(){
   pre-commit install --hook-type commit-msg
   pre-commit autoupdate
 }
+
+monk() {
+  if [ "$1" = "sad" ]; then
+    printf "( ͡° ʖ̯ ͡°)\n"
+    elif [ "$1" = "sly" ]; then
+    printf "( ͡° ͜ʖ ͡°)\n"
+    elif [ "$1" = "idk" ]; then
+    printf "¯\_(ツ)_/¯\n"
+  else
+    printf "error: name the monk!\n"
+  fi
+}

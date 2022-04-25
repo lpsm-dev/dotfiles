@@ -6,6 +6,12 @@ gz(){
   git push
 }
 
+gi(){
+  git add README.md
+  git commit -m "chore: just dummy changes"
+  git push
+}
+
 gitclean(){
   echo "🚨 Cleanup your commit history"
   git checkout --orphan latest_branch
@@ -18,4 +24,10 @@ gitclean(){
 
 commits() {
   git log $1 --oneline --reverse | cut -d' ' -f 1 | tr '/n' ' '
+}
+
+current_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(git rev-parse --short HEAD 2> /dev/null) || return
+  echo ${ref#refs/heads/}
 }
