@@ -44,6 +44,16 @@ alias br="brew"
 alias bri="brew install"
 alias brup="brew update && brew cleanup"
 
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path="echo -e ${PATH//:/\\n}"
+
+# Docker
+alias d="docker $*"
+alias dc="docker-compose $*"
+
 if [ -x "$(command -v exa)" ]; then
   alias ls="exa"
   alias la="exa --long --all --group"
