@@ -23,6 +23,10 @@
 
 ---
 
+## ➤ Versioning <a name = "versioning"></a>
+
+To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
+
 ## ➤ Show your support <a name = "show-your-support"></a>
 
 <div align="center">
