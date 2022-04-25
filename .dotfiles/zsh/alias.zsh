@@ -30,6 +30,11 @@ alias mem="top -o rsize"
 alias now="date +'%Y-%m-%d %T'"
 alias grep="grep --color"
 
+# Nvim
+alias brc="nvim ~/.bashrc"  
+alias zrc="nvim ~/.zshrc" 
+alias nv="nvim"
+
 # Tools
 alias pip="pip3"
 alias python="python3"
