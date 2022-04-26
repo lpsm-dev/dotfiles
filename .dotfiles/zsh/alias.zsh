@@ -34,6 +34,7 @@ alias grep="grep --color"
 alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
+alias vi="nvim"
 
 # Tools
 alias pip="pip3"
