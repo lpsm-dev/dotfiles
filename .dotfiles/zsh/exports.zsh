@@ -25,6 +25,7 @@ export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
 
 # System envs
 export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:~/.cargo/bin/
 
 # Disables statistics that brew collects
 export HOMEBREW_NO_ANALYTICS=1

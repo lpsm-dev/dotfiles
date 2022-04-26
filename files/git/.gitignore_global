@@ -1,41 +1,40 @@
-#  ██████╗ ██╗████████╗
-# ██╔════╝ ██║╚══██╔══╝
-# ██║  ███╗██║   ██║
-# ██║   ██║██║   ██║
-# ╚██████╔╝██║   ██║
-#  ╚═════╝ ╚═╝   ╚═╝
+#  ██████╗ ██╗████████╗██╗ ██████╗ ███╗   ██╗ ██████╗ ██████╗ ███████╗
+# ██╔════╝ ██║╚══██╔══╝██║██╔════╝ ████╗  ██║██╔═══██╗██╔══██╗██╔════╝
+# ██║  ███╗██║   ██║   ██║██║  ███╗██╔██╗ ██║██║   ██║██████╔╝█████╗
+# ██║   ██║██║   ██║   ██║██║   ██║██║╚██╗██║██║   ██║██╔══██╗██╔══╝
+# ╚██████╔╝██║   ██║   ██║╚██████╔╝██║ ╚████║╚██████╔╝██║  ██║███████╗
+#  ╚═════╝ ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
 
-[credential]
-  helper = osxkeychain
+# Artifacts
+bin
+dist
+obj
+out
+target
 
-[color]
-  ui = auto
+# Git
+.git
 
-[color "branch"]
-  current = yellow reverse
-  local = yellow
-  remote = green
+# Haskell
+dist-newstyle
 
-[color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+# Jetbrains
+.idea
 
-[color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+# Jekyll
+.jekyll-cache
+_site
 
-[url "ssh://git@github.com/"]
-  insteadOf = https://github.com/
-[url "ssh://git@gitlab.com/"]
-  insteadOf = https://gitlab.com/
-[url "ssh://git@bitbucket.org/"]
-  insteadOf = https://bitbucket.org/
+# macOS
+.DS_Store
 
-[init]
-	defaultBranch = main
+# Node.js
+node_modules
 
-[pull]
-	ff = only
+# Python
+.ipynb_checkpoints
+__pycache__
+venv
+
+# VSCode
+.vscode
