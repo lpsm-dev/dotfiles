@@ -1,18 +1,18 @@
 #!/usr/bin/env zsh
 
-gz(){
+gz() {
   git add README.md
   git commit -m "docs: update readme file"
   git push
 }
 
-gi(){
+gi() {
   git add README.md
   git commit -m "chore: just dummy changes"
   git push
 }
 
-gitclean(){
+gitclean() {
   echo "🚨 Cleanup your commit history"
   git checkout --orphan latest_branch
   git add -A

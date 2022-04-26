@@ -44,6 +44,7 @@ plugins=(git macos)
 [ -f "$HOME/.dotfiles/zsh/exports.zsh" ] && source ~/.dotfiles/zsh/exports.zsh
 [ -f "$HOME/.dotfiles/zsh/options.zsh" ] && source ~/.dotfiles/zsh/options.zsh
 [ -f "$HOME/.dotfiles/zsh/functions/git.zsh" ] && source ~/.dotfiles/zsh/functions/git.zsh
+[ -f "$HOME/.dotfiles/zsh/functions/docker.zsh" ] && source ~/.dotfiles/zsh/functions/docker.zsh
 [ -f "$HOME/.dotfiles/zsh/functions/common.zsh" ] && source ~/.dotfiles/zsh/functions/common.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

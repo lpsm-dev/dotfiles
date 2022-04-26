@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-extract(){
+extract() {
   if [ -f $1 ]; then
     case $1 in
       *.tar.bz2)   tar xjf $1        ;;
@@ -21,7 +21,7 @@ extract(){
   fi
 }
 
-mcd(){
+mcd() {
   mkdir -pv "$@"
   cd "$@"
 }
@@ -30,15 +30,15 @@ saveit() {
   cp $1 ${HOME}/tmp/${1}.saved
 }
 
-mvtmp(){
+mvtmp() {
   mv $1 ~/tmp/
 }
 
-cptmp(){
+cptmp() {
   cp -r $1 ~/tmp/
 }
 
-used(){
+used() {
   if [ $1 ]
   then
     history | awk "{print $4}" | sort | uniq -c | sort -nr | head -n $1
@@ -47,7 +47,7 @@ used(){
   fi
 }
 
-precommit(){
+precommit() {
   pre-commit install
   pre-commit install --hook-type commit-msg
   pre-commit autoupdate
