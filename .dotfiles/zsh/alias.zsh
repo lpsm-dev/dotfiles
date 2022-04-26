@@ -31,10 +31,15 @@ alias now="date +'%Y-%m-%d %T'"
 alias grep="grep --color"
 
 # Nvim
+if [[ -f $(which nvim) ]]; then
+  export VISUAL="vi"
+  export EDITOR="$VISUAL"
+  alias vi="nvim"
+fi
+
 alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
-alias vi="nvim"
 
 # Tools
 alias pip="pip3"
