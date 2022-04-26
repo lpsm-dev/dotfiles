@@ -31,8 +31,8 @@ alias now="date +'%Y-%m-%d %T'"
 alias grep="grep --color"
 
 # Nvim
-alias brc="nvim ~/.bashrc"  
-alias zrc="nvim ~/.zshrc" 
+alias brc="nvim ~/.bashrc"
+alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
 
 # Tools
@@ -55,10 +55,19 @@ alias reload="exec ${SHELL} -l"
 # Print each PATH entry on a separate line
 alias path="echo -e ${PATH//:/\\n}"
 
-# Docker
+# Docker + Docker Compose
 alias d="docker $*"
 alias dc="docker-compose $*"
 
+if [[ -x $(which docker) ]]; then
+  alias kali="docker run --rm -ti kalilinux/kali bash"
+  alias ubuntu="docker run --rm -ti ubuntu:latest bash"
+  alias debian="docker run --rm -ti debian:latest bash"
+  alias centos="docker run --rm -ti centos:latest bash"
+  alias archlinux="docker run --rm -ti archlinux:latest bash"
+fi
+
+# Others
 if [ -x "$(command -v exa)" ]; then
   alias ls="exa"
   alias la="exa --long --all --group"
