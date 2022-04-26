@@ -41,12 +41,6 @@ alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
 
-# Tools
-alias pip="pip3"
-alias python="python3"
-alias k="kubectl"
-alias h="helm"
-
 # Git
 alias gs="git status"
 
@@ -72,6 +66,24 @@ if [[ -x $(which docker) ]]; then
   alias centos="docker run --rm -ti centos:latest bash"
   alias archlinux="docker run --rm -ti archlinux:latest bash"
 fi
+
+
+# Tools
+alias pip="pip3"
+alias python="python3"
+
+# Golang
+alias grun="go run"
+alias gtidy="go mod tidy"
+
+# Kubectl
+alias k="kubectl"
+alias kview="k config view"
+alias kctx="k config current-context"
+alias kns="k get ns"
+
+# Helm
+alias h="helm"
 
 # Others
 if [ -x "$(command -v exa)" ]; then
