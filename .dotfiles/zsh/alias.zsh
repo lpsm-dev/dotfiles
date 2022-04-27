@@ -67,10 +67,10 @@ if [[ -x $(which docker) ]]; then
   alias archlinux="docker run --rm -ti archlinux:latest bash"
 fi
 
-
 # Tools
 alias pip="pip3"
 alias python="python3"
+alias neo="neofetch"
 
 # Golang
 alias grun="go run"
@@ -86,6 +86,7 @@ alias kns="k get ns"
 alias h="helm"
 
 # Others
+alias wtf="cowsay 'wtf bro, go back to work!'"
 if [ -x "$(command -v exa)" ]; then
   alias ls="exa"
   alias la="exa --long --all --group"
