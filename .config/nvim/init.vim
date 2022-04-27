@@ -1,208 +1,154 @@
-" Autocomplete engine
-function! DoRemote(arg)
-  UpdateRemotePlugins
-endfunction
+" Fundamentals "{{{
+" ---------------------------------------------------------------------
 
-" Install plugins
-call plug#begin()
-    " Appearance
-    Plug 'vim-airline/vim-airline'
-    Plug 'ryanoasis/vim-devicons'
+" init autocmd
+autocmd!
+" set script encoding
+scriptencoding utf-8
+" stop loading config if it's on tiny or small
+if !1 | finish | endif
 
-    " Utilities
-    Plug 'sheerun/vim-polyglot'
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'ap/vim-css-color'
-    Plug 'preservim/nerdtree'
-
-    " Completion / linters / formatters
-    Plug 'neoclide/coc.nvim',  {'branch': 'master', 'do': 'yarn install'}
-    Plug 'plasticboy/vim-markdown'
-
-    " Git
-    Plug 'airblade/vim-gitgutter'
-call plug#end()
-
-" Options
+set nocompatible
+set number
+syntax enable
+set fileencodings=utf-8,sjis,euc-jp,latin
+set encoding=utf-8
+set title
+set autoindent
 set background=dark
-set clipboard=unnamedplus
-set completeopt=noinsert,menuone,noselect
-set cursorline
-set noshowmode
-set noruler
-set laststatus=0
-set noshowcmd
+set nobackup
+set hlsearch
+set showcmd
 set cmdheight=1
-set mouse=a " Copy selected text with mouse to system clipboard
-"set undofile " Save undos after file closes
-set wildmode=longest:list,full " Complete longest common string, then each full match
-set updatetime=250 " If this many milliseconds nothing is typed the swap file will be written to disk
-set visualbell " Turn off the audio bell (no beeps)
-set gdefault " Always do global substitutions
-set title " Set terminal title
-set whichwrap+=<,>,[,]
-set shiftwidth=4
-set softtabstop=2
-set undolevels=1000
-set smartindent " Indentation
-set shortmess=Ia " Disable startup message
-set fileencoding=utf-8 " Encoding when written to file
-set fileformat=unix " Line endings
-set timeout timeoutlen=1000 ttimeoutlen=10 " TODO: ?
-set autowrite " Automatically save before :next, :make etc
-set ignorecase " Search case insensitive:
-set smartcase " .. but not when search pattern contains upper case characters
-set nocursorcolumn
-set number " See line numbers
-set wrap
-set textwidth=79
-set formatoptions=qrn1
-set notimeout
-set ttimeout
-set ttimeoutlen=10
-set nobackup " Don't create annoying backup files
-set path=+** " Search down into subfolders
+set laststatus=2
+set scrolloff=10
+set expandtab
+"let loaded_matchparen = 1
+set shell=fish
+set backupskip=/tmp/*,/private/tmp/*
 
-" Tabs size
-set expandtab " Transforms tabs into spaces.
-set shiftwidth=2 " Number of spaces for indentation.
-set tabstop=2 " Number of spaces for tabs.
-
-" Color support
-" True color if available
-let term_program=$TERM_PROGRAM
-
-" Check for conflicts with Apple Terminal app
-if term_program !=? 'Apple_Terminal'
-    set termguicolors
-else
-    if $TERM !=? 'xterm-256color'
-        set termguicolors
-    endif
+" incremental substitution (neovim)
+if has('nvim')
+  set inccommand=split
 endif
 
-" Folding
-set foldcolumn=1
-set foldlevel=20
-set foldlevelstart=7
-set foldmethod=syntax
-set foldignore=""
-set nofoldenable
+" Suppress appending <PasteStart> and <PasteEnd> when pasting
+set t_BE=
 
-" Buffers
-set hidden
-
-" Searching
-set wrapscan
+set nosc noru nosm
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
+"set showmatch
+" How many tenths of a second to blink when matching brackets
+"set mat=2
+" Ignore case when searching
 set ignorecase
-set smartcase
+" Be smart when using tabs ;)
+set smarttab
+" indents
+filetype plugin indent on
+set shiftwidth=2
+set tabstop=2
+set ai "Auto indent
+set si "Smart indent
+set nowrap "No Wrap lines
+set backspace=start,eol,indent
+" Finding files - Search down into subfolders
+set path+=**
+set wildignore+=*/node_modules/*
 
-" UI
-set cursorline  " Highlight current line
-set showmatch
-set tabstop=4 " Default indentation is 4 spaces long and uses tabs, not spaces
-set matchtime=2
-set termguicolors " Enable true colors support
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1 " True color
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Turn off paste mode when leaving insert
+autocmd InsertLeave * set nopaste
 
-" Open help vertically
-command! -nargs=* -complete=help Help vertical belowright help <args>
-autocmd FileType help wincmd L
+" Add asterisks in block comments
+set formatoptions+=r
 
-:autocmd InsertEnter,InsertLeave * set cul! " Notify on mode change visually
+"}}}
 
-set grepprg=rg\ --vimgrep
-set grepformat^=%f:%l:%c:%m
+" Highlights "{{{
+" ---------------------------------------------------------------------
+set cursorline
+"set cursorcolumn
 
-set viewoptions=cursor,slash,unix
+" Set cursor line color on visual mode
+highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
 
-" Bufferline
-let g:bufferline_echo = 0
+highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
 
-let g:AutoPairsFlyMode = 0
-let g:AutoPairsShortcutToggle = '<C-P>'
-au filetype vim let b:AutoPairs = {'(':')', '[':']', '{':'}',"'":"'", '`':'`'} " Don't autocomplete in vim
+augroup BgHighlight
+  autocmd!
+  autocmd WinEnter * set cul
+  autocmd WinLeave * set nocul
+augroup END
 
-" Vim session
-let g:session_autosave="no"
-let g:session_autoload="no"
+if &term =~ "screen"
+  autocmd BufEnter * if bufname("") !~ "^?[A-Za-z0-9?]*://" | silent! exe '!echo -n "\ek[`hostname`:`basename $PWD`/`basename %`]\e\\"' | endif
+  autocmd VimLeave * silent!  exe '!echo -n "\ek[`hostname`:`basename $PWD`]\e\\"'
+endif
 
-" Command mappings
-cabbrev rp Rp
+"}}}
 
-" CTRL mappings
-nnoremap <C-L> :Files<CR>
+" File types "{{{
+" ---------------------------------------------------------------------
+" JavaScript
+au BufNewFile,BufRead *.es6 setf javascript
+" TypeScript
+au BufNewFile,BufRead *.tsx setf typescriptreact
+" Markdown
+au BufNewFile,BufRead *.md set filetype=markdown
+au BufNewFile,BufRead *.mdx set filetype=markdown
+" Flow
+au BufNewFile,BufRead *.flow set filetype=javascript
+" Fish
+au BufNewFile,BufRead *.fish set filetype=fish
 
-" Space mappings
-nnoremap <SPACE> <Nop>
-let mapleader="\<Space>"
-let maplocalleader = "\<Space>"
-nnoremap <leader>= yypVr=
+set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
-" Space q
-nmap <Leader>q    :q<CR>
+autocmd FileType coffee setlocal shiftwidth=2 tabstop=2
+autocmd FileType ruby setlocal shiftwidth=2 tabstop=2
+autocmd FileType yaml setlocal shiftwidth=2 tabstop=2
 
-" Space w
-" Save
-nmap <Leader>w :w<CR>
+"}}}
 
-" Space y
-" Copy whole file
-nnoremap <Leader>y :%y<CR>
+" Imports "{{{
+" ---------------------------------------------------------------------
+runtime ./plug.vim
+if has("unix")
+  let s:uname = system("uname -s")
+  " Do Mac stuff
+  if s:uname == "Darwin\n"
+    runtime ./macos.vim
+  endif
+endif
+if has('win32')
+  runtime ./windows.vim
+endif
 
-" Space i
-nnoremap <Leader>ii :PlugInstall<CR>
-" Update plugins
-nnoremap <Leader>iu :PlugUpdate<CR>
-" Check vim health
-nnoremap <Leader>ih :CheckHealth<CR>
+runtime ./maps.vim
+"}}}
 
-" Space a
-nnoremap <Leader>a :wq<CR>
+" Syntax theme "{{{
+" ---------------------------------------------------------------------
 
-" Space s
-" Source vimrc
-nnoremap <Leader>s :source ~/.dotfiles/nvim/init.vim<CR>
+" true color
+if exists("&termguicolors") && exists("&winblend")
+  syntax enable
+  set termguicolors
+  set winblend=0
+  set wildoptions=pum
+  set pumblend=5
+  set background=dark
+  " Use NeoSolarized
+  let g:neosolarized_termtrans=1
+  runtime ./colors/NeoSolarized.vim
+  colorscheme NeoSolarized
+endif
 
-" Space d
-nmap <Leader>d :bd<CR>
+"}}}
 
-" Space f
-nmap <Leader>f :source ~/.dotfiles/nvim/init.vim<CR>
+" Extras "{{{
+" ---------------------------------------------------------------------
+set exrc
+"}}}
 
-" Auto commands
-au FileType dirvish call fugitive#detect(@%)
-au FocusLost * :wa " Auto save everything
-
-" Remaps - Search and replace
-xnoremap gs y:%s/<C-r>"//g<Left><Left>
-
-" Copy line
-nnoremap Y y$
-
-" Other
-set guicursor=n-v-c:hor20,i-ci:ver20 " Make cursor block in insert mode and underline in normal mode
-autocmd VimLeave * set guicursor=a:ver25-blinkon25 " Make cursor block when leaving to shell
-
-" Testing
-set signcolumn=yes
-set foldcolumn=0 " Remove sidebar column
-
-let g:ale_fixers = {
-\   'json': ['prettier'],
-\   'markdown': ['prettier'],
-\   'javascript': ['prettier'],
-\   'typescript': ['prettier'],
-\   'css': ['prettier'],
-\}
-let g:ale_fix_on_save = 1
-
-" File browser
-let g:netrw_banner=0
-let g:netrw_liststyle=0
-let g:netrw_browse_split=4
-let g:netrw_altv=1
-let g:netrw_winsize=25
-let g:netrw_keepdir=0
-let g:netrw_localcopydircmd='cp -r'
+" vim: set foldmethod=marker foldlevel=0:
