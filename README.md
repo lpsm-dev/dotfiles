@@ -20,6 +20,12 @@
 
 ---
 
+
+## ➤ Tools <a name = "tools"></a>
+
+- https://fig.io/
+- https://sw.kovidgoyal.net/kitty/
+
 ## ➤ Links <a name = "links"></a>
 
 - [MacOs Security-Privacy](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
