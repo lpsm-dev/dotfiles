@@ -1,0 +1,80 @@
+add_newline = true
+command_timeout = 1000
+right_format = """$time | $os | $kubernetes"""
+
+[character]
+success_symbol = "[❯](#00ff00)"
+error_symbol = "[✖](#ff0000)"
+format = """
+[│](bold green)$directory$rust$package
+[└─❯](bold green) """
+
+[package]
+disabled = true
+
+[username]
+show_always = true
+style_user = "bg:#a3aed2"
+style_root = "bg:#a3aed2"
+format = "[ $user ]($style) "
+disabled = false
+
+[directory]
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+style = '#6272a4'
+truncation_length = 0
+truncation_symbol = ".../"
+truncate_to_repo = false
+
+[cmd_duration]
+min_time = 10_000
+format = '\[[⏱ $duration]($style)\]'
+style = "yellow"
+
+[git_branch]
+symbol = "🌱 "
+truncation_symbol = ""
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+[docker_context]
+disabled = true
+
+[aws]
+disabled = true
+
+[helm]
+disabled = true
+
+[memory_usage]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[ruby]
+disabled = true
+
+# Rigth
+[time]
+time_format = "%T"
+format = "$time($style) "
+style = "bg:#f8f8f2"
+disabled = false
+
+[kubernetes]
+format = "[☸ $context](bg:white dimmed black) "
+disabled = false
+
+[gcloud]
+disabled = true
+
+[os]
+format = "[$symbol]($style)"
+style = "bold white"
+disabled = false
+
+[os.symbols]
+Macos = "127.0.0.1 チム"
