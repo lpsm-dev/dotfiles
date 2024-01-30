@@ -36,7 +36,6 @@ if [[ -f $(which nvim) ]]; then
   export EDITOR="$VISUAL"
   alias vi="nvim"
 fi
-
 alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
@@ -69,7 +68,7 @@ fi
 
 # Tools
 alias pip="pip3"
-alias python="python3"
+# alias python="python3"
 alias neo="neofetch"
 
 # Golang
@@ -84,6 +83,9 @@ alias kns="k get ns"
 
 # Helm
 alias h="helm"
+
+# VSCodium
+alias codium="codium"
 
 # Others
 alias wtf="cowsay 'wtf bro, go back to work!'"

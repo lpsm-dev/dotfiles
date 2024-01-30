@@ -1,5 +1,12 @@
 #!/usr/bin/env zsh
 
+#  ██████╗ ██╗████████╗
+# ██╔════╝ ██║╚══██╔══╝
+# ██║  ███╗██║   ██║   
+# ██║   ██║██║   ██║   
+# ╚██████╔╝██║   ██║   
+#  ╚═════╝ ╚═╝   ╚═╝   
+
 gz() {
   git add README.md
   git commit -m "docs: update readme file"
