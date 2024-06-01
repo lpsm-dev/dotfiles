@@ -1,8 +1,8 @@
 <div align="center">
 
-<img alt="gif-header" src="_assets/logo.png" width="350px"/>
+<img alt="gif-header" src="_assets/logo.png" width="350"/>
 
-<h4 align="center">My personal 🐧 MacOS dotfiles</h4>
+<p align="center">My personal 🐧 MacOS dotfiles</p>
 
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)]()
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)]()
@@ -21,21 +21,28 @@
 ---
 
 
-## ➤ Tools <a name = "tools"></a>
+# Tools <a name = "tools"></a>
 
 - https://fig.io/
 - https://sw.kovidgoyal.net/kitty/
 
-## ➤ Links <a name = "links"></a>
+# Links <a name = "links"></a>
+
+**Articles**
 
 - [MacOs Security-Privacy](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
 - [MacOs Hardening](https://www.bejarano.io/hardening-macos/)
 
-## ➤ Versioning <a name = "versioning"></a>
+**Foruns**:
+
+- https://apple.stackexchange.com/questions/376916/cannot-ls-trash-in-the-terminal-in-catalina-operation-not-permitted
+- https://superuser.com/questions/89556/how-to-disable-creating-spotlight-v100-and-trash-folders-on-external-drive
+
+# Versioning <a name = "versioning"></a>
 
 To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
 
-## ➤ Show your support <a name = "show-your-support"></a>
+# Show your support <a name = "show-your-support"></a>
 
 <div align="center">
 
