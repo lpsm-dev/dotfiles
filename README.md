@@ -16,8 +16,8 @@ Setup para a configuração do meu terminal e ambiente de desenvolvimento.
 
 # Sumário
 
+- [Motivação](#Motivação)
 - [Instalação](#Instalação)
-- [Ferramentas](#Ferramentas)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
@@ -25,17 +25,21 @@ Setup para a configuração do meu terminal e ambiente de desenvolvimento.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# Motivação
+
+Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o ambiente de desenvolvimento. Para facilitar esse processo, é possível utilizar dotfiles, que são arquivos de configuração que armazenam as preferências e configurações do usuário para diversos programas e ferramentas, como o shell, editor de texto, gerenciador de pacotes, entre outros.
+
+Tendo isso em mente, este repositório contém os meus dotfiles pessoais, que são usados para configurar o meu ambiente de desenvolvimento em diferentes sistemas operacionais, como macOS, Linux e Windows. Os dotfiles incluem configurações para o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros, e são organizados de acordo com a stack de tecnologias que eu uso no meu dia a dia.
+
+A parte de gestão dos dotfiles é uma prática essencial para profissionais e entusiastas de tecnologia, oferecendo diversas vantagens, como:
+
+- **Personalização e Controle**: Os dotfiles permitem que você personalize e controle seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
+- **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
+- **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
+
 # Instalação
 
 > **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-# Ferramentas
-
-- https://starship.rs/
-- https://zed.dev/
-- https://www.chezmoi.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -52,6 +56,16 @@ Links relevantes para essa documentação:
 
 - https://apple.stackexchange.com/questions/376916/cannot-ls-trash-in-the-terminal-in-catalina-operation-not-permitted
 - https://superuser.com/questions/89556/how-to-disable-creating-spotlight-v100-and-trash-folders-on-external-drive
+
+**Ferramentas**:
+
+- https://starship.rs/
+- https://zed.dev/
+- https://www.chezmoi.io/
+
+**Urls**:
+
+- https://dotfiles.io/aliases/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
