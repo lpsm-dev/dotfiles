@@ -33,8 +33,8 @@ Meu setup pessoal 🐧 de configurações do terminal
 
 # Ferramentas
 
-- https://fig.io/
 - https://sw.kovidgoyal.net/kitty/
+- https://www.chezmoi.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
