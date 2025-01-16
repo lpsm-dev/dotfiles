@@ -1,20 +1,16 @@
+<!-- BEGIN_DOCS -->
+
+<a name="readme-top"></a>
+
 <div align="center">
 
-<img alt="gif-header" src="_assets/logo.png" width="350"/>
+<img alt="image-header" src="_assets/logo.png" width="350"/>
 
-<p align="center">My personal 🐧 MacOS dotfiles</p>
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
+[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
+[![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-[![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)]()
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)]()
-
----
-
-<img alt="gif-about" src="https://thumbs.gfycat.com/GrizzledRemoteHornet-small.gif" width="450px" float="center"/>
-
-<p>
-  <a href="#getting-started">Getting Started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#versioning">Versioning</a>
-</p>
+My personal 🐧 MacOS dotfiles
 
 </div>
 
