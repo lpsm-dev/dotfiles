@@ -27,7 +27,7 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 # Motivação
 
-Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de trabalho. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador para armazenam as preferências e configurações para diversos programas e ferramentas, como o shell, editor de texto, gerenciador de pacotes, entre outros.
+Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de trabalho. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador para armazenam as preferências e configurações de diversos programas e ferramentas, como o shell, editor de texto, gerenciador de pacotes, entre outros.
 
 A parte complicada disso é fazer a gestão dos dotfiles, que é uma prática essencial para profissionais e entusiastas de tecnologia que desejam manter um ambiente de desenvolvimento consistente e personalizado.
 
