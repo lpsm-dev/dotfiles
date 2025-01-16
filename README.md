@@ -33,7 +33,7 @@ Com esse ideia introduzida, a parte complicada e que me motivou a criar esse rep
 
 # Objetivo
 
-Esse repositório contém os meus dotfiles pessoais, que são usados para configurar o meu ambiente de desenvolvimento em diferentes sistemas operacionais, como macOS, Linux e Windows. Os dotfiles incluem configurações para o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros, e são organizados de acordo com a stack de tecnologias que eu uso no meu dia a dia.
+Esse repositório contém os meus dotfiles pessoais, que são usados para configurar o meu ambiente de desenvolvimento em diferentes máquinas. Os dotfiles incluem configurações para o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros, e são organizados de acordo com a stack de tecnologias que eu uso no meu dia a dia.
 
 Os principais objetivos deste repositório são:
 
