@@ -10,7 +10,7 @@
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-My personal 🐧 MacOS dotfiles
+Meu setup pessoal 🐧 de configurações do terminal
 
 </div>
 
@@ -25,7 +25,7 @@ My personal 🐧 MacOS dotfiles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Installation
+# Instação
 
 > **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
