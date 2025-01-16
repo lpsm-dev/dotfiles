@@ -14,8 +14,6 @@ My personal 🐧 MacOS dotfiles
 
 </div>
 
----
-
 # Sumário
 
 - [Sumário](#sumário)
