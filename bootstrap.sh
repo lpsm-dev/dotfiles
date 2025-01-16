@@ -11,7 +11,7 @@ function sync() {
 		--exclude "bootstrap.sh" \
 		--exclude "README.md" \
 		--exclude "LICENSE" \
-		-avh --no-perms . ~;
+		-avh --no-perms ./terminal ~;
 	source ~/.bash_profile;
 }
 
