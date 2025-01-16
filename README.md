@@ -16,7 +16,6 @@ My personal 🐧 MacOS dotfiles
 
 # Sumário
 
-- [Sumário](#sumário)
 - [Tools](#tools)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
@@ -36,12 +35,12 @@ My personal 🐧 MacOS dotfiles
 
 Links relevantes para essa documentação:
 
-**Articles**
+**Artigos**
 
 - [MacOs Security-Privacy](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
 - [MacOs Hardening](https://www.bejarano.io/hardening-macos/)
 
-**Foruns**:
+**Fóruns**:
 
 - https://apple.stackexchange.com/questions/376916/cannot-ls-trash-in-the-terminal-in-catalina-operation-not-permitted
 - https://superuser.com/questions/89556/how-to-disable-creating-spotlight-v100-and-trash-folders-on-external-drive
