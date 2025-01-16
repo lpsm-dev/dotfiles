@@ -29,7 +29,7 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de trabalho. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador para armazenam as preferências e configurações de diversos programas e ferramentas, como o shell, editor de texto, gerenciador de pacotes, entre outros.
 
-Com esse ideia introduzida, a parte complicada e que me motivou a criar esse repositório é o como posso gerenciar e automatizar o ciclo de vida desses arquivos de configuração, garantindo que eles sejam facilmente sincronizados entre diferentes máquinas e sistemas operacionais, além de serem versionados e compartilhados publicamente.
+Com esse ideia introduzida, a parte complicada e que me motivou a criar esse repositório é o "como eu posso gerenciar e automatizar o ciclo de vida desses arquivos de configuração, garantindo que eles sejam facilmente sincronizados entre diferentes máquinas e sistemas operacionais, além de serem versionados e compartilhados publicamente?". A resposta para essa pergunta é o que esse repositório se propõe a responder.
 
 # Objetivo
 
