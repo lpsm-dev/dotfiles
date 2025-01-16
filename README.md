@@ -16,8 +16,8 @@ My personal 🐧 MacOS dotfiles
 
 # Sumário
 
-- [Installation](#Installation)
-- [Tools](#tools)
+- [Instação](#Instação)
+- [Ferramentas](#Ferramentas)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
@@ -31,7 +31,7 @@ My personal 🐧 MacOS dotfiles
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Tools
+# Ferramentas
 
 - https://fig.io/
 - https://sw.kovidgoyal.net/kitty/
