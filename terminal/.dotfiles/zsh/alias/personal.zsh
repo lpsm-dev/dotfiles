@@ -21,13 +21,13 @@ alias .....="cd ../../../../.."
 # Shortcuts
 alias c="clear"
 alias cls="clear"
-alias cc="code ."
 alias tree="tree -C"
 alias ls="ls --color"
 alias -- +x="chmod +x"
 alias cpu="top -o cpu"
 alias mem="top -o rsize"
 alias now="date +'%Y-%m-%d %T'"
+alias week='date +%V'
 alias grep="grep --color"
 
 # Nvim
@@ -41,7 +41,8 @@ alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
 
 # Git
-alias gs="git status"
+alias g="git"
+alias gs="g status"
 
 # Brew
 alias br="brew"
@@ -57,7 +58,6 @@ alias path="echo -e ${PATH//:/\\n}"
 # Docker + Docker Compose
 alias d="docker $*"
 alias dc="docker-compose $*"
-
 if [[ -x $(which docker) ]]; then
   alias kali="docker run --rm -ti kalilinux/kali bash"
   alias ubuntu="docker run --rm -ti ubuntu:latest bash"
@@ -68,7 +68,6 @@ fi
 
 # Tools
 alias pip="pip3"
-# alias python="python3"
 alias neo="neofetch"
 
 # Golang
@@ -84,12 +83,13 @@ alias kns="k get ns"
 # Helm
 alias h="helm"
 
-# VSCodium
-alias codium="codium"
-
 # Others
 alias wtf="cowsay 'wtf bro, go back to work!'"
 if [ -x "$(command -v exa)" ]; then
   alias ls="exa"
   alias la="exa --long --all --group"
 fi
+
+# IP addresses
+alias localip="ipconfig getifaddr en0"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"

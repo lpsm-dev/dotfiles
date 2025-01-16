@@ -39,13 +39,16 @@ plugins=(git macos)
 [ -f "$ZSH/oh-my-zsh.sh" ] && source $ZSH/oh-my-zsh.sh
 
 # Load dotfiles if existent.
-[ -f "$HOME/.dotfiles/zsh/zinit.zsh" ] && source ~/.dotfiles/zsh/zinit.zsh
-[ -f "$HOME/.dotfiles/zsh/alias.zsh" ] && source ~/.dotfiles/zsh/alias.zsh
-[ -f "$HOME/.dotfiles/zsh/exports.zsh" ] && source ~/.dotfiles/zsh/exports.zsh
-[ -f "$HOME/.dotfiles/zsh/options.zsh" ] && source ~/.dotfiles/zsh/options.zsh
-[ -f "$HOME/.dotfiles/zsh/functions/git.zsh" ] && source ~/.dotfiles/zsh/functions/git.zsh
-[ -f "$HOME/.dotfiles/zsh/functions/docker.zsh" ] && source ~/.dotfiles/zsh/functions/docker.zsh
-[ -f "$HOME/.dotfiles/zsh/functions/common.zsh" ] && source ~/.dotfiles/zsh/functions/common.zsh
+[ -f "$HOME/.dotfiles/zsh/alias/personal.zsh" ]     && source $HOME/.dotfiles/zsh/alias/personal.zsh
+[ -f "$HOME/.dotfiles/zsh/alias/work.zsh" ]         && source $HOME/.dotfiles/zsh/alias/work/alias/work.zsh
+[ -f "$HOME/.dotfiles/zsh/zinit.zsh" ]              && source $HOME/.dotfiles/zsh/zinit.zsh
+[ -f "$HOME/.dotfiles/zsh/starship.zsh" ]           && source $HOME/.dotfiles/zsh/starship.zsh
+[ -f "$HOME/.dotfiles/zsh/exports.zsh" ]            && source $HOME/.dotfiles/zsh/exports.zsh
+[ -f "$HOME/.dotfiles/zsh/options.zsh" ]            && source $HOME/.dotfiles/zsh/options.zsh
+[ -f "$HOME/.dotfiles/zsh/functions/git.zsh" ]      && source $HOME/.dotfiles/zsh/functions/git.zsh
+[ -f "$HOME/.dotfiles/zsh/functions/ssh.zsh" ]      && source $HOME/.dotfiles/zsh/functions/ssh.zsh
+[ -f "$HOME/.dotfiles/zsh/functions/docker.zsh" ]   && source $HOME/.dotfiles/zsh/functions/docker.zsh
+[ -f "$HOME/.dotfiles/zsh/functions/common.zsh" ]   && source $HOME/.dotfiles/zsh/functions/common.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
