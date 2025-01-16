@@ -29,13 +29,15 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de desenvolvimento. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador para armazenam as preferências e configurações para diversos programas e ferramentas, como o shell, editor de texto, gerenciador de pacotes, entre outros.
 
-Tendo isso em mente, este repositório contém os meus dotfiles pessoais, que são usados para configurar o meu ambiente de desenvolvimento em diferentes sistemas operacionais, como macOS, Linux e Windows. Os dotfiles incluem configurações para o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros, e são organizados de acordo com a stack de tecnologias que eu uso no meu dia a dia.
-
-A parte de gestão dos dotfiles é uma prática essencial para profissionais e entusiastas de tecnologia, oferecendo diversas vantagens, como:
+A parte complicada disso é fazer a gestão dos dotfiles, que é uma prática essencial para profissionais e entusiastas de tecnologia, oferecendo diversas vantagens, como:
 
 - **Personalização e Controle**: Os dotfiles permitem que você personalize e controle seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
 - **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
 - **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
+
+# Objetivo
+
+Tendo isso em mente, este repositório contém os meus dotfiles pessoais, que são usados para configurar o meu ambiente de desenvolvimento em diferentes sistemas operacionais, como macOS, Linux e Windows. Os dotfiles incluem configurações para o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros, e são organizados de acordo com a stack de tecnologias que eu uso no meu dia a dia.
 
 # Instalação
 
