@@ -1,0 +1,80 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
+  "autosave": "on_focus_change",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings"
+  ],
+  "format_on_save": "on",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "yaml": {
+    "customTags": [
+      "!And",
+      "!And sequence",
+      "!Base64",
+      "!Cidr",
+      "!Cidr sequence",
+      "!Condition",
+      "!Equals",
+      "!Equals sequence",
+      "!FindInMap",
+      "!FindInMap sequence",
+      "!GetAtt",
+      "!GetAZ",
+      "!If",
+      "!If sequence",
+      "!ImportValue",
+      "!ImportValue sequence",
+      "!Join",
+      "!Join sequence",
+      "!Not",
+      "!Not sequence",
+      "!Or",
+      "!Or sequence",
+      "!Ref",
+      "!Select",
+      "!Select sequence",
+      "!Split",
+      "!Split sequence",
+      "!Sub",
+      "!Sub sequence"
+    ]
+  },
+  "project_panel": {
+    "dock": "left",
+    "git_status": true,
+    "default_width": 500
+  },
+  "working_directory": "current_project_directory",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}
