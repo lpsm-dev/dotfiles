@@ -16,7 +16,7 @@ Setup para a configuração do meu terminal e ambiente de desenvolvimento.
 
 # Sumário
 
-- [Instação](#Instação)
+- [Instalação](#Instalação)
 - [Ferramentas](#Ferramentas)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
@@ -25,7 +25,7 @@ Setup para a configuração do meu terminal e ambiente de desenvolvimento.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Instação
+# Instalação
 
 > **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
