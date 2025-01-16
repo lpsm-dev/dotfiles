@@ -16,11 +16,18 @@ My personal 🐧 MacOS dotfiles
 
 # Sumário
 
+- [Installation](#Installation)
 - [Tools](#tools)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
 - [Show your support](#show-your-support)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Installation
+
+> **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
