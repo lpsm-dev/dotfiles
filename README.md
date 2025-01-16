@@ -33,7 +33,8 @@ Meu setup pessoal 🐧 de configurações do terminal
 
 # Ferramentas
 
-- https://sw.kovidgoyal.net/kitty/
+- https://starship.rs/
+- https://zed.dev/
 - https://www.chezmoi.io/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
