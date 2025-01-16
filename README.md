@@ -20,13 +20,27 @@
 
 ---
 
+# Sumário
 
-# Tools <a name = "tools"></a>
+- [Sumário](#sumário)
+- [Tools](#tools)
+- [Referências](#referências)
+- [Versionamento](#versionamento)
+- [Troubleshooting](#troubleshooting)
+- [Show your support](#show-your-support)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Tools
 
 - https://fig.io/
 - https://sw.kovidgoyal.net/kitty/
 
-# Links <a name = "links"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Referências
+
+Links relevantes para essa documentação:
 
 **Articles**
 
@@ -38,18 +52,34 @@
 - https://apple.stackexchange.com/questions/376916/cannot-ls-trash-in-the-terminal-in-catalina-operation-not-permitted
 - https://superuser.com/questions/89556/how-to-disable-creating-spotlight-v100-and-trash-folders-on-external-drive
 
-# Versioning <a name = "versioning"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-To check the change history, please access the [**CHANGELOG.md**](CHANGELOG.md) file.
+# Versionamento
 
-# Show your support <a name = "show-your-support"></a>
+Para verificar o histórico de mudanças, acesse o arquivo [**CHANGELOG.md**](CHANGELOG.md).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Troubleshooting
+
+Se você tiver algum problema, abra uma [issue](https://github.com/lpsm-dev/dotfiles/issues/new/choose) nesse projeto.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Show your support
 
 <div align="center">
 
-Give me a ⭐️ if this project helped you!
+Dê uma ⭐️ para este projeto se ele te ajudou!
 
-<img alt="gif-header" src="https://www.icegif.com/wp-content/uploads/baby-yoda-bye-bye-icegif.gif" width="350px" float="center"/>
+<img alt="gif-footer" src="https://github.com/lpsm-dev/lpsm-dev/blob/0062b174ec9877e6dfc78817f314b4a0690f63ff/.github/assets/yoda.gif" width="225"/>
 
-Made with 💜 by [me](https://github.com/ci-monk) 👋 inspired on [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
+<br>
+<br>
+
+Feito com 💜 pelo **Time de DevOps** :wave: inspirado no [readme-md-generator](https://github.com/kefranabg/readme-md-generator)
 
 </div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- END_DOCS -->
