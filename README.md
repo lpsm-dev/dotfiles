@@ -31,8 +31,6 @@ Por vezes, ao trocar de máquina ou sistema operacional, é necessário configur
 
 Com esse ideia introduzida, a parte complicada e que me motivou a criar esse repositório é o "como eu posso gerenciar e automatizar o ciclo de vida desses arquivos de configuração, garantindo que eles sejam facilmente sincronizados entre diferentes máquinas e sistemas operacionais, além de serem versionados?".
 
-A resposta para essa pergunta é o que me levou a criar esse repositório.
-
 # Objetivo
 
 Tendo isso em mente, este repositório contém os meus dotfiles pessoais, que são usados para configurar o meu ambiente de desenvolvimento em diferentes sistemas operacionais, como macOS, Linux e Windows. Os dotfiles incluem configurações para o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros, e são organizados de acordo com a stack de tecnologias que eu uso no meu dia a dia.
