@@ -62,6 +62,7 @@ brew "wget"
 brew "htop"
 brew "nmap"
 brew "tree"
+brew "awk"
 
 # Shell
 
