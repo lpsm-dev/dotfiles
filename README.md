@@ -32,7 +32,7 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 # Disclaimer
 
-> ![NOTE]
+> [!CAUTION]
 > Se quiser experimentar esses dotfiles, você deve primeiro fazer um fork deste repositório, rever o código e remover o que não quer. Não use cegamente minhas configurações a menos que saiba o que isso implica. Use por sua própria conta e risco!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
