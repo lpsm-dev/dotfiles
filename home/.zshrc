@@ -46,7 +46,7 @@ plugins=(git macos)
 
 # Load dotfiles if existent.
 [ -f "$HOME/.dotfiles/zsh/alias/personal.zsh" ]     && source $HOME/.dotfiles/zsh/alias/personal.zsh
-[ -f "$HOME/.dotfiles/zsh/alias/work.zsh" ]         && source $HOME/.dotfiles/zsh/alias/work/alias/work.zsh
+[ -f "$HOME/.dotfiles/zsh/alias/work.zsh" ]         && source $HOME/.dotfiles/zsh/alias/work.zsh
 [ -f "$HOME/.dotfiles/zsh/zinit.zsh" ]              && source $HOME/.dotfiles/zsh/zinit.zsh
 [ -f "$HOME/.dotfiles/zsh/starship.zsh" ]           && source $HOME/.dotfiles/zsh/starship.zsh
 [ -f "$HOME/.dotfiles/zsh/exports.zsh" ]            && source $HOME/.dotfiles/zsh/exports.zsh
