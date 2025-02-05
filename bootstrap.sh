@@ -46,6 +46,10 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # MAIN
 # ==============================================
 
+if [ "$(uname)" != "Darwin" ]; then
+  echo "Run on macOS !"; exit 1
+fi
+
 if is_command_not_in_path brew; then
 	info "> Installing Brew..."
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
