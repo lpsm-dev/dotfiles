@@ -4,10 +4,43 @@
 set -e
 
 # ==============================================
+# VARIABLES
+# ==============================================
+
+RED="\033[0;31m"
+GREEN="\033[0;32m"
+YELLOW="\033[0;33m"
+RESET="\033[0m"
+
+# ==============================================
 # FUNCTIONS
 # ==============================================
 
-is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
+function error {
+	if [ -t 0 ] && [ -t 1 ]; then
+		echo -e "${RED}$1${RESET}"
+	else
+		echo "$1"
+	fi
+}
+
+function info {
+	if [ -t 0 ] && [ -t 1 ]; then
+		echo -e "${GREEN}$1${RESET}"
+	else
+		echo "$1"
+	fi
+}
+
+function warn {
+	if [ -t 0 ] && [ -t 1 ]; then
+		echo -e "${YELLOW}$1${RESET}"
+	else
+		echo "$1"
+	fi
+}
+
+function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
 # ==============================================
 # MAIN
