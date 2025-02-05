@@ -68,19 +68,9 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 # Requisitos
 
-**Verifica e instala todas as atualizações de software disponíveis para o macOS**
-
-```bash
-sudo softwareupdate -i -a
-```
-
-**Instalar MacOs Xcode Command Line Tools**
-
-```bash
-xcode-select --install
-```
-
-> O Xcode Command Line Tools inclui o `git` e o `make`
+- Conectar-se à Internet
+- Abrir o System Preferences e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo)
+- Abrir o Terminal.app
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
