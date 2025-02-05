@@ -134,6 +134,7 @@ function setup_terminal(){
 # MAIN
 # ==============================================
 
+info "Welcome to bootstrap MacOs!"
 sudo -v
 while true; do
 	sudo -n true
