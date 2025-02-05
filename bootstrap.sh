@@ -181,7 +181,9 @@ function setup_automations(){
 # MAIN
 # ==============================================
 
-info "Welcome to bootstrap MacOs!"
+VERSION="0.0.1"
+
+info "Welcome to bootstrap MacOs! - $VERSION"
 sudo -v
 while true; do
 	sudo -n true
