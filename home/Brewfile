@@ -12,6 +12,7 @@ cask_args appdir: "/Applications"
 # =================================================
 
 tap "homebrew/bundle"
+tap "homebrew/core"
 tap "homebrew/services"
 
 # =================================================
@@ -41,6 +42,7 @@ cask "zen-browser"
 # =================================================
 
 mas "Slack", id: 803453959
+mas "WhatsApp Desktop", id: 1147396723
 
 # =================================================
 # Packages
