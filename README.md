@@ -95,6 +95,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/boots
 
 # Processos
 
+## Brave
+
+- Bitwarden Password Manager
+- JSON Formatter
+- MalwareBytes
+- Obsidian Web Clipper
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Referências
