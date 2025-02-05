@@ -27,6 +27,7 @@ cask "font-hack-nerd-font"
 
 cask "brave-browser"
 cask "discord"
+cask "clickup"
 cask "mullvadvpn"
 cask "obs"
 cask "obsidian"
