@@ -15,7 +15,11 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 # Sumário
 
+- [Disclaimer](#disclaimer)
 - [Motivação](#motivação)
+- [Objetivo](#objetivo)
+- [Benefícios](#benefícios)
+- [Requisitos](#requisitos)
 - [Instalação](#instalação)
 - [Ferramentas](#ferramentas)
 - [Processos](#processos)
@@ -26,11 +30,20 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# Disclaimer
+
+> ![NOTE]
+> Se quiser experimentar esses dotfiles, você deve primeiro fazer um fork deste repositório, rever o código e remover o que não quer. Não use cegamente minhas configurações a menos que saiba o que isso implica. Use por sua própria conta e risco!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Motivação
 
 Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de trabalho. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador com o objetivo de armazenaf as preferências e configurações de diversos programas e ferramentas, como: shell, editor de texto, gerenciador de pacotes e entre outras.
 
 Com esse ideia introduzida, a parte complicada e que me motivou a criar esse repositório é: "como eu posso resolver o problema de gerenciamento e automação do ciclo de vida desses arquivos de configuração, garantindo que eles sejam facilmente sincronizados entre diferentes máquinas, além de serem versionados e adaptos para outros sistemas operacionais?".
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Objetivo
 
@@ -41,6 +54,8 @@ Esse repositório contém os meus dotfiles pessoais, que são usados para config
 - **Documentar e compartilhar as configurações**: Utilizando um README.md para documentar e compartilhar as configurações e boas práticas adotadas no ambiente de desenvolvimento.
 - **Facilitar a colaboração e o aprendizado**: Compartilhando os dotfiles com outras pessoas para colaborar e aprender com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Benefícios
 
 Entre os principais benefícios de usar dotfiles, podemos destacar:
@@ -48,6 +63,8 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 - **Personalização e Controle**: Os dotfiles permitem que você personalize e controle seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
 - **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
 - **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Requisitos
 
@@ -63,11 +80,11 @@ sudo softwareupdate -i -a
 xcode-select --install
 ```
 
-> The Xcode Command Line Tools includes git and make
+> O Xcode Command Line Tools inclui o `git` e o `make`
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Instalação
-
-> **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ```bash
 git clone https://github.com/lpsm-dev/dotfiles.git ~/.dotfiles && \
