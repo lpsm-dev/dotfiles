@@ -37,6 +37,7 @@ cask "telegram"
 cask "zed"
 cask "zen-browser"
 cask "warp"
+cask "microsoft-teams"
 
 # =================================================
 # App Store Apps
