@@ -57,6 +57,25 @@ function setup_system_updates() {
     }
 }
 
+function setup_system_xcode() {
+    info "Verificando Xcode Command Line Tools..."
+    if ! xcode-select -p &>/dev/null; then
+        info "Instalando Xcode Command Line Tools..."
+        sudo touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+        local PROD=$(softwareupdate -l | grep -B 1 -E 'Command Line Tools' | \
+                    awk -F"*" '/^ +\\*/ {print $2}' | sed 's/^ *//' | tail -n1)
+        if [ -z "$PROD" ]; then
+            error "Erro: Pacote CLI não encontrado."
+            exit 1
+        fi
+        sudo softwareupdate -i "$PROD"
+        sudo rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+        sudo xcodebuild -license accept
+    else
+        info "Xcode CLI já está instalado."
+    fi
+}
+
 function setup_brew() {
 	info "Iniciando setup do Homebrew"
 	if is_command_not_in_path brew; then
@@ -72,7 +91,7 @@ function setup_brew() {
 }
 
 function setup_brew_deps() {
-	info "Iniciando setup das deps do Homebrew"
+	info "Iniciando setup das deps do Homebrew $pwd"
 	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
 }
 
@@ -100,9 +119,11 @@ OS=$(uname -s)
 case $OS in
 Darwin)
 	setup_system_updates
-	setup_brew && setup_brew_deps
+	setup_system_xcode
+	setup_brew
 	setup_git_project
 	setup_macos
+	setup_brew_deps
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
