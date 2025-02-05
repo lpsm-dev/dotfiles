@@ -121,11 +121,13 @@ function setup_macos() {
 }
 
 function setup_terminal(){
-	info "Iniciando setup terminal"
+	info "Iniciando setup terminal - Folders"
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.aws/ ~/ 	
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.config/ ~/ 	
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.docker/ ~/
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.dotfiles/ ~/
+	info "Iniciando setup terminal - Files"
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.gitignore ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zprofile ~/
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zshrc ~/ 
 }
