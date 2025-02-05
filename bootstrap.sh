@@ -13,8 +13,8 @@ YELLOW="\033[0;33m"
 RESET="\033[0m"
 
 GIT_DOTFILES_URL="https://github.com/lpsm-dev/dotfiles.git"
-DEFAULT_DOTFILES_PATH="$HOME/.dotfiles"
-DEFAULT_DOTFILES_HOME="$DEFAULT_DOTFILES_PATH/home"
+LOCAL_DOTFILES_PATH="$HOME/.dotfiles"
+LOCAL_DOTFILES_HOME="$LOCAL_DOTFILES_PATH/home"
 
 # ==============================================
 # FUNCTIONS
@@ -47,7 +47,7 @@ function error {
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
 function setup_macos() {
-	bash "$DEFAULT_DOTFILES_HOME/.macos"
+	bash "$LOCAL_DOTFILES_HOME/.macos"
 }
 
 function setup_brew() {
@@ -55,7 +55,7 @@ function setup_brew() {
 		info "Instalando brew..."
 		curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash --login
 	fi
-	brew bundle --file="$DEFAULT_DOTFILES_HOME/Brewfile"
+	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile"
 }
 
 # ==============================================
@@ -67,9 +67,9 @@ case $OS in
 Darwin)
     info "Iniciando setup no macOS"
 	# Setup Git Project in local environment
-	if [ ! -d "$DEFAULT_DOTFILES_PATH" ]; then
-		info "Cloning $GIT_DOTFILES_URL to $DEFAULT_DOTFILES_PATH"
-		git clone --depth=1 $GIT_DOTFILES_URL $DEFAULT_DOTFILES_PATH	
+	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
+		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
+		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH	
 	fi
 	# Setup MacOs
 	setup_macos
