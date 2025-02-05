@@ -54,7 +54,8 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 > **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ```bash
-cd $HOME && bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
+git clone https://github.com/lpsm-dev/dotfiles.git ~/.dotfiles && \
+    cd ~/.dotfiles && bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
