@@ -129,9 +129,9 @@ function setup_terminal_zsh(){
 	info "Mudando shell para zsh"
 	SHELL_PATH=$(command -v zsh)
 	if ! grep "$SHELL_PATH" /etc/shells > /dev/null 2>&1 ; then
-		sudo sh -c "echo $SHELL_PATH >> /etc/shells"
+		sh -c "echo $SHELL_PATH >> /etc/shells"
 	fi
-	sudo chsh -s "$SHELL_PATH" "$USER"
+	chsh -s "$SHELL_PATH" "$USER"
 	info "Iniciando setup terminal - oh-my-zsh"
 	if [ ! -d "$LOCAL_OH_MY_ZSH_PATH" ]; then
 		info "Instalando oh-my-zsh"
@@ -160,7 +160,16 @@ function setup_ai_tools(){
 	info "Waiting for Ollama service to start..." && sleep 5
 	info "Downloading DeepSeek Coder model..."
 	ollama pull deepseek-coder:6.7b
-	info "🎉 Setup complete! You can now use DeepSeek with Ollama"
+	info "Setup complete! You can now use DeepSeek with Ollama"
+}
+
+function setup_automations(){
+	if ! crontab -l | grep -q "brew file update"; then
+	info "Adicionando cron job..."
+	(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
+	else
+	info "Cron job já existe."
+	fi
 }
 
 # ==============================================
@@ -187,6 +196,7 @@ Darwin)
 	setup_terminal_zsh
 	setup_terminal
 	setup_ai_tools
+	setup_automations
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
