@@ -148,6 +148,7 @@ function setup_terminal(){
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.docker/ ~/
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.dotfiles/ ~/
 	info "Iniciando setup terminal - Files"
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.Brewfile ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.gitignore ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zprofile ~/
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zshrc ~/ 
