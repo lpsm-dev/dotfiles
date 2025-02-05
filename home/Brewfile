@@ -47,7 +47,7 @@ cask "zoom"
 
 mas "Bitwarden", id: 1352778147
 mas "Slack", id: 803453959
-mas "WhatsApp Desktop", id: 1147396723
+mas "WhatsApp", id: 1147396723
 
 # =================================================
 # Packages
