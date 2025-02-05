@@ -15,7 +15,7 @@ is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
 if is_command_not_in_path brew; then
 	echo 'Installing brew...'
-	/bin/bash -c "$(curl -fsSL $HOMEBREW_INSTALL_URL"
+    /bin/bash -c "$(curl -fsSL $HOMEBREW_INSTALL_URL)"
 fi
 
 brew update
