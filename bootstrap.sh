@@ -134,6 +134,13 @@ function setup_terminal(){
 # MAIN
 # ==============================================
 
+sudo -v
+while true; do
+	sudo -n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
+
 OS=$(uname -s)
 case $OS in
 Darwin)
