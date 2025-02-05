@@ -21,6 +21,8 @@ tap "homebrew/services"
 
 cask "discord"
 cask "obsidian"
+cask "obs"
+cask "mullvadvpn"
 cask "ollama"
 cask "spotify"
 cask "telegram"
