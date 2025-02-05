@@ -153,6 +153,15 @@ function setup_terminal(){
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zshrc ~/ 
 }
 
+function setup_ai_tools(){
+	info "Starting Ollama service..."
+	brew services start ollama
+	info "Waiting for Ollama service to start..." && sleep 5
+	info "Downloading DeepSeek Coder model..."
+	ollama pull deepseek-coder:6.7b
+	info "🎉 Setup complete! You can now use DeepSeek with Ollama"
+}
+
 # ==============================================
 # MAIN
 # ==============================================
@@ -176,6 +185,7 @@ Darwin)
 	setup_macos
 	setup_terminal_zsh
 	setup_terminal
+	setup_ai_tools
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
