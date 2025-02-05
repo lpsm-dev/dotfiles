@@ -13,7 +13,7 @@ YELLOW="\033[0;33m"
 RESET="\033[0m"
 
 GIT_DOTFILES_URL="https://github.com/lpsm-dev/dotfiles.git"
-DEFAULT_DOTFILES_PATH="~/.dotfiles"
+DEFAULT_DOTFILES_PATH="$HOME/.dotfiles"
 DEFAULT_DOTFILES_HOME="$DEFAULT_DOTFILES_PATH/home"
 
 # ==============================================
