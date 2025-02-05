@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/sh
 
 # Exit immediately if a command exits with a non-zero status
 set -e
@@ -95,11 +95,6 @@ function setup_macos() {
 # ==============================================
 # MAIN
 # ==============================================
-
-if [ "$EUID" -ne 0 ]; then
-	echo "Esse script requer privilégios de administrador."
-	exit 1
-fi
 
 OS=$(uname -s)
 case $OS in
