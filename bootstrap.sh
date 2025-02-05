@@ -51,6 +51,7 @@ if is_command_not_in_path brew; then
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+eval $($brew shellenv)
 brew update
 brew upgrade
 
