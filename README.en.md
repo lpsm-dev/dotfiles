@@ -3,13 +3,13 @@
 
 <a name="readme-top"></a>
 
-<img src=".github/assets/logo.png" width="350"/>
+<img src="https://github.com/lpsm-dev/lpsm-dev/blob/894a1209815a95f8a0e6e6adc4f4739b02555b57/.github/assets/dotfiles.png" width="350"/>
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-Este repositório contém os dotfiles e scripts usados para configurar o meu ambiente de desenvolvimento
+Nesse repositório, tenho o setup dos dotfiles e scripts usados para configurar meu ambiente de desenvolvimento
 
 </div>
 
@@ -68,19 +68,9 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 # Requisitos
 
-**Verifica e instala todas as atualizações de software disponíveis para o macOS**
-
-```bash
-sudo softwareupdate -i -a
-```
-
-**Instalar MacOs Xcode Command Line Tools**
-
-```bash
-xcode-select --install
-```
-
-> O Xcode Command Line Tools inclui o `git` e o `make`
+- Conectar-se à Internet.
+- Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo).
+- Abrir o `Terminal.app` para rodar o script de instalação.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,6 +94,13 @@ bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/boots
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Processos
+
+## Brave
+
+- Bitwarden Password Manager
+- JSON Formatter
+- MalwareBytes
+- Obsidian Web Clipper
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

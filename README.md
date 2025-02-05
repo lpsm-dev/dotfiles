@@ -3,7 +3,7 @@
 
 <a name="readme-top"></a>
 
-<img src=".github/assets/logo.png" width="350"/>
+<img src="https://github.com/lpsm-dev/lpsm-dev/blob/894a1209815a95f8a0e6e6adc4f4739b02555b57/.github/assets/dotfiles.png" width="350"/>
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
