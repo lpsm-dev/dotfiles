@@ -56,11 +56,18 @@ mas "WhatsApp Desktop", id: 1147396723
 # Cloud/DevOps
 
 brew "awscli"
+brew "eksctl"
 brew "gitleaks"
+brew "helm"
 brew "k9s"
 brew "krew"
+brew "kubectx"
 brew "kubernetes-cli"
 brew "podman"
+brew "sops"
+brew "terraform"
+brew "terraform-docs"
+brew "tflint"
 
 # Programming
 
@@ -102,3 +109,5 @@ brew "rclone"
 brew "tree"
 brew "unzip"
 brew "wget"
+brew "pre-commit"
+brew "gh"
