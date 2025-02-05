@@ -53,7 +53,7 @@ function setup_macos() {
 function setup_brew() {
 	if is_command_not_in_path brew; then
 		info "Instalando brew..."
-		curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash --login
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	fi
 	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile"
 }
