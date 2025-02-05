@@ -12,8 +12,3 @@ repos:
     hooks:
       - id: commitizen
         stages: [commit-msg]
-  - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.8.2
-    hooks:
-      - id: gitleaks
-        args: ["--config", ".gitleaks.toml", "--verbose"]

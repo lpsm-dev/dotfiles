@@ -1,8 +1,7 @@
 <!-- BEGIN_DOCS -->
+<div align="center">
 
 <a name="readme-top"></a>
-
-<div align="center">
 
 <img alt="image-header" src=".github/assets/logo.png" width="350"/>
 
