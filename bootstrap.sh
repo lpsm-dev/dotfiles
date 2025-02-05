@@ -124,7 +124,10 @@ function setup_terminal(){
 	info "Iniciando setup terminal"
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.aws/ ~/ 	
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.config/ ~/ 	
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.dotfiles/ ~/ 
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.docker/ ~/
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.dotfiles/ ~/
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zprofile ~/
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zshrc ~/ 
 }
 
 # ==============================================
