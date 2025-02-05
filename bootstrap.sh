@@ -14,6 +14,7 @@ RESET="\033[0m"
 
 GIT_DOTFILES_URL="https://github.com/lpsm-dev/dotfiles.git"
 DEFAULT_DOTFILES_PATH="~/.dotfiles"
+DEFAULT_DOTFILES_HOME="$DEFAULT_DOTFILES_PATH/home"
 
 # ==============================================
 # FUNCTIONS
@@ -46,7 +47,7 @@ function error {
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
 function setup_macos() {
-	bash "$DEFAULT_DOTFILES_PATH/terminal/.macos"
+	bash "$DEFAULT_DOTFILES_HOME/.macos"
 }
 
 function setup_brew() {
@@ -54,7 +55,7 @@ function setup_brew() {
 		info "Instalando brew..."
 		curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash --login
 	fi
-	brew bundle --file="$DEFAULT_DOTFILES_PATH/terminal/Brewfile"
+	brew bundle --file="$DEFAULT_DOTFILES_HOME/Brewfile"
 }
 
 # ==============================================
