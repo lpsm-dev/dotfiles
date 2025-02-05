@@ -51,7 +51,7 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 # Requisitos
 
-**Atualizar sistema**
+**Verifica e instala todas as atualizações de software disponíveis para o macOS**
 
 ```bash
 sudo softwareupdate -i -a
