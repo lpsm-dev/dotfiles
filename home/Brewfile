@@ -60,6 +60,8 @@ brew "jq"
 brew "tree"
 brew "wget"
 brew "htop"
+brew "nmap"
+brew "tree"
 
 # Shell
 
@@ -84,3 +86,4 @@ brew "gitleaks"
 brew "krew"
 brew "kubernetes-cli"
 brew "podman"
+brew "k9s"
