@@ -144,14 +144,14 @@ function setup_terminal_zsh(){
 
 function setup_terminal(){
 	info "Iniciando setup terminal - Folders"
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.aws/ ~/ 	
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.config/ ~/ 	
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.docker/ ~/
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.dotfiles/ ~/
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.aws/ ~/ 	
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.config/ ~/ 	
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.docker/ ~/
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.dotfiles/ ~/
 	info "Iniciando setup terminal - Files"
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.gitignore ~/ 
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zprofile ~/
-	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zshrc ~/ 
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.gitignore ~/ 
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zprofile ~/
+	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zshrc ~/ 
 }
 
 # ==============================================
