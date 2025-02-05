@@ -28,6 +28,5 @@ case "$choice" in
 esac
 
 brew update
-brew bundle install
 
 echo "Dotfiles setup complete!"
