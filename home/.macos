@@ -24,11 +24,10 @@ sudo scutil --set HostName "${comp_name}"
 sudo scutil --set LocalHostName "${comp_name}"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "${comp_name}"
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
-# Set highlight color to green
-defaults write NSGlobalDomain AppleHighlightColor -string "0.764700 0.976500 0.568600"
+# Set highlight colour to green, accent to blue, dark theme
+defaults write NSGlobalDomain AppleHighlightColor -string "0.752941 0.964706 0.678431 Green"
+defaults write NSGlobalDomain AppleAccentColor -int 4
+defaults write NSGlobalDomain AppleInterfaceStyle -string "Dark"
 
 # Set sidebar icon size to small
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
@@ -41,6 +40,9 @@ defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
 
 ###############################################################################
 # Security                                                                    #
