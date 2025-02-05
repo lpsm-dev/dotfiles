@@ -29,26 +29,11 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 # Always show scrollbars - Possible values: `WhenScrolling`, `Automatic` and `Always`
 defaults write NSGlobalDomain AppleShowScrollBars -string "Always"
 
-# Disable the over-the-top focus ring animation
-defaults write NSGlobalDomain NSUseAnimatedFocusRing -bool false
-
 # Adjust toolbar title rollover delay
 defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-
-# Automatically quit printer app once the print jobs complete
-defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
-
-# Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
-/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
-
-# Disable Resume system-wide
-defaults write com.apple.systempreferences NSQuitAlwaysKeepsWindows -bool false
-
-# Set Help Viewer windows to non-floating mode
-defaults write com.apple.helpviewer DevMode -bool true
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -85,7 +70,6 @@ defaults write com.apple.screencapture disable-shadow -bool true
 ###############################################################################
 
 # Set Desktop as the default location for new Finder windows
-# For other paths, use `PfLo` and `file:///full/path/here/`
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
 
@@ -132,20 +116,10 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
 
-# Enable highlight hover effect for the grid view of a stack (Dock)
-defaults write com.apple.dock mouse-over-hilite-stack -bool true
-
 # Set the icon size of Dock items to 42 pixels
 defaults write com.apple.dock tilesize -int 42
 
 defaults write com.apple.dock orientation -string "left"
-
-###############################################################################
-# Terminal & iTerm 2                                                          #
-###############################################################################
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
 
 ###############################################################################
 # Activity Monitor                                                            #
@@ -191,8 +165,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 for app in "Activity Monitor" \
 	"Dock" \
 	"Finder" \
-	"Photos" \
-	"Terminal"; do
+	"Photos"; do
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
