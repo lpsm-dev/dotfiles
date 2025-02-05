@@ -46,20 +46,34 @@ mas "Slack", id: 803453959
 # Packages
 # =================================================
 
-brew "awscli"
-brew "bash"
+# Utilities
+
 brew "curl"
+brew "direnv"
 brew "dnscrypt-proxy"
-brew "exa"
+brew "fzf"
 brew "git"
 brew "git-lfs"
-brew "gitleaks"
-brew "goreleaser"
 brew "jq"
-brew "krew"
-brew "kubernetes-cli"
+brew "tree"
+brew "wget"
+brew "htop"
+
+# Shell
+
+brew "bash"
 brew "neovim"
 brew "starship"
 brew "tmux"
-brew "tree"
-brew "wget"
+
+# Programming
+
+brew "goreleaser"
+brew "nvm"
+
+# Cloud/DevOps
+
+brew "awscli"
+brew "gitleaks"
+brew "krew"
+brew "kubernetes-cli"
