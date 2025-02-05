@@ -28,16 +28,16 @@ cask "font-hack-nerd-font"
 # Apps
 # =================================================
 
+cask "brave-browser"
 cask "discord"
-cask "obsidian"
-cask "obs"
 cask "mullvadvpn"
+cask "obs"
+cask "obsidian"
 cask "ollama"
 cask "spotify"
 cask "telegram"
 cask "zed"
 cask "zen-browser"
-cask "brave-browser"
 
 # =================================================
 # App Store Apps
