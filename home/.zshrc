@@ -11,9 +11,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -42,9 +39,9 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git macos)
 
-[ -f "$ZSH/oh-my-zsh.sh" ] && source $ZSH/oh-my-zsh.sh
+# Load files
 
-# Load dotfiles if existent.
+[ -f "$ZSH/oh-my-zsh.sh" ] && source $ZSH/oh-my-zsh.sh
 [ -f "$HOME/.dotfiles/zsh/alias/personal.zsh" ]     && source $HOME/.dotfiles/zsh/alias/personal.zsh
 [ -f "$HOME/.dotfiles/zsh/alias/work.zsh" ]         && source $HOME/.dotfiles/zsh/alias/work.zsh
 [ -f "$HOME/.dotfiles/zsh/zinit.zsh" ]              && source $HOME/.dotfiles/zsh/zinit.zsh
