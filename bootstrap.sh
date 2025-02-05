@@ -61,93 +61,93 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # ==============================================
 
 function setup_system_updates() {
-    info "Buscando nova atualização no MacOs..."
+    info "Checking for new updates on macOS..."
     sudo softwareupdate -iaR || {
-        error "Falha na atualização do MacOs. Verifique manualmente" && exit 1
+        error "Failed to update macOS. Please check manually" && exit 1
     }
 }
 
 function setup_system_xcode() {
-    info "Iniciando setup Xcode Command Line Tools..."
+    info "Starting Xcode Command Line Tools setup..."
     if ! xcode-select -p &>/dev/null; then
-        info "Instalando Xcode Command Line Tools..."
+        info "Installing Xcode Command Line Tools..."
         sudo touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
         local PROD=$(softwareupdate -l | grep -B 1 -E 'Command Line Tools' | \
                     awk -F"*" '/^ +\\*/ {print $2}' | sed 's/^ *//' | tail -n1)
         if [ -z "$PROD" ]; then
-            error "Erro: Pacote CLI não encontrado."
+            error "Error: CLI package not found."
             exit 1
         fi
         sudo softwareupdate -i "$PROD"
         sudo rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
         sudo xcodebuild -license accept
     else
-        info "Xcode CLI já está instalado."
+        info "Xcode CLI is already installed."
     fi
 }
 
 function setup_brew() {
-	info "Iniciando setup do Homebrew..."
+	info "Starting Homebrew setup..."
 	if is_command_not_in_path brew; then
-		info "Instalando Homebrew..."
+		info "Installing Homebrew..."
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         if [[ "$(uname -m)" == "arm64" ]]; then
             eval "$(/opt/homebrew/bin/brew shellenv)"
         fi
 	else
-	  info "Homebrew já está instalado"
+	  info "Homebrew is already installed"
 	fi
 }
 
 function setup_brew_deps() {
-	info "Iniciando setup das deps do Homebrew $pwd"
+	info "Starting Homebrew deps setup $pwd"
 	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
 }
 
 function setup_git_project() {
-    info "Iniciando setup do projeto $GIT_DOTFILES_URL"
+    info "Starting project setup $GIT_DOTFILES_URL"
 	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
 		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
 		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
 	else
-	    info "O projeto dotfile $GIT_DOTFILES_URL já existe na referência $LOCAL_DOTFILES_PATH. Iremos atualizar o código"
+	    info "The dotfile project $GIT_DOTFILES_URL already exists at $LOCAL_DOTFILES_PATH. We will update the code"
 		cd $LOCAL_DOTFILES_PATH && git pull
 	fi
 }
 
 function setup_macos() {
-	read -p "Deseja realmente iniciar o setup do macOS? (s/n): " confirm
-	if [[ "$confirm" =~ ^[Ss]$ ]]; then
-		info "Iniciando setup do macOS"
+	read -p "Do you really want to start macOS setup? (y/n): " confirm
+	if [[ "$confirm" =~ ^[Yy]$ ]]; then
+		info "Starting macOS setup"
 		bash "$LOCAL_DOTFILES_HOME/.macos"
 	else
-		info "Setup do macOS cancelado"
+		info "macOS setup canceled"
 	fi
 }
 
 function setup_terminal_zsh(){
-	info "Mudando shell para zsh"
+	info "Changing shell to zsh"
 	SHELL_PATH=$(command -v zsh)
 	if ! grep "$SHELL_PATH" /etc/shells > /dev/null 2>&1 ; then
 		sh -c "echo $SHELL_PATH >> /etc/shells"
 	fi
 	chsh -s "$SHELL_PATH" "$USER"
-	info "Iniciando setup terminal - oh-my-zsh"
+	info "Starting terminal setup - oh-my-zsh"
 	if [ ! -d "$LOCAL_OH_MY_ZSH_PATH" ]; then
-		info "Instalando oh-my-zsh"
+		info "Installing oh-my-zsh"
 		sh -c "`curl -fsSL https://raw.github.com/gullitmiranda/oh-my-zsh/master/tools/install.sh`"
 	else
-		info "O oh-my-zsh já está instalado"
+		info "oh-my-zsh is already installed"
 	fi
 }
 
 function setup_terminal(){
-	info "Iniciando setup terminal - Folders"
+	info "Starting terminal setup - Folders"
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.aws/ ~/ 	
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.config/ ~/ 	
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.docker/ ~/
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.dotfiles/ ~/
-	info "Iniciando setup terminal - Files"
+	info "Starting terminal setup - Files"
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.Brewfile ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.gitignore ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zprofile ~/
@@ -155,8 +155,8 @@ function setup_terminal(){
 }
 
 function setup_ai_tools(){
-	read -p "Deseja realmente iniciar o setup das ferramentas de IA? (s/n): " confirm
-	if [[ "$confirm" =~ ^[Ss]$ ]]; then
+	read -p "Do you really want to start the AI tools setup? (y/n): " confirm
+	if [[ "$confirm" =~ ^[Yy]$ ]]; then
 		info "Starting Ollama service..."
 		brew services start ollama
 		info "Waiting for Ollama service to start..." && sleep 5
@@ -164,16 +164,16 @@ function setup_ai_tools(){
 		ollama pull deepseek-coder:6.7b
 		info "Setup complete! You can now use DeepSeek with Ollama"
 	else
-		info "Setup do IA Tools cancelado"
+		info "AI Tools setup canceled"
 	fi
 }
 
 function setup_automations(){
 	if ! crontab -l | grep -q "brew file update"; then
-		info "Adicionando cronjob..."
+		info "Adding cronjob..."
 		(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
 	else
-		info "Cronjob já existe."
+		info "Cronjob already exists."
 	fi
 }
 
@@ -183,7 +183,7 @@ function setup_automations(){
 
 VERSION="0.0.3"
 
-info "Welcome to bootstrap MacOs! - $VERSION"
+info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
 sudo -v
 while true; do
 	sudo -n true
@@ -191,9 +191,9 @@ while true; do
 	kill -0 "$$" || exit
 done 2>/dev/null &
 
-read -p "Esse script realizará diversas configurações no seu sistema. Deseja continuar? (y/N): " confirm
+read -p "This script will perform several configurations on your system. Do you want to continue? (y/N): " confirm
 if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
-    error "Operação cancelada pelo usuário." && exit 1
+    error "Operation canceled by the user." && exit 1
 fi
 
 OS=$(uname -s)
@@ -213,4 +213,4 @@ Darwin)
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
 
-info "Setup dotfiles finalizado!"
+info "Dotfiles setup completed!"
