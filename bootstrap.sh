@@ -24,6 +24,7 @@ RESET="\033[0m"
 GIT_DOTFILES_URL="https://github.com/lpsm-dev/dotfiles.git"
 LOCAL_DOTFILES_PATH="$HOME/.dotfiles-local"
 LOCAL_DOTFILES_HOME="$LOCAL_DOTFILES_PATH/home"
+LOCAL_OH_MY_ZSH_PATH="$HOME/.dotfiles-local"
 
 # ==============================================
 # SUPPORT FUNCTIONS
@@ -130,6 +131,13 @@ function setup_terminal(){
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.gitignore ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zprofile ~/
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zshrc ~/ 
+	info "Iniciando setup terminal - oh-my-zsh"
+	if [ ! -d "$LOCAL_OH_MY_ZSH_PATH" ]; then
+		info "Instalando oh-my-zsh"
+		sh -c "`curl -fsSL https://raw.github.com/gullitmiranda/oh-my-zsh/master/tools/install.sh`"
+	else
+		info "O oh-my-zsh já está instalado"
+	fi
 }
 
 # ==============================================
