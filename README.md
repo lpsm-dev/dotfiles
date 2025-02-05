@@ -3,7 +3,7 @@
 
 <a name="readme-top"></a>
 
-<img alt="image-header" src=".github/assets/logo.png" width="350"/>
+<img src=".github/assets/logo.png" width="350"/>
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
@@ -118,7 +118,7 @@ Se você tiver algum problema, abra uma [issue](https://github.com/lpsm-dev/dotf
 
 Dê uma ⭐️ para este projeto se ele te ajudou!
 
-<img alt="gif-footer" src="https://github.com/lpsm-dev/lpsm-dev/blob/0062b174ec9877e6dfc78817f314b4a0690f63ff/.github/assets/yoda.gif" width="225"/>
+<img src="https://github.com/lpsm-dev/lpsm-dev/blob/0062b174ec9877e6dfc78817f314b4a0690f63ff/.github/assets/yoda.gif" width="225"/>
 
 <br>
 <br>
