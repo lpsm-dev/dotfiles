@@ -46,6 +46,14 @@ function error {
 
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
+function setup_git_project() {
+    info "Iniciando setup no macOS"
+	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
+		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
+		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH	
+	fi
+}
+
 function setup_macos() {
 	info "Iniciando setup do macOS"
 	bash "$LOCAL_DOTFILES_HOME/.macos"
@@ -59,14 +67,6 @@ function setup_brew() {
 		eval "$(/opt/homebrew/bin/brew shellenv)"
 	fi
 	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile"
-}
-
-function setup_git_project() {
-    info "Iniciando setup no macOS"
-	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
-		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
-		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH	
-	fi
 }
 
 # ==============================================
