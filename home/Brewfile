@@ -68,6 +68,10 @@ brew "htop"
 brew "nmap"
 brew "tree"
 brew "awk"
+brew "gpg"
+brew "git-crypt"
+brew "unzip"
+brew "cowsay"
 
 # Shell
 
