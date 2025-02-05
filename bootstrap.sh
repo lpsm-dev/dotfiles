@@ -46,11 +46,7 @@ function error {
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
 function setup_macos() {
-	if [ "$(id -u)" -eq 0 ]; then
-		bash "$DEFAULT_DOTFILES_PATH/terminal/.macos"
-	else
-		error "User sem permissão de administrador. Tente novamente..." && exit 1
-	fi	
+	bash "$DEFAULT_DOTFILES_PATH/terminal/.macos"
 }
 
 function setup_brew() {
