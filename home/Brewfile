@@ -36,6 +36,7 @@ cask "spotify"
 cask "telegram"
 cask "zed"
 cask "zen-browser"
+cask "warp"
 
 # =================================================
 # App Store Apps
