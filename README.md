@@ -131,6 +131,7 @@ Links relevantes para essa documentação:
 **Urls**:
 
 - https://dotfiles.io/aliases/
+- https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

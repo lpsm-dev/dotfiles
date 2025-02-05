@@ -120,6 +120,13 @@ function setup_macos() {
 	bash "$LOCAL_DOTFILES_HOME/.macos"
 }
 
+function setup_terminal(){
+	info "Iniciando setup terminal"
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.aws/ ~/ 	
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.config/ ~/ 	
+	ln -sfnv ${LOCAL_DOTFILES_PATH}/.dotfiles/ ~/ 
+}
+
 # ==============================================
 # MAIN
 # ==============================================
@@ -133,6 +140,7 @@ Darwin)
 	setup_git_project
 	setup_macos
 	setup_brew_deps
+	setup_terminal
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
