@@ -61,14 +61,14 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # ==============================================
 
 function setup_system_updates() {
-    info "Instalando atualizações do MacOs..."
+    info "Buscando nova atualização no MacOs..."
     sudo softwareupdate -iaR || {
-        error "Falha na instalação das atualizações. Verifique manualmente" && exit 1
+        error "Falha na atualização do MacOs. Verifique manualmente" && exit 1
     }
 }
 
 function setup_system_xcode() {
-    info "Verificando Xcode Command Line Tools..."
+    info "Iniciando setup Xcode Command Line Tools..."
     if ! xcode-select -p &>/dev/null; then
         info "Instalando Xcode Command Line Tools..."
         sudo touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
@@ -87,7 +87,7 @@ function setup_system_xcode() {
 }
 
 function setup_brew() {
-	info "Iniciando setup do Homebrew"
+	info "Iniciando setup do Homebrew..."
 	if is_command_not_in_path brew; then
 		info "Instalando Homebrew..."
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -95,7 +95,7 @@ function setup_brew() {
             eval "$(/opt/homebrew/bin/brew shellenv)"
         fi
 	else
-	  info "Homebrew já está instalado."
+	  info "Homebrew já está instalado"
 	fi
 }
 
@@ -105,7 +105,7 @@ function setup_brew_deps() {
 }
 
 function setup_git_project() {
-    info "Iniciando setup no macOS"
+    info "Iniciando setup do projeto $GIT_DOTFILES_URL"
 	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
 		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
 		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
@@ -170,10 +170,10 @@ function setup_ai_tools(){
 
 function setup_automations(){
 	if ! crontab -l | grep -q "brew file update"; then
-		info "Adicionando cron job..."
+		info "Adicionando cronjob..."
 		(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
 	else
-		info "Cron job já existe."
+		info "Cronjob já existe."
 	fi
 }
 
