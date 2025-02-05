@@ -65,9 +65,13 @@ brew "bash"
 brew "neovim"
 brew "starship"
 brew "tmux"
+brew "zsh"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
 
 # Programming
 
+brew "go"
 brew "goreleaser"
 brew "nvm"
 
@@ -77,3 +81,4 @@ brew "awscli"
 brew "gitleaks"
 brew "krew"
 brew "kubernetes-cli"
+brew "podman"
