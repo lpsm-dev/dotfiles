@@ -126,6 +126,22 @@ function setup_macos() {
 	fi
 }
 
+function setup_terminal_zsh(){
+	info "Mudando shell para zsh"
+	SHELL_PATH=$(command -v zsh)
+	if ! grep "$SHELL_PATH" /etc/shells > /dev/null 2>&1 ; then
+		sudo sh -c "echo $SHELL_PATH >> /etc/shells"
+	fi
+	sudo chsh -s "$SHELL_PATH" "$USER"
+	info "Iniciando setup terminal - oh-my-zsh"
+	if [ ! -d "$LOCAL_OH_MY_ZSH_PATH" ]; then
+		info "Instalando oh-my-zsh"
+		sh -c "`curl -fsSL https://raw.github.com/gullitmiranda/oh-my-zsh/master/tools/install.sh`"
+	else
+		info "O oh-my-zsh já está instalado"
+	fi
+}
+
 function setup_terminal(){
 	info "Iniciando setup terminal - Folders"
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.aws/ ~/ 	
@@ -136,13 +152,6 @@ function setup_terminal(){
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.gitignore ~/ 
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zprofile ~/
 	ln -sfnv ${LOCAL_DOTFILES_PATH}/.zshrc ~/ 
-	info "Iniciando setup terminal - oh-my-zsh"
-	if [ ! -d "$LOCAL_OH_MY_ZSH_PATH" ]; then
-		info "Instalando oh-my-zsh"
-		sh -c "`curl -fsSL https://raw.github.com/gullitmiranda/oh-my-zsh/master/tools/install.sh`"
-	else
-		info "O oh-my-zsh já está instalado"
-	fi
 }
 
 # ==============================================
@@ -164,8 +173,9 @@ Darwin)
 	setup_system_xcode
 	setup_brew
 	setup_git_project
-	setup_macos
 	setup_brew_deps
+	setup_macos
+	setup_terminal_zsh
 	setup_terminal
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
