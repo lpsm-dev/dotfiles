@@ -26,67 +26,41 @@ cask "font-hack-nerd-font"
 # =================================================
 
 cask "brave-browser"
-cask "discord"
 cask "clickup"
+cask "discord"
+cask "microsoft-auto-update"
+cask "microsoft-teams"
 cask "mullvadvpn"
 cask "obs"
 cask "obsidian"
 cask "ollama"
 cask "spotify"
 cask "telegram"
+cask "warp"
 cask "zed"
 cask "zen-browser"
-cask "warp"
-cask "microsoft-teams"
-cask "microsoft-auto-update"
 cask "zoom"
 
 # =================================================
 # App Store Apps
 # =================================================
 
+mas "Bitwarden", id: 1352778147
 mas "Slack", id: 803453959
 mas "WhatsApp Desktop", id: 1147396723
-mas "Bitwarden", id: 1352778147
 
 # =================================================
 # Packages
 # =================================================
 
-# Utilities
+# Cloud/DevOps
 
-brew "mas"
-brew "curl"
-brew "direnv"
-brew "dnscrypt-proxy"
-brew "fzf"
-brew "git"
-brew "git-lfs"
-brew "jq"
-brew "tree"
-brew "wget"
-brew "htop"
-brew "nmap"
-brew "tree"
-brew "awk"
-brew "gpg"
-brew "git-crypt"
-brew "unzip"
-brew "cowsay"
-
-# Shell
-
-brew "bash"
-brew "neovim"
-brew "starship"
-brew "tmux"
-brew "kitty"
-brew "zsh"
-brew "zsh-completions"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-brew "neofetch"
-brew "gum"
+brew "awscli"
+brew "gitleaks"
+brew "k9s"
+brew "krew"
+brew "kubernetes-cli"
+brew "podman"
 
 # Programming
 
@@ -94,11 +68,36 @@ brew "go"
 brew "goreleaser"
 brew "nvm"
 
-# Cloud/DevOps
+# Shell
 
-brew "awscli"
-brew "gitleaks"
-brew "krew"
-brew "kubernetes-cli"
-brew "podman"
-brew "k9s"
+brew "bash"
+brew "gum"
+brew "kitty"
+brew "neofetch"
+brew "neovim"
+brew "starship"
+brew "tmux"
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+
+# Utilities
+
+brew "awk"
+brew "cowsay"
+brew "curl"
+brew "direnv"
+brew "dnscrypt-proxy"
+brew "fzf"
+brew "git"
+brew "git-crypt"
+brew "git-lfs"
+brew "gpg"
+brew "htop"
+brew "jq"
+brew "mas"
+brew "nmap"
+brew "tree"
+brew "unzip"
+brew "wget"
