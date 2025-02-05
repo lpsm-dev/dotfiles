@@ -155,20 +155,25 @@ function setup_terminal(){
 }
 
 function setup_ai_tools(){
-	info "Starting Ollama service..."
-	brew services start ollama
-	info "Waiting for Ollama service to start..." && sleep 5
-	info "Downloading DeepSeek Coder model..."
-	ollama pull deepseek-coder:6.7b
-	info "Setup complete! You can now use DeepSeek with Ollama"
+	read -p "Deseja realmente iniciar o setup das ferramentas de IA? (s/n): " confirm
+	if [[ "$confirm" =~ ^[Ss]$ ]]; then
+		info "Starting Ollama service..."
+		brew services start ollama
+		info "Waiting for Ollama service to start..." && sleep 5
+		info "Downloading DeepSeek Coder model..."
+		ollama pull deepseek-coder:6.7b
+		info "Setup complete! You can now use DeepSeek with Ollama"
+	else
+		info "Setup do IA Tools cancelado"
+	fi
 }
 
 function setup_automations(){
 	if ! crontab -l | grep -q "brew file update"; then
-	info "Adicionando cron job..."
-	(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
+		nfo "Adicionando cron job..."
+		(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
 	else
-	info "Cron job já existe."
+		info "Cron job já existe."
 	fi
 }
 
