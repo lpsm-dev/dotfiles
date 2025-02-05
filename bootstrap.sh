@@ -47,11 +47,11 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # ==============================================
 
 if is_command_not_in_path brew; then
-	echo "Installing Brew..."
+	info "> Installing Brew..."
 	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 brew update
 brew upgrade
 
-echo "Dotfiles setup complete!"
+info "> Dotfiles setup complete!"
