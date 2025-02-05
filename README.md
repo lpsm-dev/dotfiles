@@ -15,8 +15,10 @@ Este repositório contém os dotfiles e scripts usados para configurar o meu amb
 
 # Sumário
 
-- [Motivação](#Motivação)
-- [Instalação](#Instalação)
+- [Motivação](#motivação)
+- [Instalação](#instalação)
+- [Ferramentas](#ferramentas)
+- [Processos](#processos)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
@@ -54,6 +56,21 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 ```bash
 cd $HOME && bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Ferramentas
+
+## Productivity
+
+- Brave
+- Bitwarden
+- DuckDuckGo
+- SimpleLogin
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Processos
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
