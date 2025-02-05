@@ -1,0 +1,30 @@
+# ██████╗ ██████╗ ███████╗██╗    ██╗███████╗██╗██╗     ███████╗
+# ██╔══██╗██╔══██╗██╔════╝██║    ██║██╔════╝██║██║     ██╔════╝
+# ██████╔╝██████╔╝█████╗  ██║ █╗ ██║█████╗  ██║██║     █████╗
+# ██╔══██╗██╔══██╗██╔══╝  ██║███╗██║██╔══╝  ██║██║     ██╔══╝
+# ██████╔╝██║  ██║███████╗╚███╔███╔╝██║     ██║███████╗███████╗
+# ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝     ╚═╝╚══════╝╚══════╝
+
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
+
+brew "awscli"
+brew "bash"
+brew "curl"
+brew "dnscrypt-proxy"
+brew "exa"
+brew "git"
+brew "git-lfs"
+brew "gitleaks"
+brew "goreleaser"
+brew "jq"
+brew "krew"
+brew "kubernetes-cli"
+brew "neovim"
+brew "starship"
+brew "tmux"
+brew "tree"
+brew "wget"
