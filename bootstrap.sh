@@ -17,7 +17,7 @@ LOCAL_DOTFILES_PATH="$HOME/.dotfiles-local"
 LOCAL_DOTFILES_HOME="$LOCAL_DOTFILES_PATH/home"
 
 # ==============================================
-# FUNCTIONS
+# SUPPORT FUNCTIONS
 # ==============================================
 
 function info {
@@ -46,27 +46,50 @@ function error {
 
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
+# ==============================================
+# MAIN FUNCTIONS
+# ==============================================
+
+function setup_system_updates() {
+    info "Instalando atualizações do sistema..."
+    sudo softwareupdate -iaR || {
+        error "Falha na instalação das atualizações. Verifique manualmente" && exit 1
+    }
+}
+
+function setup_brew() {
+	info "Iniciando setup do Homebrew"
+	if is_command_not_in_path brew; then
+		info "Instalando Homebrew..."
+		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+        if [[ "$(uname -m)" == "arm64" ]]; then
+            echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+            eval "$(/opt/homebrew/bin/brew shellenv)"
+        fi
+	else
+	  info "Homebrew já está instalado."
+	fi
+}
+
+function setup_brew_deps() {
+	info "Iniciando setup das deps do Homebrew"
+	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
+}
+
 function setup_git_project() {
     info "Iniciando setup no macOS"
 	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
 		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
-		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH	
+		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
+	else
+	    info "Dotfile project $GIT_DOTFILES_URL alredy exists in $LOCAL_DOTFILES_PATH", trying to update
+		cd $LOCAL_DOTFILES_PATH && git pull
 	fi
 }
 
 function setup_macos() {
 	info "Iniciando setup do macOS"
 	bash "$LOCAL_DOTFILES_HOME/.macos"
-}
-
-function setup_brew() {
-	info "Iniciando setup do Brew"
-	if is_command_not_in_path brew; then
-		info "Instalando brew..."
-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-		eval "$(/opt/homebrew/bin/brew shellenv)"
-	fi
-	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
 }
 
 # ==============================================
@@ -76,11 +99,12 @@ function setup_brew() {
 OS=$(uname -s)
 case $OS in
 Darwin)
+	setup_system_updates
+	setup_brew && setup_brew_deps
 	setup_git_project
 	setup_macos
-	setup_brew
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
 
-info "Setup Dotfiles finalizado!"
+info "Setup dotfiles finalizado!"

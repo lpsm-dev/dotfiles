@@ -36,6 +36,26 @@ defaults write NSGlobalDomain NSToolbarTitleViewRolloverDelay -float 0
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 ###############################################################################
+# Security                                                                    #
+###############################################################################
+
+# Require password immediately after sleep or screen saver begins
+defaults write com.apple.screensaver askForPassword -int 1
+defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Disable the crash reporter
+defaults write com.apple.CrashReporter DialogType -string "none"
+
+# Disable the guest account
+sudo sysadminctl -guestAccount off &> /dev/null
+
+# Disable ad tracking library: System Preferences → Security & Privacy → Privacy → Advertising
+defaults write com.apple.AdLib forceLimitAdTracking -bool true
+
+# Disable remote management (must be root)
+sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -deactivate -stop
+
+###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
@@ -51,10 +71,6 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
-
-# Require password immediately after sleep or screen saver begins
-defaults write com.apple.screensaver askForPassword -int 1
-defaults write com.apple.screensaver askForPasswordDelay -int 0
 
 # Save screenshots to the desktop
 defaults write com.apple.screencapture location -string "${HOME}/Desktop"
