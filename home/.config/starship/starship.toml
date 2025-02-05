@@ -1,5 +1,8 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Setup Terminal
 add_newline = true
-command_timeout = 1000
+command_timeout = 10000
 right_format = """$time | $os | $kubernetes"""
 
 [character]
@@ -8,9 +11,6 @@ error_symbol = "[✖](#ff0000)"
 format = """
 [│](bold green)$directory$rust$package
 [└─❯](bold green) """
-
-[package]
-disabled = true
 
 [username]
 show_always = true
@@ -22,15 +22,22 @@ disabled = false
 [directory]
 format = "[$path]($style)[$lock_symbol]($lock_style) "
 style = '#6272a4'
-truncation_length = 0
-truncation_symbol = ".../"
+truncation_length = 1
+truncation_symbol = "./"
 truncate_to_repo = false
 
 [cmd_duration]
-min_time = 10_000
+min_time = 2_000
 format = '\[[⏱ $duration]($style)\]'
 style = "yellow"
 
+[package]
+disabled = true
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+# Setup Git
 [git_branch]
 symbol = "🌱 "
 truncation_symbol = ""
@@ -39,16 +46,11 @@ truncation_symbol = ""
 commit_hash_length = 4
 tag_symbol = "🔖 "
 
+# Setup Tools
 [docker_context]
 disabled = true
 
-[aws]
-disabled = true
-
 [helm]
-disabled = true
-
-[memory_usage]
 disabled = true
 
 [nodejs]
@@ -57,20 +59,24 @@ disabled = true
 [ruby]
 disabled = true
 
-# Rigth
-[time]
-time_format = "%T"
-format = "$time($style) "
-style = "bg:#f8f8f2"
+[direnv]
 disabled = false
 
 [kubernetes]
 format = "[☸ $context](bg:white dimmed black) "
 disabled = false
 
+# Setup Cloud Tools
+[aws]
+disabled = false
+format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+style = 'bold blue'
+symbol = '🅰 '
+
 [gcloud]
 disabled = true
 
+# Setup OS
 [os]
 format = "[$symbol]($style)"
 style = "bold white"
@@ -78,3 +84,17 @@ disabled = false
 
 [os.symbols]
 Macos = "127.0.0.1 チム"
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '🔌 '
+discharging_symbol = '💀 '
+
+[memory_usage]
+disabled = true
+
+[time]
+time_format = "%T"
+format = "$time($style) "
+style = "bg:#f8f8f2"
+disabled = false
