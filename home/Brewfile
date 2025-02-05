@@ -50,7 +50,6 @@ cask "zoom"
 
 mas "Bitwarden", id: 1352778147
 mas "Slack", id: 803453959
-mas "Telegram", id: 747648890
 
 # =================================================
 # Packages
