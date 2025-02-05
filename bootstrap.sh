@@ -100,12 +100,12 @@ function setup_brew() {
 }
 
 function setup_brew_deps() {
-	info "Starting Homebrew deps setup $pwd"
+	info "Starting install Homebrew deps $pwd"
 	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
 }
 
 function setup_git_project() {
-    info "Starting project setup $GIT_DOTFILES_URL"
+    info "Starting git project setup $GIT_DOTFILES_URL"
 	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
 		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
 		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
