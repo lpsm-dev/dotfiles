@@ -70,7 +70,7 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 - Conectar-se à Internet.
 - Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo).
-- Abrir o `Terminal.app`.
+- Abrir o `Terminal.app` para rodar o script de instalação.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
