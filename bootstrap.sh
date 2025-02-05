@@ -117,8 +117,13 @@ function setup_git_project() {
 }
 
 function setup_macos() {
-	info "Iniciando setup do macOS"
-	bash "$LOCAL_DOTFILES_HOME/.macos"
+	read -p "Deseja realmente iniciar o setup do macOS? (s/n): " confirm
+	if [[ "$confirm" =~ ^[Ss]$ ]]; then
+		info "Iniciando setup do macOS"
+		bash "$LOCAL_DOTFILES_HOME/.macos"
+	else
+		info "Setup do macOS cancelado"
+	fi
 }
 
 function setup_terminal(){
