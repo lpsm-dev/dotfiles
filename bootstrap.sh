@@ -47,15 +47,26 @@ function error {
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 
 function setup_macos() {
+	info "Iniciando setup do macOS"
 	bash "$LOCAL_DOTFILES_HOME/.macos"
 }
 
 function setup_brew() {
+	info "Iniciando setup do Brew"
 	if is_command_not_in_path brew; then
 		info "Instalando brew..."
 		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+		eval "$(/opt/homebrew/bin/brew shellenv)"
 	fi
 	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile"
+}
+
+function setup_git_project() {
+    info "Iniciando setup no macOS"
+	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
+		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
+		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH	
+	fi
 }
 
 # ==============================================
@@ -65,15 +76,8 @@ function setup_brew() {
 OS=$(uname -s)
 case $OS in
 Darwin)
-    info "Iniciando setup no macOS"
-	# Setup Git Project in local environment
-	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
-		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
-		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH	
-	fi
-	# Setup MacOs
+	setup_git_project
 	setup_macos
-	# Setup Brew
 	setup_brew
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
