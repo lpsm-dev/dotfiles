@@ -1,27 +1,23 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-cd "$(dirname "${BASH_SOURCE}")";
+choice="Y"
 
-git pull origin main;
+if ! command -v brew &> /dev/null; then
+    read -p "Brew not found. Do you want to install it? (Y/n) " -n 1 -r choice
+    echo
+fi
 
-function sync() {
-	rsync --exclude ".git/" \
-		--exclude ".DS_Store" \
-		--exclude ".osx" \
-		--exclude "bootstrap.sh" \
-		--exclude "README.md" \
-		--exclude "LICENSE" \
-		-avh --no-perms ./terminal ~;
-	source ~/.bash_profile;
-}
-
-if [ "$1" == "--force" -o "$1" == "-f" ]; then
-	sync;
-else
-	read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1;
-	echo "";
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		sync;
-	fi;
-fi;
-unset sync;
+case "$choice" in
+    y|Y )
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+        if [ $? -ne 0 ]; then
+            echo "Homebrew installation failed. Exiting..."
+            exit 1
+        fi
+        ;;
+    n|N )
+        echo "Please install Homebrew first."
+        exit 1
+        ;;
+    * ) echo "Invalid input. Please try again." ;;
+esac
