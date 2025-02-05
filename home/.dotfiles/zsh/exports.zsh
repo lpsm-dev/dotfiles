@@ -33,6 +33,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_BOTTLE_SOURCE_FALLBACK=1
+export HOMEBREW_BREWFILE=~/Brewfile
 
 # LC variables
 export LANG="en_US.UTF-8"
