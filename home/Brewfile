@@ -37,6 +37,7 @@ cask "zed"
 cask "zen-browser"
 cask "warp"
 cask "microsoft-teams"
+cask "microsoft-auto-update"
 cask "zoom"
 
 # =================================================
