@@ -49,6 +49,22 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 - **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
 - **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
 
+# Requisitos
+
+**Atualizar sistema**
+
+```bash
+sudo softwareupdate -i -a
+```
+
+**Instalar MacOs Xcode Command Line Tools**
+
+```bash
+xcode-select --install
+```
+
+> The Xcode Command Line Tools includes git and make
+
 # Instalação
 
 > **Warning**: If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
