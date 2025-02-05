@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+HOMEBREW_INSTALL_URL="https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"
+
 choice="Y"
 
 if ! command -v brew &> /dev/null; then
@@ -9,7 +14,7 @@ fi
 
 case "$choice" in
     y|Y )
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
+        /bin/bash -c "$(curl -fsSL $HOMEBREW_INSTALL_URL)" 
         if [ $? -ne 0 ]; then
             echo "Homebrew installation failed. Exiting..."
             exit 1
@@ -21,3 +26,8 @@ case "$choice" in
         ;;
     * ) echo "Invalid input. Please try again." ;;
 esac
+
+brew update
+brew bundle install
+
+echo "Dotfiles setup complete!"
