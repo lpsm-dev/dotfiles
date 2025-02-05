@@ -68,9 +68,9 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 # Requisitos
 
-- Conectar-se à Internet
-- Abrir o System Preferences e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo)
-- Abrir o Terminal.app
+- Conectar-se à Internet.
+- Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo).
+- Abrir o `Terminal.app`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
