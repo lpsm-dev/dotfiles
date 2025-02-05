@@ -64,7 +64,7 @@ function setup_brew() {
 OS=$(uname -s)
 case $OS in
 Darwin)
-    info "Setting up for macOS"
+    info "Iniciando setup no macOS"
 	# Setup Git Project in local environment
 	if [ ! -d "$DEFAULT_DOTFILES_PATH" ]; then
 		info "Cloning $GIT_DOTFILES_URL to $DEFAULT_DOTFILES_PATH"
