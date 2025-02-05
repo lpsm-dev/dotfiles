@@ -111,7 +111,7 @@ function setup_git_project() {
 		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
 		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
 	else
-	    info "Dotfile project $GIT_DOTFILES_URL alredy exists in $LOCAL_DOTFILES_PATH", trying to update
+	    info "O projeto dotfile $GIT_DOTFILES_URL já existe na referência $LOCAL_DOTFILES_PATH. Iremos atualizar o código"
 		cd $LOCAL_DOTFILES_PATH && git pull
 	fi
 }
