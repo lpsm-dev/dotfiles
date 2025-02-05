@@ -84,6 +84,7 @@ brew "zsh"
 brew "zsh-completions"
 brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
+brew "neofetch"
 
 # Programming
 
