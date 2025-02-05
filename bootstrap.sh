@@ -61,7 +61,7 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # ==============================================
 
 function setup_system_updates() {
-    info "Instalando atualizações do sistema..."
+    info "Instalando atualizações do MacOs..."
     sudo softwareupdate -iaR || {
         error "Falha na instalação das atualizações. Verifique manualmente" && exit 1
     }
@@ -170,7 +170,7 @@ function setup_ai_tools(){
 
 function setup_automations(){
 	if ! crontab -l | grep -q "brew file update"; then
-		nfo "Adicionando cron job..."
+		info "Adicionando cron job..."
 		(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
 	else
 		info "Cron job já existe."
@@ -181,7 +181,7 @@ function setup_automations(){
 # MAIN
 # ==============================================
 
-VERSION="0.0.1"
+VERSION="0.0.3"
 
 info "Welcome to bootstrap MacOs! - $VERSION"
 sudo -v
@@ -190,6 +190,11 @@ while true; do
 	sleep 60
 	kill -0 "$$" || exit
 done 2>/dev/null &
+
+read -p "Esse script realizará diversas configurações no seu sistema. Deseja continuar? (y/N): " confirm
+if [[ ! "$confirm" =~ ^[Yy]$ ]]; then
+    error "Operação cancelada pelo usuário." && exit 1
+fi
 
 OS=$(uname -s)
 case $OS in
