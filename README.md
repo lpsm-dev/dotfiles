@@ -87,8 +87,7 @@ xcode-select --install
 # Instalação
 
 ```bash
-git clone https://github.com/lpsm-dev/dotfiles.git ~/.dotfiles && \
-    cd ~/.dotfiles && bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -114,6 +113,7 @@ Links relevantes para essa documentação:
 
 **Artigos**
 
+- [Awesome MacOs Command Line](https://git.herrbischoff.com/awesome-macos-command-line/about/)
 - [MacOs Security-Privacy](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
 - [MacOs Hardening](https://www.bejarano.io/hardening-macos/)
 

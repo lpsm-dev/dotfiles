@@ -46,17 +46,16 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # MAIN
 # ==============================================
 
-if [ "$(uname)" != "Darwin" ]; then
-  echo "Run on macOS !"; exit 1
-fi
-
-if is_command_not_in_path brew; then
-	info "> Installing Brew..."
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-brew update
-brew upgrade
+os_name="$(uname -s)"
+case "${os_name}" in
+Darwin*)
+    info "Setting up for macOS"
+    git clone --depth=1 https://github.com/lpsm-dev/dotfiles.git ~/.dotfiles
+    ;;
+*)
+    error "Unsupported OS: ${os_name}"
+    exit 1
+    ;;
+esac
 
 info "> Dotfiles setup complete!"
