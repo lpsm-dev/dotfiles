@@ -53,6 +53,7 @@ mas "Bitwarden", id: 1352778147
 
 # Utilities
 
+brew "mas"
 brew "curl"
 brew "direnv"
 brew "dnscrypt-proxy"
