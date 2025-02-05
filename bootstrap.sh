@@ -69,17 +69,15 @@ OS=$(uname -s)
 case $OS in
 Darwin)
     info "Setting up for macOS"
+	# Setup Git Project in local environment
 	if [ ! -d "$DEFAULT_DOTFILES_PATH" ]; then
-		# Setup Git Project
 		info "Cloning $GIT_DOTFILES_URL to $DEFAULT_DOTFILES_PATH"
-		git clone --depth=1 $GIT_DOTFILES_URL $DEFAULT_DOTFILES_PATH
-
-		# Setup MacOs
-		setup_macos
-
-		# Setup Brew
-		setup_brew
+		git clone --depth=1 $GIT_DOTFILES_URL $DEFAULT_DOTFILES_PATH	
 	fi
+	# Setup MacOs
+	setup_macos
+	# Setup Brew
+	setup_brew
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac
