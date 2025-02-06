@@ -9,11 +9,11 @@
 # ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
 #                                                          
 
-function kdebug() {
+kdebug() {
     kubectl run -i --rm --tty debug --image=busybox --restart=Never -- sh
 }
 
-function kadd(){
+kadd(){
     if [ -z "$1" ] || [ -z "$2" ]; then
         echo "Os params para o kubeconfig file and kubeconfig context name devem ser preenchidos..."
     else

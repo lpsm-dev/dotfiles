@@ -48,10 +48,11 @@ plugins=(git macos)
 [ -f "$HOME/.shell/zsh/starship.zsh" ]           && source $HOME/.shell/zsh/starship.zsh
 [ -f "$HOME/.shell/zsh/exports.zsh" ]            && source $HOME/.shell/zsh/exports.zsh
 [ -f "$HOME/.shell/zsh/options.zsh" ]            && source $HOME/.shell/zsh/options.zsh
+[ -f "$HOME/.shell/zsh/functions/common.zsh" ]   && source $HOME/.shell/zsh/functions/common.zsh
+[ -f "$HOME/.shell/zsh/functions/docker.zsh" ]   && source $HOME/.shell/zsh/functions/docker.zsh
+[ -f "$HOME/.shell/zsh/functions/kubectl.zsh" ]   && source $HOME/.shell/zsh/functions/kubectl.zsh
 [ -f "$HOME/.shell/zsh/functions/git.zsh" ]      && source $HOME/.shell/zsh/functions/git.zsh
 [ -f "$HOME/.shell/zsh/functions/ssh.zsh" ]      && source $HOME/.shell/zsh/functions/ssh.zsh
-[ -f "$HOME/.shell/zsh/functions/docker.zsh" ]   && source $HOME/.shell/zsh/functions/docker.zsh
-[ -f "$HOME/.shell/zsh/functions/common.zsh" ]   && source $HOME/.shell/zsh/functions/common.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

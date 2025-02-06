@@ -30,7 +30,6 @@ source "$ZINIT_PATH/zinit.zsh"
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light zsh-users/zsh-history-substring-search
-
 zinit light zdharma/fast-syntax-highlighting
 
 # If completion is needed, de-comment lines below.
