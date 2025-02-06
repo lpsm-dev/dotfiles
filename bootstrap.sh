@@ -172,7 +172,7 @@ function setup_automations(){
 # MAIN
 # ==============================================
 
-VERSION="0.0.6"
+VERSION="0.0.7"
 
 info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
 sudo -v
