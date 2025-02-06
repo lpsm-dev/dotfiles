@@ -142,16 +142,7 @@ function setup_terminal_zsh(){
 }
 
 function setup_terminal(){
-	info "Starting terminal setup - Folders"
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.aws/ ~/ 	
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.config/ ~/ 	
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.docker/ ~/
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.dotfiles/ ~/
-	info "Starting terminal setup - Files"
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.Brewfile ~/ 
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.gitignore ~/ 
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zprofile ~/
-	ln -sfnv ${LOCAL_DOTFILES_HOME}/.zshrc ~/ 
+	stow --target=$HOME --dir=$LOCAL_DOTFILES_HOME
 }
 
 function setup_ai_tools(){
