@@ -105,7 +105,7 @@ function setup_brew_deps() {
 }
 
 function setup_git_project() {
-    info "Starting git project setup $GIT_DOTFILES_URL"
+    info "Starting git project setup $GIT_DOTFILES_URL in your local environment"
 	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
 		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
 		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
@@ -137,7 +137,7 @@ function setup_terminal_zsh(){
 		info "Installing oh-my-zsh"
 		sh -c "`curl -fsSL https://raw.github.com/gullitmiranda/oh-my-zsh/master/tools/install.sh`"
 	else
-		info "oh-my-zsh is already installed"
+		info "The oh-my-zsh is already installed"
 	fi
 }
 
@@ -173,7 +173,7 @@ function setup_automations(){
 		info "Adding cronjob..."
 		(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
 	else
-		info "Cronjob already exists."
+		info "Cronjob already exists"
 	fi
 }
 
