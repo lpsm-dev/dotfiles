@@ -11,9 +11,9 @@
 
 Hello Human 👽!
 
-Bem-vindo ao meu repositório de dotfiles 👋.
+Bem-vindo ao meu repositório de dotfiles 👋
 
-Aqui você encontrará as minhas configurações pessoais para o ambiente de desenvolvimento, incluindo o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros. Sinta-se à vontade para explorar, colaborar e compartilhar suas próprias configurações. Que a força esteja com você! 🚀
+Aqui você encontrará todas as minhas configurações pessoais para o ambiente de desenvolvimento. Sinta-se à vontade para explorar, colaborar e compartilhar suas próprias configurações 🚀
 
 </div>
 
