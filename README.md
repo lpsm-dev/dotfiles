@@ -9,7 +9,11 @@
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-Hello Hummans 👽! Bem-vindo ao meu repositório de dotfiles. Aqui você encontrará as minhas configurações pessoais para o ambiente de desenvolvimento, incluindo o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros. Sinta-se à vontade para explorar, colaborar e compartilhar suas próprias configurações. Que a força esteja com você! 🚀
+Hello Human 👽!
+
+Bem-vindo ao meu repositório de dotfiles 👋.
+
+Aqui você encontrará as minhas configurações pessoais para o ambiente de desenvolvimento, incluindo o shell (Zsh), editor de texto (Neovim), gerenciador de pacotes (Homebrew), entre outros. Sinta-se à vontade para explorar, colaborar e compartilhar suas próprias configurações. Que a força esteja com você! 🚀
 
 </div>
 
