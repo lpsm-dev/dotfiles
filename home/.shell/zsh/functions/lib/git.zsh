@@ -16,8 +16,9 @@ gz() {
 }
 
 gdummy() {
+  random_id=$(uuidgen | cut -c1-8)
   git add .
-  git commit -m "chore: just dummy changes"
+  git commit -m "chore(sorry): just dummy changes - $random_id"
   git push
 }
 
