@@ -13,7 +13,7 @@ Hello Human 👽!
 
 Bem-vindo ao meu repositório de dotfiles 👋
 
-Aqui você encontrará todas as minhas configurações pessoais para o ambiente de desenvolvimento. Sinta-se à vontade para explorar, colaborar e compartilhar suas próprias configurações 🚀
+Aqui você encontrará todas as minhas configurações pessoais para o setup do meu ambiente de desenvolvimento. Sinta-se à vontade para explorar, colaborar e compartilhar suas próprias configurações 🚀
 
 </div>
 
