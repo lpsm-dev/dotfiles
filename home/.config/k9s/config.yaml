@@ -1,0 +1,15 @@
+---
+k9s:
+  logger:
+    tail: 500
+    buffer: 5000
+    sinceSeconds: -1
+  thresholds:
+    cpu:
+      critical: 90
+      warn: 70
+    memory:
+      critical: 90
+      warn: 70
+  ui:
+    skin: catppuccin-mocha-transparent

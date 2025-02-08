@@ -1,0 +1,16 @@
+#
+# ██████╗ ███████╗██████╗ ███████╗ ██████╗ ███╗   ██╗ █████╗ ██╗
+# ██╔══██╗██╔════╝██╔══██╗██╔════╝██╔═══██╗████╗  ██║██╔══██╗██║
+# ██████╔╝█████╗  ██████╔╝███████╗██║   ██║██╔██╗ ██║███████║██║
+# ██╔═══╝ ██╔══╝  ██╔══██╗╚════██║██║   ██║██║╚██╗██║██╔══██║██║
+# ██║     ███████╗██║  ██║███████║╚██████╔╝██║ ╚████║██║  ██║███████╗
+# ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+#
+
+# Setup the gitconfig used for my personal stuffs on GitHub
+[includeIf "gitdir:/Volumes/SSD/1-projects/tech/github/"]
+  path = /Volumes/SSD/1-projects/tech/github/.gitconfig
+
+# Setup the gitconfig used for my personal stuffs on GitLab
+[includeIf "gitdir:/Volumes/SSD/1-projects/tech/gitlab/"]
+  path = /Volumes/SSD/1-projects/tech/gitlab/.gitconfig

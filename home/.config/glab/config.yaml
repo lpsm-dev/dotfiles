@@ -1,0 +1,8 @@
+---
+display_hyperlinks: true
+no_prompt: false
+hosts:
+  gitlab.com:
+    api_host: gitlab.com
+    git_protocol: ssh
+    api_protocol: https

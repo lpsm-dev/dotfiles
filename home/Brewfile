@@ -1,0 +1,224 @@
+# ██████╗ ██████╗ ███████╗██╗    ██╗███████╗██╗██╗     ███████╗
+# ██╔══██╗██╔══██╗██╔════╝██║    ██║██╔════╝██║██║     ██╔════╝
+# ██████╔╝██████╔╝█████╗  ██║ █╗ ██║█████╗  ██║██║     █████╗
+# ██╔══██╗██╔══██╗██╔══╝  ██║███╗██║██╔══╝  ██║██║     ██╔══╝
+# ██████╔╝██║  ██║███████╗╚███╔███╔╝██║     ██║███████╗███████╗
+# ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚══╝╚══╝ ╚═╝     ╚═╝╚══════╝╚══════╝
+
+cask_args appdir: "/Applications"
+
+# =================================================
+# TAPS
+# =================================================
+
+tap "homebrew/bundle"
+tap "homebrew/services"
+
+# =================================================
+# FONTS
+# =================================================
+
+cask "font-jetbrains-mono"
+cask "font-hack-nerd-font"
+
+# =================================================
+# APPS
+# =================================================
+
+# -------------------
+# Browsers
+# -------------------
+cask "brave-browser"
+cask "tor-browser"
+cask "zen-browser"
+
+# -------------------
+# Development
+# -------------------
+cask "docker"
+cask "kitty"
+cask "ollama"
+cask "warp"
+cask "zed"
+cask "obsidian"
+
+# -------------------
+# Communication
+# -------------------
+cask "discord"
+cask "microsoft-teams"
+cask "telegram"
+cask "zoom"
+
+# -------------------
+# Security & Privacy
+# -------------------
+cask "bitwarden"
+cask "malwarebytes"
+cask "mullvadvpn"
+
+# -------------------
+# Productivity
+# -------------------
+cask "appcleaner"
+cask "clickup"
+cask "obs"
+
+# -------------------
+# Utilities
+# -------------------
+cask "microsoft-auto-update"
+cask "spotify"
+cask "webtorrent"
+
+# =================================================
+# APP STORE APPS
+# =================================================
+
+mas "Slack", id: 803453959
+
+# =================================================
+# PACKAGES
+# =================================================
+
+# -------------------
+# Cloud & DevOps
+# -------------------
+brew "awscli"
+brew "eksctl"
+brew "helm"
+brew "k9s"
+brew "kind"
+brew "krew"
+brew "kubectx"
+brew "kubernetes-cli"
+brew "terraform"
+brew "terraform-docs"
+brew "tflint"
+brew "sops"
+
+# -------------------
+# Containers
+# -------------------
+brew "docker"
+brew "podman"
+
+# -------------------
+# Development Tools
+# -------------------
+brew "direnv"
+brew "go-task"
+brew "pre-commit"
+brew "nvm"
+brew "rbenv"
+brew "rustup"
+brew "volta"
+
+# -------------------
+# Programming Languages
+# -------------------
+brew "go"
+brew "node"
+brew "openjdk"
+brew "python"
+brew "rust"
+
+# -------------------
+# Package Managers
+# -------------------
+brew "pnpm"
+brew "yarn"
+
+# -------------------
+# Shell & CLI
+# -------------------
+brew "zsh"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "starship"
+brew "tmux"
+brew "neovim"
+brew "fzf"
+brew "gum"
+
+# -------------------
+# Security
+# -------------------
+brew "age"
+brew "bitwarden-cli"
+brew "git-crypt"
+brew "gitleaks"
+brew "gnupg"
+brew "gpg"
+brew "sops"
+
+# -------------------
+# Code Quality
+# -------------------
+brew "hadolint"
+brew "shellcheck"
+brew "yamllint"
+
+# -------------------
+# Networking
+# -------------------
+brew "curl"
+brew "dnscrypt-proxy"
+brew "nmap"
+brew "telnet"
+brew "wget"
+
+# -------------------
+# System Monitoring
+# -------------------
+brew "btop"
+brew "fastfetch"
+brew "htop"
+brew "neofetch"
+
+# -------------------
+# Text & File Utilities
+# -------------------
+brew "awk"
+brew "bat"
+brew "eza"
+brew "fd"
+brew "jq"
+brew "pandoc"
+brew "p7zip"
+brew "tree"
+brew "unzip"
+brew "yazi"
+brew "yq"
+
+# -------------------
+# Git Tools
+# -------------------
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "git-lfs"
+brew "github-keygen"
+brew "lazygit"
+
+# -------------------
+# Miscellaneous
+# -------------------
+brew "chezmoi"
+brew "cowsay"
+brew "m-cli"
+brew "mas"
+brew "mercurial"
+brew "ollama"
+brew "pinentry"
+brew "rclone"
+brew "stow"
+brew "watch"
+
+# -------------------
+# Email
+# -------------------
+brew "isync"
+brew "msmtp"
+brew "mu"

@@ -1,0 +1,55 @@
+#
+#  ██████╗ ██╗████████╗
+# ██╔════╝ ██║╚══██╔══╝
+# ██║  ███╗██║   ██║
+# ██║   ██║██║   ██║
+# ╚██████╔╝██║   ██║
+#  ╚═════╝ ╚═╝   ╚═╝
+#
+
+# General
+*.bak
+*.DS_Store
+*.egg-info
+*.html.py
+*.md5
+*.o
+*.orig
+*.pickle
+*.pyc
+*.pyo
+*.so
+*.svn
+*.svn/*
+*.tmp
+*~
+.\#*
+.coverage
+.DS_Store
+.hg
+.hgignore
+.installed.cfg
+.personal.gitconfig
+.pip/download_cache
+.Python
+.sass-cache
+.sass-cache/*
+.svn
+.svn/*
+.tox
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

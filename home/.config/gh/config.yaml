@@ -1,0 +1,6 @@
+---
+version: "1"
+prompt: enabled
+hosts:
+  github.com:
+    git_protocol: ssh

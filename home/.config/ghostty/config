@@ -1,0 +1,27 @@
+#
+#  ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗████████╗██╗   ██╗
+# ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+# ██║  ███╗███████║██║   ██║███████╗   ██║      ██║    ╚████╔╝
+# ██║   ██║██╔══██║██║   ██║╚════██║   ██║      ██║     ╚██╔╝
+# ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║      ██║
+#  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝      ╚═╝
+#
+
+## General Settings
+# Reload using `cmd+r`
+theme = tokyonight
+background-opacity = 0.98
+window-padding-color = background
+
+## Font Settings
+font-family = "Berkeley Mono"
+font-size = 18
+font-style = "Regular"
+font-style-italic = "Oblique"
+font-style-bold = "Bold"
+font-style-bold-italic = "Bold Oblique"
+font-synthetic-style = false
+
+## macOS Specific Settings
+macos-option-as-alt = left
+macos-titlebar-style = hidden

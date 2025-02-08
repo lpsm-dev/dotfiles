@@ -1,0 +1,22 @@
+---
+git:
+  parseEmoji: true
+gui:
+  showNumstatInFilesView: true
+  mouseEvents: false
+  nerdFontsVersion: "3"
+  showBottomLine: false
+  showCommandLog: false
+  language: "en"
+  border: "rounded"
+  skipDiscardChangeWarning: true
+  skipRewordInEditorWarning: true
+  theme:
+    selectedLineBgColor:
+      - "#3e4452"
+customCommands:
+  - key: "E"
+    description: "Add empty commit"
+    context: "commits"
+    command: 'git commit --allow-empty -m "chore: empty commit"'
+    loadingText: "Committing empty commit..."

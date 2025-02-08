@@ -1,0 +1,119 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# ================================================
+# SETUP TERMINAL STYLE
+# ================================================
+add_newline = true
+command_timeout = 10000
+right_format = """$time | $os | $kubernetes"""
+
+[character]
+success_symbol = "[❯](#00ff00)"
+error_symbol = "[✖](#ff0000)"
+format = """
+[│](bold green)$directory$rust$package
+[└─❯](bold green) """
+
+[username]
+show_always = true
+style_user = "bg:#a3aed2"
+style_root = "bg:#a3aed2"
+format = "[ $user ]($style) "
+disabled = false
+
+[directory]
+format = "[$path]($style)[$lock_symbol]($lock_style) "
+style = '#6272a4'
+truncation_length = 1
+truncation_symbol = "./"
+truncate_to_repo = false
+
+[cmd_duration]
+min_time = 2_000
+format = '\[[⏱ $duration]($style)\]'
+style = "yellow"
+
+[package]
+disabled = true
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+# ================================================
+# SETUP OS STYLE
+# ================================================
+[os]
+format = "[$symbol]($style)"
+style = "bold white"
+disabled = false
+
+[os.symbols]
+Macos = "127.0.0.1 チム"
+
+[battery]
+full_symbol = '🔋 '
+charging_symbol = '🔌 '
+discharging_symbol = '💀 '
+
+[memory_usage]
+disabled = true
+
+[time]
+time_format = "%T"
+format = "$time($style) "
+style = "bg:#f8f8f2"
+disabled = false
+
+# ================================================
+# SETUP GIT
+# ================================================
+[git_branch]
+symbol = "🌱 "
+truncation_symbol = ""
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = "🔖 "
+
+# ================================================
+# SETUP TOOLS
+# ================================================
+[docker_context]
+disabled = true
+
+[helm]
+disabled = true
+
+[nodejs]
+disabled = true
+
+[python]
+symbol = "py "
+
+[ruby]
+disabled = true
+
+[rust]
+symbol = "rs "
+
+[direnv]
+disabled = true
+
+[terraform]
+symbol = "terraform "
+
+[kubernetes]
+format = "[☸ $context](bg:white dimmed black) "
+disabled = false
+
+# ================================================
+# SETUP CLOUD TOOLS
+# ================================================
+[aws]
+disabled = false
+format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+style = 'bold blue'
+symbol = 'aws '
+
+[gcloud]
+disabled = true
