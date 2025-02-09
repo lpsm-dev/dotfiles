@@ -20,5 +20,9 @@ Uma vez encontrado as chaves, para cada uma delas, você deve adicionar a chave 
 > [!NOTE]
 > O Bitwarden vai solicitar que você confirme sempre que você acessar uma chave SSH. Isso é uma medida de segurança para garantir que você está ciente de que está acessando uma chave SSH.
 
+# Docker
+
+Abra o aplicativo Docker e termine sua configuração de forma manual.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- END_DOCS -->
