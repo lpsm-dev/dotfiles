@@ -35,3 +35,7 @@
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# SSH
+home/.ssh/known_hosts
+home/.ssh/known_hosts.old
