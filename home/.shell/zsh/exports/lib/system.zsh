@@ -23,9 +23,6 @@ export LC_CTYPE="en_US.UTF-8"
 # GPG variables
 export GPG_TTY=$(tty)
 
-# OpenSSH variables
-export PATH=$(brew --prefix openssh)/bin:$PATH
-
 # Bitwarden SSH
 export SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock
 export BITWARDEN_SSH_AUTH_SOCK=$HOME/.bitwarden-ssh-agent.sock

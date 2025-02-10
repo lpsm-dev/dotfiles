@@ -9,8 +9,8 @@
 # ╚══════╝╚═╝  ╚═╝╚═╝      ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝
 #
 
-[ -f "$HOME/.shell/zsh/exports/lib/special.zsh" ]     && source $HOME/.shell/zsh/exports/lib/special.zsh
-[ -f "$HOME/.shell/zsh/exports/lib/devops.zsh" ]      && source $HOME/.shell/zsh/exports/lib/devops.zsh
-[ -f "$HOME/.shell/zsh/exports/lib/programming.zsh" ] && source $HOME/.shell/zsh/exports/lib/programming.zsh
-[ -f "$HOME/.shell/zsh/exports/lib/system.zsh" ]      && source $HOME/.shell/zsh/exports/lib/system.zsh
-[ -f "$HOME/.shell/zsh/exports/lib/terminal.zsh" ]    && source $HOME/.shell/zsh/exports/lib/terminal.zsh
+# OpenSSH variables
+export PATH=$(brew --prefix openssh)/bin:$PATH
+
+# Go variables
+export GOROOT="$(brew --prefix golang)/libexec"
