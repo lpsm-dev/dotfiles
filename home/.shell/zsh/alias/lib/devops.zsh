@@ -27,13 +27,13 @@ fi
 # SETUP KUBECTL
 # ================================================
 
-alias k="kubectl"
-alias kview="k config view"
-alias kctx="k config current-context"
-alias kns="k get ns"
+alias k="kubectl --insecure-skip-tls-verify"
+alias kctx="kubectl config current-context"
+alias kview="kubectl config view"
+alias kns="kubectl get ns"
 
 # ================================================
 # SETUP HELM
 # ================================================
 
-alias h="helm"
+alias h="helm --kube-insecure-skip-tls-verify"
