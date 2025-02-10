@@ -4,7 +4,7 @@
     "direnv@latest",
     "gitleaks@latest",
     "pre-commit@latest",
-    "rsync@latest",
+    "rsync@3.4.1",
     "yamllint@latest"
   ],
   "shell": {
