@@ -155,7 +155,7 @@ function setup_automations(){
 # MAIN
 # ==============================================
 
-VERSION="0.0.3"
+VERSION="0.0.4"
 
 info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
 
