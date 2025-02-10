@@ -39,3 +39,6 @@
 # SSH
 home/.ssh/known_hosts
 home/.ssh/known_hosts.old
+
+# Git
+home/.config/git/include/work-config
