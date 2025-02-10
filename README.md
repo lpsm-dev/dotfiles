@@ -9,7 +9,7 @@
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-#### Hello Human 👽! Bem-vindo 👋 ao meu repositório de dotfiles
+Hello Human 👽! Bem-vindo 👋 ao meu repositório de dotfiles
 
 Aqui você encontrará minhas configurações pessoais para o setup do meu ambiente de desenvolvimento. Fique à vontade para explorar, colaborar e compartilhar 🚀
 
@@ -17,20 +17,33 @@ Aqui você encontrará minhas configurações pessoais para o setup do meu ambie
 
 # Sumário
 
+<details>
+  <summary><strong>Expandir</strong></summary>
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
 - [Disclaimer](#disclaimer)
-- [Motivação](#motivação)
+- [Motivação](#motiva%C3%A7%C3%A3o)
 - [Objetivo](#objetivo)
-- [Benefícios](#benefícios)
+- [Benefícios](#benef%C3%ADcios)
 - [Requisitos](#requisitos)
-- [Instalação](#instalação)
+- [Instalação](#instala%C3%A7%C3%A3o)
 - [Ferramentas](#ferramentas)
+  - [Productivity](#productivity)
 - [Processos](#processos)
-- [Referências](#referências)
+  - [Brave](#brave)
+- [Features](#features)
+- [Referências](#refer%C3%AAncias)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
 - [Show your support](#show-your-support)
 
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+</details>
 
 # Disclaimer
 

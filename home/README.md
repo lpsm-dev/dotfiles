@@ -7,6 +7,23 @@
 
 </div>
 
+# Sumário
+
+<details>
+  <summary><strong>Expandir</strong></summary>
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [SSH](#ssh)
+- [Docker](#docker)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+</details>
+
 # SSH
 
 As chaves SSH estão sendo gerenciadas pelo [Bitwarden](https://bitwarden.com/). Para acessar as chaves, acesse o Bitwarden e procure por `SSH Key` e você encontrará as chaves.

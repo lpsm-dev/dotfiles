@@ -1,4 +1,0 @@
-title = "Custom gitleaks configuration"
-
-[allowlist]
-files = ["config/dnscrypt-proxy/dnscrypt-proxy.toml"]

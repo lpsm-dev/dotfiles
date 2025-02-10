@@ -17,24 +17,24 @@
 #
 
 [alias]
-	clear-credentials = "!f(){ REMOTE=origin; git remote -v | grep $REMOTE | head -n1 | sed -E \"s/^$REMOTE\\t+([a-z]+):\\/\\/([^\\/]+).*/protocol=\\1\\nhost=\\2/\" | git credential-osxkeychain erase ;};f"
-	s  = status -sb
-	f  = fetch --prune
-	c  = commit -v
-	co = commit -v
-	cl = clone --recursive
-	cm = commit -vm
-	br = branch -v
-	st = status
-	ck = checkout
-	t  = tag --column
-	tn = tag -n
-	d  = diff
-	branches = branch --all
-	remotes = remote --verbose
-	contributors = shortlog --summary --numbered
-	whoami = config user.email
-	tags = tag -l
+    clear-credentials = "!f(){ REMOTE=origin; git remote -v | grep $REMOTE | head -n1 | sed -E \"s/^$REMOTE\\t+([a-z]+):\\/\\/([^\\/]+).*/protocol=\\1\\nhost=\\2/\" | git credential-osxkeychain erase ;};f"
+    s  = status -sb
+    f  = fetch --prune
+    c  = commit -v
+    co = commit -v
+    cl = clone --recursive
+    cm = commit -vm
+    br = branch -v
+    st = status
+    ck = checkout
+    t  = tag --column
+    tn = tag -n
+    d  = diff
+    branches = branch --all
+    remotes = remote --verbose
+    contributors = shortlog --summary --numbered
+    whoami = config user.email
+    tags = tag -l
 
 #
 #  ██████╗ ██████╗ ██████╗ ███████╗
@@ -99,14 +99,14 @@
 #
 
 [include]
-	path = include/personal-config
+    path = include/personal-config
 [init]
   defaultBranch = main
 [merge]
   ff = only
 [pull]
   ff = only
-	rebase = true
+    rebase = true
 [push]
   followTags = true
 [credential]
@@ -121,7 +121,7 @@
 [help]
   autocorrect = 1
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

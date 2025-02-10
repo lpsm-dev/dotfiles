@@ -20,27 +20,27 @@ LOCAL_DOTFILES_HOME="$LOCAL_DOTFILES_PATH/home"
 # ==============================================
 
 function info {
-	if [ -t 0 ] && [ -t 1 ]; then
-		echo -e "${GREEN}╰┈➤ $1${RESET}"
-	else
-		echo "$1"
-	fi
+    if [ -t 0 ] && [ -t 1 ]; then
+        echo -e "${GREEN}╰┈➤ $1${RESET}"
+    else
+        echo "$1"
+    fi
 }
 
 function warn {
-	if [ -t 0 ] && [ -t 1 ]; then
-		echo -e "${YELLOW}╰┈➤ $1${RESET}"
-	else
-		echo "$1"
-	fi
+    if [ -t 0 ] && [ -t 1 ]; then
+        echo -e "${YELLOW}╰┈➤ $1${RESET}"
+    else
+        echo "$1"
+    fi
 }
 
 function error {
-	if [ -t 0 ] && [ -t 1 ]; then
-		echo -e "${RED}╰┈➤ $1${RESET}"
-	else
-		echo "$1"
-	fi
+    if [ -t 0 ] && [ -t 1 ]; then
+        echo -e "${RED}╰┈➤ $1${RESET}"
+    else
+        echo "$1"
+    fi
 }
 
 function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
@@ -76,51 +76,51 @@ function setup_system_xcode() {
 }
 
 function setup_brew() {
-	info "Starting Homebrew setup..."
-	if is_command_not_in_path brew; then
-		info "Installing Homebrew..."
-		/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    info "Starting Homebrew setup..."
+    if is_command_not_in_path brew; then
+        info "Installing Homebrew..."
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     if [[ "$(uname -m)" == "arm64" ]]; then
       eval "$(/opt/homebrew/bin/brew shellenv)"
     fi
-	else
-	  warn "Homebrew is already installed"
-	fi
+    else
+      warn "Homebrew is already installed"
+    fi
 }
 
 function setup_brew_deps() {
-	info "Starting install Homebrew deps $pwd"
-	brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
-	info "Running Homebrew cleanup"
-	brew cleanup
+    info "Starting install Homebrew deps $pwd"
+    brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
+    info "Running Homebrew cleanup"
+    brew cleanup
 }
 
 function setup_git_project() {
   info "Starting git project setup $GIT_DOTFILES_URL in your local environment"
-	if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
-		info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
-		git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
-	else
-	  info "The dotfile project $GIT_DOTFILES_URL already exists at $LOCAL_DOTFILES_PATH. We will update the code"
-		cd $LOCAL_DOTFILES_PATH && git pull
-	fi
+    if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
+        info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
+        git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
+    else
+      info "The dotfile project $GIT_DOTFILES_URL already exists at $LOCAL_DOTFILES_PATH. We will update the code"
+        cd $LOCAL_DOTFILES_PATH && git pull
+    fi
 }
 
 function setup_macos() {
-	read -p "Do you really want to start MacOS setup? (y/n): " confirm
-	if [[ "$confirm" =~ ^[Yy]$ ]]; then
-		info "Starting macOS setup"
-		bash "$LOCAL_DOTFILES_HOME/.macos"
-	else
-		info "MacOS setup canceled"
-	fi
+    read -p "Do you really want to start MacOS setup? (y/n): " confirm
+    if [[ "$confirm" =~ ^[Yy]$ ]]; then
+        info "Starting macOS setup"
+        bash "$LOCAL_DOTFILES_HOME/.macos"
+    else
+        info "MacOS setup canceled"
+    fi
 }
 
 function setup_terminal(){
-	info "Starting sync with stow"
-	cd $LOCAL_DOTFILES_HOME && stow --target=$HOME --adopt .
-	info "Install devbox"
-	if ! command -v devbox >/dev/null 2>&1; then
+    info "Starting sync with stow"
+    cd $LOCAL_DOTFILES_HOME && stow --target=$HOME --adopt .
+    info "Install devbox"
+    if ! command -v devbox >/dev/null 2>&1; then
     info "Devbox not found. Installing..."
     curl -fsSL https://get.jetify.com/devbox | bash
   else
@@ -129,26 +129,26 @@ function setup_terminal(){
 }
 
 function setup_ai_tools(){
-	read -p "Do you really want to start the AI tools setup? (y/n): " confirm
-	if [[ "$confirm" =~ ^[Yy]$ ]]; then
-		info "Starting Ollama service..."
-		brew services start ollama
-		info "Waiting for Ollama service to start..." && sleep 5
-		info "Downloading DeepSeek Coder model..."
-		ollama pull deepseek-coder:6.7b
-		info "Setup complete! You can now use DeepSeek with Ollama"
-	else
-		info "AI Tools setup canceled"
-	fi
+    read -p "Do you really want to start the AI tools setup? (y/n): " confirm
+    if [[ "$confirm" =~ ^[Yy]$ ]]; then
+        info "Starting Ollama service..."
+        brew services start ollama
+        info "Waiting for Ollama service to start..." && sleep 5
+        info "Downloading DeepSeek Coder model..."
+        ollama pull deepseek-coder:6.7b
+        info "Setup complete! You can now use DeepSeek with Ollama"
+    else
+        info "AI Tools setup canceled"
+    fi
 }
 
 function setup_automations(){
-	if ! crontab -l | grep -q "brew file update"; then
-		info "Adding cronjob..."
-		(crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
-	else
-		warn "Cronjob already exists"
-	fi
+    if ! crontab -l | grep -q "brew file update"; then
+        info "Adding cronjob..."
+        (crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
+    else
+        warn "Cronjob already exists"
+    fi
 }
 
 # ==============================================
@@ -176,9 +176,9 @@ echo -e "${RESET}"
 
 sudo -v
 while true; do
-	sudo -n true
-	sleep 60
-	kill -0 "$$" || exit
+    sudo -n true
+    sleep 60
+    kill -0 "$$" || exit
 done 2>/dev/null &
 
 read -p "This script will perform several configurations on your system. Do you want to continue? (y/N): " confirm
@@ -189,15 +189,15 @@ fi
 OS=$(uname -s)
 case $OS in
 Darwin)
-	setup_system_updates
-	setup_system_xcode
-	setup_brew
-	setup_git_project
-	setup_brew_deps
-	setup_macos
-	setup_terminal
-	setup_ai_tools
-	setup_automations
+    setup_system_updates
+    setup_system_xcode
+    setup_brew
+    setup_git_project
+    setup_brew_deps
+    setup_macos
+    setup_terminal
+    setup_ai_tools
+    setup_automations
     ;;
 *) error "Unsupported OS: ${os_name}" && exit 1 ;;
 esac

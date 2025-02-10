@@ -12,19 +12,19 @@
 export ZINIT_PATH="$HOME/.zinit/bin"
 
 if [ ! -f "$ZINIT_PATH/zinit.zsh" ]; then
-	echo "Installing zinit ..."
-	[ ! -d "$ZINIT_PATH" ] && mkdir -p "$ZINIT" 2> /dev/null
-	if [ -x "$(which git)" ]; then
-		git clone https://github.com/zdharma-continuum/zinit.git $ZINIT_PATH
-	else
-		echo "ERROR: please install git before installation !!"
-		exit 1
-	fi
-	if [ ! $? -eq 0 ]; then
-		echo ""
-		echo "ERROR: downloading zinit failed !!"
-		exit 1
-	fi;
+    echo "Installing zinit ..."
+    [ ! -d "$ZINIT_PATH" ] && mkdir -p "$ZINIT" 2> /dev/null
+    if [ -x "$(which git)" ]; then
+        git clone https://github.com/zdharma-continuum/zinit.git $ZINIT_PATH
+    else
+        echo "ERROR: please install git before installation !!"
+        exit 1
+    fi
+    if [ ! $? -eq 0 ]; then
+        echo ""
+        echo "ERROR: downloading zinit failed !!"
+        exit 1
+    fi;
 fi
 
 source "$ZINIT_PATH/zinit.zsh"

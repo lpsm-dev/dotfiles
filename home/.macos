@@ -13,7 +13,7 @@
 # I tailored it according to my preferences, however
 
 # Close any open System Preferences panes, to prevent them from overriding
-# settings we’re about to change
+# settings we're about to change
 osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
@@ -53,10 +53,10 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
-# Disable the “Are you sure you want to open this application?” dialog
+# Disable the "Are you sure you want to open this application?" dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
 
-# Remove duplicates in the “Open With” menu (also see `lscleanup` alias)
+# Remove duplicates in the "Open With" menu (also see `lscleanup` alias)
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
 # Disable the sound effects on boot
@@ -209,9 +209,9 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 ###############################################################################
 
 for app in "Activity Monitor" \
-	"Dock" \
-	"Finder" \
-	"Photos"; do
-	killall "${app}" &> /dev/null
+    "Dock" \
+    "Finder" \
+    "Photos"; do
+    killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
