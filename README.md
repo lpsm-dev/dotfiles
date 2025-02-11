@@ -33,10 +33,10 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 - [Visão Geral](#vis%C3%A3o-geral)
   - [Objetivo](#objetivo)
   - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
+- [Features](#features)
 - [Implementação](#implementa%C3%A7%C3%A3o)
   - [Pré-requisitos](#pr%C3%A9-requisitos)
   - [Instalação](#instala%C3%A7%C3%A3o)
-- [Features](#features)
 - [Referências](#refer%C3%AAncias)
 - [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Versionamento](#versionamento)
@@ -81,6 +81,15 @@ Com esse ideia introduzida, a parte complicada e que me motivou a criar esse rep
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# Features
+
+- Symlink dotfiles from this repository to your home directory
+- Install apps, fonts, and tools using Homebrew, uv, and the Mac App Store
+- Set up straightforward Python configuration using uv
+- Set up macOS Dock with most used apps
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Implementação
 
 ## Pré-requisitos
@@ -96,15 +105,6 @@ Com esse ideia introduzida, a parte complicada e que me motivou a criar esse rep
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-# Features
-
-- Symlink dotfiles from this repository to your home directory
-- Install apps, fonts, and tools using Homebrew, uv, and the Mac App Store
-- Set up straightforward Python configuration using uv
-- Set up macOS Dock with most used apps
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
