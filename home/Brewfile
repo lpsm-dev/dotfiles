@@ -104,6 +104,7 @@ brew "sops"
 # Containers
 # -------------------
 brew "docker"
+brew "lazydocker"
 brew "podman"
 
 # -------------------
