@@ -64,7 +64,7 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 
 ## Objetivo
 
-O objetivo desse repositório é compartilhar e documentar as minhas configurações pessoais para o setup do meu ambiente de desenvolvimento, incluindo dotfiles, scripts e ferramentas de automação, que são usados para instalar e configurar as dependências e ferramentas necessárias para o desenvolvimento de software.
+O objetivo desse repositório é compartilhar e documentar as minhas configurações pessoais para o setup do meu ambiente de desenvolvimento, incluindo dotfiles, scripts e ferramentas de automação, que são usados para instalar e configurar as dependências e ferramentas necessárias para meu dia a dia de trabalho.
 
 ## Contexto e Motivação
 
