@@ -34,8 +34,9 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
   - [Objetivo](#objetivo)
   - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
 - [Benefícios](#benef%C3%ADcios)
-- [Requisitos](#requisitos)
-- [Instalação](#instala%C3%A7%C3%A3o)
+- [Implementação](#implementa%C3%A7%C3%A3o)
+  - [Pré-requisitos](#pr%C3%A9-requisitos)
+  - [Instalação](#instala%C3%A7%C3%A3o)
 - [Ferramentas](#ferramentas)
   - [Productivity](#productivity)
 - [Processos](#processos)
@@ -88,7 +89,9 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Requisitos
+# Implementação
+
+## Pré-requisitos
 
 - Conectar-se à Internet.
 - Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo).
@@ -96,7 +99,7 @@ Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Instalação
+## Instalação
 
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
