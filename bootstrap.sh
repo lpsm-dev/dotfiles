@@ -121,11 +121,13 @@ function setup_terminal(){
     cd $LOCAL_DOTFILES_HOME && stow --target=$HOME --adopt .
     info "Install devbox"
     if ! command -v devbox >/dev/null 2>&1; then
-    info "Devbox not found. Installing..."
-    curl -fsSL https://get.jetify.com/devbox | bash
-  else
-    warn "Devbox is already installed"
-  fi
+        info "Devbox not found. Installing..."
+        curl -fsSL https://get.jetify.com/devbox | bash
+    else
+        warn "Devbox is already installed"
+    fi
+    info "Install neovim plugins"
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 }
 
 function setup_ai_tools(){
@@ -155,7 +157,7 @@ function setup_automations(){
 # MAIN
 # ==============================================
 
-VERSION="0.0.6"
+VERSION="0.0.7"
 
 info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
 
