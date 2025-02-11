@@ -130,6 +130,13 @@ function setup_terminal(){
     [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim" ] || \
       sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
         --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    info "Install nix"
+    if ! command -v nix >/dev/null 2>&1; then
+        info "Nix not found. Installing..."
+        sh <(curl -L https://nixos.org/nix/install) --daemon
+    else
+        warn "Nix is already installed"
+    fi
 }
 
 function setup_ai_tools(){
@@ -159,7 +166,7 @@ function setup_automations(){
 # MAIN
 # ==============================================
 
-VERSION="0.0.7"
+VERSION="0.0.8"
 
 info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
 

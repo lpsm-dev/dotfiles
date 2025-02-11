@@ -139,7 +139,6 @@ brew "yarn"
 brew "fzf"
 brew "gum"
 brew "neovim"
-brew "nix"
 brew "nushell"
 brew "starship"
 brew "tmux"
@@ -211,7 +210,6 @@ brew "lazygit"
 # -------------------
 # Miscellaneous
 # -------------------
-brew "basictex"
 brew "chezmoi"
 brew "cowsay"
 brew "m-cli"
