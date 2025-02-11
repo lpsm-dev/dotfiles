@@ -102,28 +102,6 @@ bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/boots
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Ferramentas
-
-## Productivity
-
-- Brave
-- Bitwarden
-- DuckDuckGo
-- SimpleLogin
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-# Processos
-
-## Brave
-
-- Bitwarden Password Manager
-- JSON Formatter
-- MalwareBytes
-- Obsidian Web Clipper
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 # Features
 
 - Symlink dotfiles from this repository to your home directory
