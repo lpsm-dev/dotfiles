@@ -35,12 +35,14 @@ cask "zen-browser"
 # -------------------
 # Development
 # -------------------
+cask "cursor"
 cask "docker"
 cask "kitty"
+cask "obsidian"
 cask "ollama"
 cask "warp"
 cask "zed"
-cask "obsidian"
+cask "windsurf"
 
 # -------------------
 # Communication
