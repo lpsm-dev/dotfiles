@@ -56,7 +56,7 @@ Obrigado por considerar contribuir com este projeto! Seguir nossas diretrizes fa
 
 - Se você não conseguir continuar uma tarefa, informe imediatamente sua equipe. A comunicação rápida evita atrasos e permite que outras pessoas te ajudem a resolver os problemas com mais rapidez.
 - Minimize o uso de IA na comunicação diária com a equipe. Valorizamos interações reais e genuínas.
-- Seja objetivo na sua comunição quando precisa de ajuda (isso não significa ser rude).
+- Seja objetivo na sua comunição quando precisar de ajuda (isso não significa ser rude).
 - A comunicação assíncrona é uma grande aliada para equipes remotas. Para mais detalhes, clique [aqui](https://nohello.net/en/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
