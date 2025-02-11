@@ -33,7 +33,6 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 - [Visão Geral](#vis%C3%A3o-geral)
   - [Objetivo](#objetivo)
   - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
-- [Objetivo](#objetivo-1)
 - [Benefícios](#benef%C3%ADcios)
 - [Requisitos](#requisitos)
 - [Instalação](#instala%C3%A7%C3%A3o)
