@@ -36,12 +36,9 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 - [Implementação](#implementa%C3%A7%C3%A3o)
   - [Pré-requisitos](#pr%C3%A9-requisitos)
   - [Instalação](#instala%C3%A7%C3%A3o)
-- [Ferramentas](#ferramentas)
-  - [Productivity](#productivity)
-- [Processos](#processos)
-  - [Brave](#brave)
 - [Features](#features)
 - [Referências](#refer%C3%AAncias)
+- [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
 - [Show your support](#show-your-support)
@@ -136,6 +133,12 @@ Links relevantes para essa documentação:
 
 - https://dotfiles.io/aliases/
 - https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Contribuição
+
+Gostaria de contribuir? Isso é ótimo! Temos um guia de contribuição para te ajudar. Clique [aqui](CONTRIBUTING.md) para lê-lo.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
