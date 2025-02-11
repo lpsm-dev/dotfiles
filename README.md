@@ -30,8 +30,10 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Disclaimer](#disclaimer)
-- [Motivação](#motiva%C3%A7%C3%A3o)
-- [Objetivo](#objetivo)
+- [Visão Geral](#vis%C3%A3o-geral)
+  - [Objetivo](#objetivo)
+  - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
+- [Objetivo](#objetivo-1)
 - [Benefícios](#benef%C3%ADcios)
 - [Requisitos](#requisitos)
 - [Instalação](#instala%C3%A7%C3%A3o)
@@ -58,7 +60,13 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Motivação
+# Visão Geral
+
+## Objetivo
+
+O objetivo desse repositório é compartilhar e documentar as minhas configurações pessoais para o setup do meu ambiente de desenvolvimento, incluindo dotfiles, scripts e ferramentas de automação, que são usados para instalar e configurar as dependências e ferramentas necessárias para o desenvolvimento de software.
+
+## Contexto e Motivação
 
 Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de trabalho. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador com o objetivo de armazenaf as preferências e configurações de diversos programas e ferramentas, como: shell, editor de texto, gerenciador de pacotes e entre outras.
 
