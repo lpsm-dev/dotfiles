@@ -48,5 +48,11 @@ sudo tlmgr install lastpage
 sudo tlmgr update --self
 ```
 
+# Nix
+
+Setup do Nix, uma ferramenta de gerenciamento de pacotes.
+
+Basta seguir o passo a passo do [site oficial](https://nixos.org/download.html).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- END_DOCS -->
