@@ -51,6 +51,7 @@ cask "discord"
 cask "microsoft-teams"
 cask "telegram"
 cask "zoom"
+cask "whatsapp"
 
 # -------------------
 # Security & Privacy
