@@ -65,6 +65,7 @@ cask "mullvadvpn"
 # -------------------
 cask "appcleaner"
 cask "clickup"
+cask "coconutbattery"
 cask "obs"
 
 # -------------------
