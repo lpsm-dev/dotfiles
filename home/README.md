@@ -41,5 +41,12 @@ Uma vez encontrado as chaves, para cada uma delas, você deve adicionar a chave 
 
 Abra o aplicativo Docker e termine sua configuração de forma manual.
 
+# Latext
+
+```bash
+sudo tlmgr install lastpage
+sudo tlmgr update --self
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- END_DOCS -->
