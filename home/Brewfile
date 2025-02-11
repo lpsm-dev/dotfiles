@@ -215,6 +215,7 @@ brew "ollama"
 brew "pinentry"
 brew "rclone"
 brew "stow"
+brew "texlab"
 brew "watch"
 
 # -------------------
