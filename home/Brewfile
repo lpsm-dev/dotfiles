@@ -97,10 +97,10 @@ brew "krew"
 brew "kubecm"
 brew "kubectx"
 brew "kubernetes-cli"
+brew "opentofu"
 brew "terraform"
 brew "terraform-docs"
 brew "tflint"
-brew "tofu"
 brew "sops"
 
 # -------------------
