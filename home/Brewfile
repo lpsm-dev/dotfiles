@@ -100,6 +100,7 @@ brew "kubernetes-cli"
 brew "terraform"
 brew "terraform-docs"
 brew "tflint"
+brew "tofu"
 brew "sops"
 
 # -------------------
