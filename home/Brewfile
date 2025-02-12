@@ -212,6 +212,7 @@ brew "lazygit"
 # -------------------
 # Miscellaneous
 # -------------------
+brew "aichat"
 brew "chezmoi"
 brew "cowsay"
 brew "m-cli"
@@ -220,6 +221,7 @@ brew "mercurial"
 brew "ollama"
 brew "pinentry"
 brew "rclone"
+brew "spacer"
 brew "stow"
 brew "texlab"
 brew "watch"
