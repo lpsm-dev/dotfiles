@@ -164,11 +164,9 @@ function setup_automations(){
 # ==============================================
 VERSION="0.0.2"
 
-info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
-
 echo -e "${YELLOW}"
 cat << EOF
-👨🏻‍🚀 Hey Folks! This is my Dotfiles
+👨🏻‍🚀 Hey Folks! This is my Dotfiles - $VERSION
    Get ready for your ultimate MacOs setup!
 
 ██████╗░░█████╗░████████╗███████╗██╗██╗░░░░░███████╗░██████╗
