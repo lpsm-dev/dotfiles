@@ -38,7 +38,6 @@ rag_embedding_model: nomic-embed-text
 rag_reranker_model: null # Specifies the rerank model to use
 rag_chunk_size: 1500
 rag_chunk_overlap: 75
-
 # Define document loaders to control how RAG and `.file`/`--file` load files of specific formats.
 document_loaders:
   # You can add custom loaders using the following syntax:
@@ -56,18 +55,10 @@ right_prompt: "{?consume_tokens {color.blue}{consume_tokens}({consume_percent}%)
 
 # ---- clients ----
 clients:
-  - type: claude
-  - type: gemini
-  - type: openai
-
-  # OpenRouter
+  # github
   - type: openai-compatible
-    name: openrouter
-
-  # together.ai
-  - type: openai-compatible
-    name: together
-
+    name: github
+    api_base: https://models.inference.ai.azure.com
   # local
   - type: openai-compatible
     name: ollama
@@ -75,5 +66,6 @@ clients:
     models:
       - name: nomic-embed-text
         type: embedding
-      - name: jina-reranker-v2-base-multilingual
-        type: reranker
+      - name: llama3.1:8b
+        max_input_tokens: 128000
+        supports_function_calling: true
