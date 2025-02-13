@@ -77,3 +77,28 @@ monk() {
 preview-bat() {
   bat --list-themes | fzf --preview="bat --theme={} --color=always $1"
 }
+
+big() {
+  du | sort -r -n |
+    awk '{split("K M G",v); s=1; while($1>1024){$1/=1024; s++} \
+      print int($1)" "v[s]"\t"$2}' | head -n 20
+}
+
+genpass() {
+  local length="${1:-16}"
+  tr </dev/urandom -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' |
+    fold -w "$length" | head -n1 | pbcopy
+}
+
+brewclear() {
+  printf "Are you sure to remove all Homebrew formulae [y\N] > "
+  read -r choice
+  case "$choice" in
+  [yY])
+    brew list --formula | xargs brew uninstall --ignore-dependencies --force
+    ;;
+  *)
+    printf "Aborted.\n"
+    ;;
+  esac
+}

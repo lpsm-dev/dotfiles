@@ -9,7 +9,15 @@
 # ╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝
 #
 
-# Shortcuts
+# ================================================
+# GENERAL
+# ================================================
+alias reload-bat="bat cache --build"
+alias wtf="cowsay 'wtf bro, go back to work!'"
+
+# ================================================
+# SHORTCUTS
+# ================================================
 alias c="clear"
 alias cls="clear"
 alias tree="tree -C"
@@ -20,8 +28,15 @@ alias mem="top -o rsize"
 alias now="date +'%Y-%m-%d %T'"
 alias week='date +%V'
 alias grep="grep --color"
+alias x="exit"
+alias reload="exec ${SHELL} -l"
+alias path="echo -e ${PATH//:/\\n}"
+alias neo="neofetch"
+alias ff="fastfetch"
 
-# Nvim
+# ================================================
+# NVIM
+# ================================================
 if [[ -f $(which nvim) ]]; then
   export VISUAL="vi"
   export EDITOR="$VISUAL"
@@ -31,16 +46,17 @@ alias brc="nvim ~/.bashrc"
 alias zrc="nvim ~/.zshrc"
 alias nv="nvim"
 
-# Git
+# ================================================
+# GIT
+# ================================================
 alias g="git"
 alias gs="g status"
 alias gpull="g pull"
 alias gpush="g push"
 
-# General
-alias reload-bat="bat cache --build"
-
-# Brew
+# ================================================
+# BREW
+# ================================================
 alias brewd="brew doctor"
 alias brewi="brew install"
 alias brewr="brew uninstall"
@@ -49,10 +65,9 @@ alias brewu="brew update --quiet \
                 && brew upgrade \
                 && brew cleanup"
 
-# Simple WTF
-alias wtf="cowsay 'wtf bro, go back to work!'"
-
-# Setup eza as default ls
+# ================================================
+# EZA
+# ================================================
 if [ -x "$(command -v eza)" ]; then
   alias ld="eza -lD"
   alias lf="eza -lf --color=always"
@@ -64,19 +79,15 @@ else
   alias ls="ls -AlhF --color=auto"
 fi
 
-# Exit terminal
-alias x="exit"
+# ================================================
+# TERMINAL
+# ================================================
+alias cursor="cursor --reuse-window --add"
+alias ws="windsurf --reuse-window --add"
 
-# Reload the shell (i.e. invoke as a login shell)
-alias reload="exec ${SHELL} -l"
-
-# Print each PATH entry on a separate line
-alias path="echo -e ${PATH//:/\\n}"
-
-# Fetch system information
-alias neo="neofetch"
-alias ff="fastfetch"
-
+# ================================================
+# MISCELLANEOUS
+# ================================================
 # Empty the trash, the main HDD and on all mounted volumes,
 alias empty-trash="sudo rm -frv /Volumes/*/.Trashes; \
                     sudo rm -frv ~/.Trash; \

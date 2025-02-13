@@ -46,7 +46,7 @@ summary_prompt: "This is a summary of the chat history as a recap: "
 # RAG CONFIGURATION
 # ================================================
 # See [RAG-Guide](https://github.com/sigoden/aichat/wiki/RAG-Guide) for more details.
-rag_embedding_model: nomic-embed-text
+rag_embedding_model: nomic-embed-text:latest
 rag_reranker_model: null # Specifies the rerank model to use
 rag_chunk_size: 1500
 rag_chunk_overlap: 75
@@ -71,11 +71,15 @@ right_prompt: "{?consume_tokens {color.blue}{consume_tokens}({consume_percent}%)
 # CLIENTS CONFIGURATION
 # ================================================
 clients:
-  # github
+  # -------------------
+  # GITHUB
+  # -------------------
   - type: openai-compatible
     name: github
     api_base: https://models.inference.ai.azure.com
-  # local
+  # -------------------
+  # LOCAL
+  # -------------------
   - type: openai-compatible
     name: ollama
     api_base: http://127.0.0.1:11434/v1

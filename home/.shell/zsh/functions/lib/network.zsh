@@ -16,3 +16,9 @@ addhost() {
   fi
   echo "$1 $2" | sudo tee -a /etc/hosts
 }
+
+port() {
+  local filter=
+  [ -n "$1" ] && filter=":$1"
+  lsof -P -iTCP"$filter" -sTCP:LISTEN +c0
+}

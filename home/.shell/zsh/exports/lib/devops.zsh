@@ -23,3 +23,9 @@ export KUBE_EDITOR="nano"
 # K9S
 # ================================================
 export K9SCONFIG=$HOME/.config/k9s
+
+# ================================================
+# INFRACOST
+# ================================================
+export INFRACOST_SELF_HOSTED_TELEMETRY=false
+export INFRACOST_SKIP_UPDATE_CHECK=true

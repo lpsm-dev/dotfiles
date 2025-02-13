@@ -26,6 +26,7 @@ export NVM_DIR="$HOME/.nvm"
 # ================================================
 export GOPATH=$HOME/go
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+export GOTELEMETRY=off
 
 # ================================================
 # RUBY
