@@ -1,4 +1,7 @@
 {
+  "features": {
+    "inline_completion_provider": "zed"
+  },
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
