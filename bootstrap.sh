@@ -134,6 +134,8 @@ function setup_terminal(){
     else
         warn "Nix is already installed"
     fi
+    info "Other things to do"
+    mkdir -p $HOME/.secrets
 }
 
 function setup_ai_tools(){
