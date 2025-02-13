@@ -5,7 +5,6 @@ set -e
 # ==============================================
 # VARIABLES
 # ==============================================
-
 RED="\033[0;31m"
 GREEN="\033[0;32m"
 YELLOW="\033[0;33m"
@@ -18,7 +17,6 @@ LOCAL_DOTFILES_HOME="$LOCAL_DOTFILES_PATH/home"
 # ==============================================
 # SUPPORT FUNCTIONS
 # ==============================================
-
 function info {
     if [ -t 0 ] && [ -t 1 ]; then
         echo -e "${GREEN}╰┈➤ $1${RESET}"
@@ -48,7 +46,6 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 # ==============================================
 # MAIN FUNCTIONS
 # ==============================================
-
 function setup_system_updates() {
     info "Checking for new updates on macOS..."
     sudo softwareupdate -iaR || {
@@ -165,8 +162,7 @@ function setup_automations(){
 # ==============================================
 # MAIN
 # ==============================================
-
-VERSION="0.0.1"
+VERSION="0.0.2"
 
 info "Hey Folks! Welcome to bootstrap MacOs! - $VERSION"
 
