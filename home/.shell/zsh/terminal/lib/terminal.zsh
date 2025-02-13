@@ -10,11 +10,26 @@
 #
 
 # ==============================================
-# STARSHIP
+# AICHAT
 # ==============================================
-eval "$(starship init zsh)"
+_aichat_zsh() {
+  if [ -n "$BUFFER" ]; then
+    _input="$BUFFER"
+    BUFFER="$_input⌛"
+    zle -I && zle redisplay
+    BUFFER=$(aichat --execute "$_input")
+    zle end-of-line
+  fi
+}
+zle -N _aichat_zsh
+bindkey '^X' _aichat_zsh
 
 # ==============================================
 # DIRENV
 # ==============================================
 eval "$(direnv hook zsh)"
+
+# ==============================================
+# STARSHIP
+# ==============================================
+command -v starship >/dev/null && eval "$(starship init "${SHELL##*/}")"

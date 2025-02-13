@@ -1,0 +1,6 @@
+[prompt]
+about_user = "I am a curious human devops engineer."
+response_preference = "Basic concepts don't need to be explained."
+
+[env]
+MODEL = "openai/gpt-4o"

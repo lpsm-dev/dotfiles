@@ -86,6 +86,14 @@ mas "Slack", id: 803453959
 # =================================================
 
 # -------------------
+# AI
+# -------------------
+brew "aichat"
+brew "aider"
+brew "gptme"
+brew "ollama"
+
+# -------------------
 # Cloud & DevOps
 # -------------------
 brew "awscli"
@@ -139,6 +147,7 @@ brew "yarn"
 # -------------------
 # Shell & CLI
 # -------------------
+brew "atuin"
 brew "fzf"
 brew "gum"
 brew "neovim"
@@ -213,7 +222,6 @@ brew "lazygit"
 # -------------------
 # Miscellaneous
 # -------------------
-brew "aichat"
 brew "chezmoi"
 brew "cmake"
 brew "coreutils"
@@ -222,7 +230,6 @@ brew "findutils"
 brew "m-cli"
 brew "mas"
 brew "mercurial"
-brew "ollama"
 brew "pinentry"
 brew "rclone"
 brew "spacer"

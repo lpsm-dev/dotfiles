@@ -12,5 +12,4 @@
 # ================================================
 # LOADING FILES
 # ================================================
-
 [ -f "$HOME/.shell/zsh/exports/all.zsh" ]   && source $HOME/.shell/zsh/exports/all.zsh
