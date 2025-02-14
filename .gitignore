@@ -43,3 +43,6 @@ home/.ssh/known_hosts.old
 # Git
 home/.config/git/include/work-config
 home/.config/gh/hosts.yml
+
+# Secrets
+home/.shell/zsh/exports/lib/_secrets.zsh
