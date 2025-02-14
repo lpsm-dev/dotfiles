@@ -171,6 +171,25 @@ function setup_automations(){
     fi
 }
 
+function setup_git_submodules() {
+    info "Checking and updating Git submodules..."
+    cd $LOCAL_DOTFILES_PATH
+
+    if [ -f ".gitmodules" ]; then
+        if [ ! -d ".git/modules" ]; then
+            info "Initializing Git submodules..."
+            git submodule init
+        else
+            info "Git submodules already initialized."
+        fi
+
+        info "Updating Git submodules..."
+        git submodule update --recursive --remote
+    else
+        warn "No submodules found in the repository. Skipping submodule setup."
+    fi
+}
+
 # ==============================================
 # MAIN
 # ==============================================
@@ -210,6 +229,7 @@ Darwin)
     setup_system_xcode
     setup_brew
     setup_git_project
+    setup_git_submodules
     setup_brew_deps
     setup_macos
     setup_terminal
