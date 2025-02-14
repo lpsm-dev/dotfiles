@@ -1,10 +1,15 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
+    "type": "kitty-direct",
+    "source": "~/config/fastfetch/images/home.png",
+    "height": 17,
+    "width": 35,
     "padding": {
-      "top": 5,
-      "right": 6
-    }
+      "top": 4,
+      "left": 2
+    },
+    "position": "left"
   },
   "modules": [
     "break",
