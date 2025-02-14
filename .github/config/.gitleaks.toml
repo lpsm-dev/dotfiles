@@ -1,0 +1,3 @@
+[allowlist]
+description = "Ignore specific files"
+paths = ["home/.config/prompts/assistant/write_nuclei_template_rule.md"]
