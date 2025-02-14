@@ -86,7 +86,7 @@ big() {
 
 genpass() {
   local length="${1:-16}"
-  tr </dev/urandom -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' |
+  LC_CTYPE=C tr -dc 'a-zA-Z0-9-_!@#$%^&*()_+{}|:<>?=' </dev/urandom |
     fold -w "$length" | head -n1 | pbcopy
 }
 
