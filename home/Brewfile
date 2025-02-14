@@ -144,6 +144,8 @@ brew "rust"
 brew "pnpm"
 brew "yarn"
 brew "pipx"
+brew "pyenv"
+brew "nvm"
 
 # -------------------
 # Shell & CLI
