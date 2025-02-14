@@ -41,7 +41,7 @@ repos:
     rev: v8.23.3
     hooks:
       - id: gitleaks
-        args: [--verbose]
+        args: [--verbose, --config=.github/config/.gitleaks.toml]
   - repo: https://github.com/adrienverge/yamllint.git
     rev: v1.35.1
     hooks:

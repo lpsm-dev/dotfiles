@@ -32,9 +32,12 @@ Date:: mm/dd/yyyy
 ___
 # Idea/Question::
 
+
 # Definition::
 
+
 # Evidence::
+
 
 # Source::
 
@@ -42,3 +45,4 @@ ___
 #### West:: Similar
 #### East:: Opposite
 #### North:: theme/question
+#### South:: What does this lead to?

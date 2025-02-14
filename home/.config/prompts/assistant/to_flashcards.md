@@ -18,6 +18,7 @@ up. This will reduce error rates, increase specificity, reduce response time, an
 3. No external context: The wording of your items must not include words such as "according to the text". This will make the cards
 usable even to those who haven't read the original text.
 
+
 # EXAMPLE
 
 The following is a model card-create template for you to study.
@@ -43,6 +44,7 @@ Q: Why only simple organisms can live in the Dead Sea? A: because of high salt c
 - Formulate questions according to the above rules and examples
 
 - Present questions and answers in the form of a Markdown table
+
 
 # OUTPUT INSTRUCTIONS
 

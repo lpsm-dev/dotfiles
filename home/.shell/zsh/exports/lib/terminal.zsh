@@ -14,3 +14,8 @@
 # ================================================
 export STARSHIP_CONFIG=$HOME/.config/starship/starship.toml
 export STARSHIP_CACHE=$HOME/.cache/starship
+
+# ================================================
+# LOCAL BIN
+# ================================================
+export PATH="$PATH:/Users/lpsm/.local/bin"
