@@ -89,7 +89,6 @@ mas "Slack", id: 803453959
 # AI
 # -------------------
 brew "aichat"
-brew "aider"
 brew "gptme"
 brew "ollama"
 
@@ -237,6 +236,13 @@ brew "spacer"
 brew "stow"
 brew "texlab"
 brew "watch"
+brew "ffmpegthumbnailer"
+brew "ffmpeg"
+brew "sevenzip"
+brew "poppler"
+brew "ripgrep"
+brew "zoxide"
+brew "imagemagick"
 
 # -------------------
 # Email
