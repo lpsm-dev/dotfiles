@@ -136,7 +136,14 @@ function setup_terminal(){
     fi
     info "Setup yazi"
     mkdir -p $LOCAL_DOTFILES_PATH/.config/yazi/flavors
-    cd $LOCAL_DOTFILES_PATH/.config/yazi/flavors && ya pack -a yazi-rs/flavors:catppuccin-mocha
+    THEME_PATH="$LOCAL_DOTFILES_PATH/.config/yazi/flavors/catppuccin-mocha"
+    FLAVOR_FILE="$THEME_PATH/flavor.toml"
+    if [ -d "$THEME_PATH" ] && [ -f "$FLAVOR_FILE" ]; then
+        warn "The yazi theme is already installed"
+    else
+        info "Install yazi theme..."
+        cd "$LOCAL_DOTFILES_PATH/.config/yazi/flavors" && ya pack -a yazi-rs/flavors:catppuccin-mocha
+    fi
     info "Other things to do"
     mkdir -p $HOME/.secrets
 }
@@ -167,7 +174,7 @@ function setup_automations(){
 # ==============================================
 # MAIN
 # ==============================================
-VERSION="0.0.2"
+VERSION="0.0.3"
 
 echo -e "${YELLOW}"
 cat << EOF
