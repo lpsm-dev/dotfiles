@@ -134,6 +134,9 @@ function setup_terminal(){
     else
         warn "Nix is already installed"
     fi
+    info "Setup yazi"
+    mkdir -p $LOCAL_DOTFILES_PATH/.config/yazi/flavors
+    cd $LOCAL_DOTFILES_PATH/.config/yazi/flavors && ya pack -a yazi-rs/flavors:catppuccin-mocha
     info "Other things to do"
     mkdir -p $HOME/.secrets
 }
