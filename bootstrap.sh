@@ -170,6 +170,7 @@ function setup_nix() {
 function setup_misc() {
     info "Creating necessary directories..."
     mkdir -p "$HOME/.secrets"
+    mkdir -p "$HOME/.nvm"
 }
 
 function setup_terminal() {
