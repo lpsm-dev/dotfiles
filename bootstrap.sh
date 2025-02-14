@@ -113,6 +113,23 @@ function setup_macos() {
     fi
 }
 
+function setup_yazi_theme() {
+    info "Setting up Yazi theme..."
+    THEME_PATH="$LOCAL_DOTFILES_PATH/.config/yazi/flavors/catppuccin-mocha"
+    PACKAGE_TOML="$LOCAL_DOTFILES_PATH/.config/yazi/package.toml"
+
+    if [ ! -f "$PACKAGE_TOML" ]; then
+        info "package.toml not found. Installing Yazi theme..."
+        mkdir -p "$LOCAL_DOTFILES_PATH/.config/yazi/flavors"
+        cd "$LOCAL_DOTFILES_PATH/.config/yazi/flavors" && ya pack -a yazi-rs/flavors:catppuccin-mocha
+    elif grep -q "catppuccin-mocha.yazi" "$PACKAGE_TOML"; then
+        warn "The Yazi theme is already installed and registered."
+    else
+        info "Installing Yazi theme..."
+        cd "$LOCAL_DOTFILES_PATH/.config/yazi/flavors" && ya pack -a yazi-rs/flavors:catppuccin-mocha
+    fi
+}
+
 function setup_terminal(){
     info "Starting sync with stow"
     cd $LOCAL_DOTFILES_HOME && stow --target=$HOME --adopt .
@@ -134,18 +151,9 @@ function setup_terminal(){
     else
         warn "Nix is already installed"
     fi
-    info "Setup yazi"
-    mkdir -p $LOCAL_DOTFILES_PATH/.config/yazi/flavors
-    THEME_PATH="$LOCAL_DOTFILES_PATH/.config/yazi/flavors/catppuccin-mocha"
-    FLAVOR_FILE="$THEME_PATH/flavor.toml"
-    if [ -d "$THEME_PATH" ] && [ -f "$FLAVOR_FILE" ]; then
-        warn "The yazi theme is already installed"
-    else
-        info "Install yazi theme..."
-        cd "$LOCAL_DOTFILES_PATH/.config/yazi/flavors" && ya pack -a yazi-rs/flavors:catppuccin-mocha
-    fi
     info "Other things to do"
     mkdir -p $HOME/.secrets
+    setup_yazi_theme
 }
 
 function setup_ai_tools(){
@@ -193,7 +201,7 @@ function setup_git_submodules() {
 # ==============================================
 # MAIN
 # ==============================================
-VERSION="0.0.3"
+VERSION="0.0.4"
 
 echo -e "${YELLOW}"
 cat << EOF
