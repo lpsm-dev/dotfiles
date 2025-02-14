@@ -125,6 +125,7 @@ brew "direnv"
 brew "go-task"
 brew "pre-commit"
 brew "nvm"
+brew "pyenv"
 brew "rbenv"
 brew "rustup"
 brew "volta"
@@ -143,9 +144,6 @@ brew "rust"
 # -------------------
 brew "pnpm"
 brew "yarn"
-brew "pipx"
-brew "pyenv"
-brew "nvm"
 
 # -------------------
 # Shell & CLI
