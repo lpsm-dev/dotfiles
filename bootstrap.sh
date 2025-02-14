@@ -130,30 +130,57 @@ function setup_yazi_theme() {
     fi
 }
 
-function setup_terminal(){
-    info "Starting sync with stow"
-    cd $LOCAL_DOTFILES_HOME && stow --target=$HOME --adopt .
-    info "Install devbox"
+function setup_stow() {
+    info "Syncing dotfiles with Stow..."
+    cd "$LOCAL_DOTFILES_HOME" && stow --target="$HOME" --adopt .
+}
+
+function setup_devbox() {
+    info "Checking Devbox installation..."
     if ! command -v devbox >/dev/null 2>&1; then
         info "Devbox not found. Installing..."
         curl -fsSL https://get.jetify.com/devbox | bash
     else
-        warn "Devbox is already installed"
+        warn "Devbox is already installed."
     fi
-    info "Install neovim plugins"
-    [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim" ] || \
-      sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim \
-        --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-    info "Install nix"
+}
+
+function setup_neovim() {
+    info "Setting up Neovim plugins..."
+    local nvim_autoload="${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim"
+
+    if [ ! -f "$nvim_autoload" ]; then
+        info "Installing Vim-Plug for Neovim..."
+        curl -fLo "$nvim_autoload" --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    else
+        warn "Neovim plugins are already installed."
+    fi
+}
+
+function setup_nix() {
+    info "Checking Nix installation..."
     if ! command -v nix >/dev/null 2>&1; then
         info "Nix not found. Installing..."
         sh <(curl -L https://nixos.org/nix/install) --daemon
     else
-        warn "Nix is already installed"
+        warn "Nix is already installed."
     fi
-    info "Other things to do"
-    mkdir -p $HOME/.secrets
+}
+
+function setup_misc() {
+    info "Creating necessary directories..."
+    mkdir -p "$HOME/.secrets"
+}
+
+function setup_terminal() {
+    info "Starting terminal setup..."
+    setup_stow
+    setup_devbox
+    setup_neovim
+    setup_nix
     setup_yazi_theme
+    setup_misc
+    info "Terminal setup completed!"
 }
 
 function setup_ai_tools(){
