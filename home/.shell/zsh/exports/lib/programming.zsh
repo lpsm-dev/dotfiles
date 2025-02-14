@@ -39,3 +39,9 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 export PATH="$HOME/.config/cargo/bin:$PATH"
 export CARGO_HOME="$HOME/.config/cargo"
 export RUSTUP_HOME="$HOME/.config/rustup"
+
+# ================================================
+# PYTHON
+# ================================================
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
