@@ -17,6 +17,8 @@
 
 - [SSH](#ssh)
 - [Docker](#docker)
+- [Latext](#latext)
+- [Nix](#nix)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

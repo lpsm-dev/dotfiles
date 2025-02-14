@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Assistant Prompt Library](#assistant-prompt-library)
+  - [Create roles](#create-roles)
+  - [Add metadata](#add-metadata)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Assistant Prompt Library
 
 Prompt files in `assistant/` are created programmatically from [fabric's patterns](https://github.com/danielmiessler/fabric/tree/main/patterns).

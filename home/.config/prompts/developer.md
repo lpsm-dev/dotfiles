@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Developer Prompt Library](#developer-prompt-library)
+  - [Sorted by use case](#sorted-by-use-case)
+    - [I. Code Quality & Understanding:](#i-code-quality--understanding)
+    - [II. Learning & Knowledge Extraction:](#ii-learning--knowledge-extraction)
+    - [III. Code Improvement & Transformation:](#iii-code-improvement--transformation)
+    - [IV. Testing & Security:](#iv-testing--security)
+    - [V. Business & Stakeholder Analysis:](#v-business--stakeholder-analysis)
+    - [VI. Architecture & Design:](#vi-architecture--design)
+    - [VII. Performance & Optimization:](#vii-performance--optimization)
+    - [VIII. Code Evolution & History:](#viii-code-evolution--history)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Developer Prompt Library
 
 Prompt files in `developer/` are originally forked from [codebase-digest's prompt library](https://github.com/kamilstanuch/codebase-digest/tree/77efab5/prompt_library).
