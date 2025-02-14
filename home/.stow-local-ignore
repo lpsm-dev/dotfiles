@@ -1,5 +1,5 @@
 .config/zed/
 .scripts/
-.stow-local-ignore
 .macos
+.stow-local-ignore
 README.md

@@ -15,10 +15,12 @@
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [SSH](#ssh)
-- [Docker](#docker)
-- [Latext](#latext)
-- [Nix](#nix)
+- [Processos](#processos)
+  - [SSH](#ssh)
+  - [Docker](#docker)
+- [Ferramentas](#ferramentas)
+  - [Latext](#latext)
+  - [Nix](#nix)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -26,7 +28,9 @@
 
 </details>
 
-# SSH
+# Processos
+
+## SSH
 
 As chaves SSH estão sendo gerenciadas pelo [Bitwarden](https://bitwarden.com/). Para acessar as chaves, acesse o Bitwarden e procure por `SSH Key` e você encontrará as chaves.
 
@@ -39,18 +43,20 @@ Uma vez encontrado as chaves, para cada uma delas, você deve adicionar a chave 
 > [!NOTE]
 > O Bitwarden vai solicitar que você confirme sempre que você acessar uma chave SSH. Isso é uma medida de segurança para garantir que você está ciente de que está acessando uma chave SSH.
 
-# Docker
+## Docker
 
 Abra o aplicativo Docker e termine sua configuração de forma manual.
 
-# Latext
+# Ferramentas
+
+## Latext
 
 ```bash
 sudo tlmgr install lastpage
 sudo tlmgr update --self
 ```
 
-# Nix
+## Nix
 
 Setup do Nix, uma ferramenta de gerenciamento de pacotes.
 

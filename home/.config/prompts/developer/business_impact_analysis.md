@@ -1,16 +1,6 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
-
-  - [use_tools: all](#use_tools-all)
-- [Codebase Business Impact Analysis](#codebase-business-impact-analysis)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 ---
 use_tools: all
 ---
-
 # Codebase Business Impact Analysis
 
 **Objective:** Analyze the codebase to identify key features and their potential business impact.
@@ -19,10 +9,10 @@ use_tools: all
 
 1. Review the codebase and identify major features or functionalities.
 2. For each feature, analyze its potential business impact:
-   - Revenue generation potential
-   - Cost-saving opportunities
-   - Customer satisfaction improvements
-   - Competitive advantage
+   * Revenue generation potential
+   * Cost-saving opportunities
+   * Customer satisfaction improvements
+   * Competitive advantage
 3. Prioritize features based on their estimated business value.
 4. Suggest potential enhancements or new features that could increase business value.
 
