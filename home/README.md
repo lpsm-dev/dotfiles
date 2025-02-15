@@ -49,6 +49,12 @@ Abra o aplicativo Docker e termine sua configuração de forma manual.
 
 # Ferramentas
 
+## Helm
+
+```bash
+helm plugin install https://github.com/dadav/helm-schema
+```
+
 ## Latext
 
 ```bash
