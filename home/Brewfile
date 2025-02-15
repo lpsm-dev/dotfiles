@@ -96,6 +96,7 @@ brew "ollama"
 # Cloud & DevOps
 # -------------------
 brew "awscli"
+brew "chart-testing"
 brew "eksctl"
 brew "helm"
 brew "k9s"
