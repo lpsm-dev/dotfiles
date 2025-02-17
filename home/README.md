@@ -52,6 +52,11 @@ Abra o aplicativo Docker e termine sua configuração de forma manual.
 ## Browser Extensions
 
 - Wappalyzer
+- Bitwarden
+- JSON Formatter
+- DuckDuckGo Privacy Essentials
+- Obsidian Web Clipper
+- Malwarebytes
 
 ## Helm
 
