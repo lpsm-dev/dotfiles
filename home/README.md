@@ -49,6 +49,10 @@ Abra o aplicativo Docker e termine sua configuração de forma manual.
 
 # Ferramentas
 
+## Browser Extensions
+
+- Wappalyzer
+
 ## Helm
 
 ```bash
