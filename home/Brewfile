@@ -57,6 +57,7 @@ cask "whatsapp"
 # Security & Privacy
 # -------------------
 cask "bitwarden"
+cask "burp-suite"
 cask "malwarebytes"
 cask "mullvadvpn"
 
