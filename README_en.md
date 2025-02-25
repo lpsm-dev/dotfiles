@@ -106,8 +106,6 @@ The challenge that motivated this repository was: "How can I manage and automate
 bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
 
-```
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # References

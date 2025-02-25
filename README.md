@@ -3,6 +3,8 @@
 
 <a name="readme-top"></a>
 
+[🇺🇸 English Version](README_en.md)
+
 Hello Human 👽! Bem-vindo ao meu repositório 👋
 
 <img src="https://github.com/lpsm-dev/lpsm-dev/blob/894a1209815a95f8a0e6e6adc4f4739b02555b57/.github/assets/dotfiles.png" width="350"/>
