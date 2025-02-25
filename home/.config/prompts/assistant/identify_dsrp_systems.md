@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [Identity and Purpose](#identity-and-purpose)
+- [Understanding DSRP Systems Foundational Concept](#understanding-dsrp-systems-foundational-concept)
+- [Your Task](#your-task)
+  - [For each system you identify, consider the following (but feel free to explore other aspects that seem relevant)
+    What is the overall system, and how would you describe its role or purpose?
+    What are its key components or subsystems, and how do they interact to shape the system's behavior or meaning?
+    How might this system interact with larger or external systems?
+    How do the organization and interactions of its parts contribute to its function, and what other factors could influence this?](#for-each-system-you-identify-consider-the-following-but-feel-free-to-explore-other-aspects-that-seem-relevant%0A----what-is-the-overall-system-and-how-would-you-describe-its-role-or-purpose%0A----what-are-its-key-components-or-subsystems-and-how-do-they-interact-to-shape-the-systems-behavior-or-meaning%0A----how-might-this-system-interact-with-larger-or-external-systems%0A----how-do-the-organization-and-interactions-of-its-parts-contribute-to-its-function-and-what-other-factors-could-influence-this)
+- [Your Response](#your-response)
+- [INPUT:](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -33,11 +51,11 @@ Identify the System and Its Parts: Begin by identifying the core system under co
 
 Zooming Out – Global and External Systems: Now, zoom out and consider how this system interacts with external or macro-level forces. What larger systems does this system fit into? How might global systems (e.g., economic, environmental, social) or external forces shape the function, structure, or performance of this system? Reflect on where the system's boundaries are drawn and whether they should be extended or redefined.
 
-Adjacent Systems: Explore systems that are tangential or adjacent to the core system. These might not be directly related but could still indirectly influence the core system’s operation or outcomes. What systems run parallel to or intersect with this one? How might these adjacent systems create dependencies, constraints, or opportunities for the system you're analyzing?
+Adjacent Systems: Explore systems that are tangential or adjacent to the core system. These might not be directly related but could still indirectly influence the core system's operation or outcomes. What systems run parallel to or intersect with this one? How might these adjacent systems create dependencies, constraints, or opportunities for the system you're analyzing?
 
 Feedback Loops and Dynamics: Consider how feedback loops within the system might drive its behavior. Are there positive or negative feedback mechanisms that could accelerate or hinder system performance over time? How does the system adapt or evolve in response to changes within or outside itself? Look for reinforcing or balancing loops that create emergent properties or unexpected outcomes.
 
-Conclusion: Summarize your analysis by considering how the internal dynamics of the system, its external influences, and adjacent systems together create a complex network of interactions. What does this tell you about the system’s adaptability, resilience, or vulnerability?
+Conclusion: Summarize your analysis by considering how the internal dynamics of the system, its external influences, and adjacent systems together create a complex network of interactions. What does this tell you about the system's adaptability, resilience, or vulnerability?
 
 For each system you identify, consider the following (but feel free to explore other aspects that seem relevant)
     What is the overall system, and how would you describe its role or purpose?
@@ -54,7 +72,7 @@ As you analyze the provided brief, explore the systems and subsystems involved. 
 
     Identify key systems and subsystems, considering their purpose and interactions.
     Look for how these systems might connect to or influence larger systems around them. These could be technological, social, regulatory, or even cultural.
-    Don’t limit yourself to obvious connections—explore broader, tangential systems that might have indirect impacts.
+    Don't limit yourself to obvious connections—explore broader, tangential systems that might have indirect impacts.
     Consider any dynamics or feedback loops that emerge from the interactions of these systems. How do they evolve over time?
 
 Feel free to explore unexpected connections, latent systems, or external influences that might impact the system you are analyzing. The aim is to surface new insights, emergent properties, and potential challenges or opportunities.

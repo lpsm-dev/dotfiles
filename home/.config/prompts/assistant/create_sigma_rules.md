@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [use_tools: all](#use_tools-all)
+  - [IDENTITY and PURPOSE:](#identity-and-purpose)
+  - [STEPS:](#steps)
+  - [Example Input:](#example-input)
+  - [Example Output:](#example-output)
+    - [Sigma Rule: Suspicious PowerShell Execution](#sigma-rule-suspicious-powershell-execution)
+    - [End of Sigma Rule](#end-of-sigma-rule)
+    - [Sigma Rule: Unusual Sysmon Network Connection](#sigma-rule-unusual-sysmon-network-connection)
+    - [End of Sigma Rule](#end-of-sigma-rule-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [STEPS:](#steps)
+- [OUTPUT INSTRUCTIONS:](#output-instructions)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -18,7 +30,7 @@ Prompt examples
 Explore prompt examples to learn what GPT models can do
 Six strategies for getting better results
 Write clear instructions
-These models can’t read your mind. If outputs are too long, ask for brief replies. If outputs are too simple, ask for expert-level writing. If you dislike the format, demonstrate the format you’d like to see. The less the model has to guess at what you want, the more likely you’ll get it.
+These models can't read your mind. If outputs are too long, ask for brief replies. If outputs are too simple, ask for expert-level writing. If you dislike the format, demonstrate the format you'd like to see. The less the model has to guess at what you want, the more likely you'll get it.
 
 Tactics:
 
@@ -74,7 +86,7 @@ In order to get a highly relevant response, make sure that requests provide any 
 
 Worse Better
 How do I add numbers in Excel? How do I add up a row of dollar amounts in Excel? I want to do this automatically for a whole sheet of rows with all the totals ending up on the right in a column called "Total".
-Who’s president? Who was the president of Mexico in 2021, and how frequently are elections held?
+Who's president? Who was the president of Mexico in 2021, and how frequently are elections held?
 Write code to calculate the Fibonacci sequence. Write a TypeScript function to efficiently calculate the Fibonacci sequence. Comment the code liberally to explain what each piece does and why it's written that way.
 Summarize the meeting notes. Summarize the meeting notes in a single paragraph. Then write a markdown list of the speakers and each of their key points. Finally, list the next steps or action items suggested by the speakers, if any.
 Tactic: Ask the model to adopt a persona
@@ -108,7 +120,7 @@ Abstract: insert abstract here
 
 Title: insert title here
 
-For straightforward tasks such as these, using delimiters might not make a difference in the output quality. However, the more complex a task is the more important it is to disambiguate task details. Don’t make the model work to understand exactly what you are asking of them.
+For straightforward tasks such as these, using delimiters might not make a difference in the output quality. However, the more complex a task is the more important it is to disambiguate task details. Don't make the model work to understand exactly what you are asking of them.
 
 Tactic: Specify the steps required to complete a task
 Some tasks are best specified as a sequence of steps. Writing the steps out explicitly can make it easier for the model to follow them.
@@ -244,11 +256,11 @@ An alternative solution is to dynamically select previous parts of the conversat
 Tactic: Summarize long documents piecewise and construct a full summary recursively
 Since models have a fixed context length, they cannot be used to summarize a text longer than the context length minus the length of the generated summary in a single query.
 
-To summarize a very long document such as a book we can use a sequence of queries to summarize each section of the document. Section summaries can be concatenated and summarized producing summaries of summaries. This process can proceed recursively until an entire document is summarized. If it’s necessary to use information about earlier sections in order to make sense of later sections, then a further trick that can be useful is to include a running summary of the text that precedes any given point in the book while summarizing content at that point. The effectiveness of this procedure for summarizing books has been studied in previous research by OpenAI using variants of GPT-3.
+To summarize a very long document such as a book we can use a sequence of queries to summarize each section of the document. Section summaries can be concatenated and summarized producing summaries of summaries. This process can proceed recursively until an entire document is summarized. If it's necessary to use information about earlier sections in order to make sense of later sections, then a further trick that can be useful is to include a running summary of the text that precedes any given point in the book while summarizing content at that point. The effectiveness of this procedure for summarizing books has been studied in previous research by OpenAI using variants of GPT-3.
 
 Strategy: Give models time to "think"
 Tactic: Instruct the model to work out its own solution before rushing to a conclusion
-Sometimes we get better results when we explicitly instruct the model to reason from first principles before coming to a conclusion. Suppose for example we want a model to evaluate a student’s solution to a math problem. The most obvious way to approach this is to simply ask the model if the student's solution is correct or not.
+Sometimes we get better results when we explicitly instruct the model to reason from first principles before coming to a conclusion. Suppose for example we want a model to evaluate a student's solution to a math problem. The most obvious way to approach this is to simply ask the model if the student's solution is correct or not.
 
 SYSTEM
 Determine if the student's solution is correct or not.
@@ -297,7 +309,7 @@ Student's Solution: Let x be the size of the installation in square feet.
 The student's solution is incorrect. They made an error in the maintenance cost calculation, using 100x instead of 10x. The correct total cost for the first year of operations is 360x + 100,000.
 
 Tactic: Use inner monologue or a sequence of queries to hide the model's reasoning process
-The previous tactic demonstrates that it is sometimes important for the model to reason in detail about a problem before answering a specific question. For some applications, the reasoning process that a model uses to arrive at a final answer would be inappropriate to share with the user. For example, in tutoring applications we may want to encourage students to work out their own answers, but a model’s reasoning process about the student’s solution could reveal the answer to the student.
+The previous tactic demonstrates that it is sometimes important for the model to reason in detail about a problem before answering a specific question. For some applications, the reasoning process that a model uses to arrive at a final answer would be inappropriate to share with the user. For example, in tutoring applications we may want to encourage students to work out their own answers, but a model's reasoning process about the student's solution could reveal the answer to the student.
 
 Inner monologue is a tactic that can be used to mitigate this. The idea of inner monologue is to instruct the model to put parts of the output that are meant to be hidden from the user into a structured format that makes parsing them easy. Then before presenting the output to the user, the output is parsed and only part of the output is made visible.
 
@@ -318,12 +330,12 @@ Student Solution: <insert student solution>
 
 Alternatively, this can be achieved with a sequence of queries in which all except the last have their output hidden from the end user.
 
-First, we can ask the model to solve the problem on its own. Since this initial query doesn't require the student’s solution, it can be omitted. This provides the additional advantage that there is no chance that the model’s solution will be biased by the student’s attempted solution.
+First, we can ask the model to solve the problem on its own. Since this initial query doesn't require the student's solution, it can be omitted. This provides the additional advantage that there is no chance that the model's solution will be biased by the student's attempted solution.
 
 USER
 <insert problem statement>
 
-Next, we can have the model use all available information to assess the correctness of the student’s solution.
+Next, we can have the model use all available information to assess the correctness of the student's solution.
 
 SYSTEM
 Compare your solution to the student's solution and evaluate if the student's solution is correct or not.
@@ -332,7 +344,7 @@ Problem statement: """<insert problem statement>"""
 
 Your solution: """<insert model generated solution>"""
 
-Student’s solution: """<insert student's solution>"""
+Student's solution: """<insert student's solution>"""
 
 Finally, we can let the model use its own analysis to construct a reply in the persona of a helpful tutor.
 
@@ -343,7 +355,7 @@ Problem statement: """<insert problem statement>"""
 
 Your solution: """<insert model generated solution>"""
 
-Student’s solution: """<insert student's solution>"""
+Student's solution: """<insert student's solution>"""
 
 Analysis: """<insert model generated analysis from previous step>"""
 
@@ -369,11 +381,11 @@ Are there more relevant excerpts? Take care not to repeat excerpts. Also ensure 
 
 Strategy: Use external tools
 Tactic: Use embeddings-based search to implement efficient knowledge retrieval
-A model can leverage external sources of information if provided as part of its input. This can help the model to generate more informed and up-to-date responses. For example, if a user asks a question about a specific movie, it may be useful to add high quality information about the movie (e.g. actors, director, etc…) to the model’s input. Embeddings can be used to implement efficient knowledge retrieval, so that relevant information can be added to the model input dynamically at run-time.
+A model can leverage external sources of information if provided as part of its input. This can help the model to generate more informed and up-to-date responses. For example, if a user asks a question about a specific movie, it may be useful to add high quality information about the movie (e.g. actors, director, etc…) to the model's input. Embeddings can be used to implement efficient knowledge retrieval, so that relevant information can be added to the model input dynamically at run-time.
 
 A text embedding is a vector that can measure the relatedness between text strings. Similar or relevant strings will be closer together than unrelated strings. This fact, along with the existence of fast vector search algorithms means that embeddings can be used to implement efficient knowledge retrieval. In particular, a text corpus can be split up into chunks, and each chunk can be embedded and stored. Then a given query can be embedded and vector search can be performed to find the embedded chunks of text from the corpus that are most related to the query (i.e. closest together in the embedding space).
 
-Example implementations can be found in the OpenAI Cookbook. See the tactic “Instruct the model to use retrieved knowledge to answer queries” for an example of how to use knowledge retrieval to minimize the likelihood that a model will make up incorrect facts.
+Example implementations can be found in the OpenAI Cookbook. See the tactic "Instruct the model to use retrieved knowledge to answer queries" for an example of how to use knowledge retrieval to minimize the likelihood that a model will make up incorrect facts.
 
 Tactic: Use code execution to perform more accurate calculations or call external APIs
 Language models cannot be relied upon to perform arithmetic or long calculations accurately on their own. In cases where this is needed, a model can be instructed to write and run code instead of making its own calculations. In particular, a model can be instructed to put code that is meant to be run into a designated format such as triple backtick. After an output is produced, the code can be extracted and run. Finally, if necessary, the output from the code execution engine (i.e. Python interpreter) can be provided as an input to the model for the next query.
@@ -406,11 +418,11 @@ Evaluation procedures (or "evals") are useful for optimizing system designs. Goo
 Representative of real-world usage (or at least diverse)
 Contain many test cases for greater statistical power (see table below for guidelines)
 Easy to automate or repeat
-DIFFERENCE TO DETECT	SAMPLE SIZE NEEDED FOR 95% CONFIDENCE
-30%	~10
-10%	~100
-3%	~1,000
-1%	~10,000
+DIFFERENCE TO DETECT    SAMPLE SIZE NEEDED FOR 95% CONFIDENCE
+30% ~10
+10% ~100
+3%  ~1,000
+1%  ~10,000
 Evaluation of outputs can be done by computers, humans, or a mix. Computers can automate evals with objective criteria (e.g., questions with single correct answers) as well as some subjective or fuzzy criteria, in which model outputs are evaluated by other model queries. OpenAI Evals is an open-source software framework that provides tools for creating automated evals.
 
 Model-based evals can be useful when there exists a range of possible outputs that would be considered equally high in quality (e.g. for questions with long answers). The boundary between what can be realistically evaluated with a model-based eval and what requires a human to evaluate is fuzzy and is constantly shifting as models become more capable. We encourage experimentation to figure out how well model-based evals can work for your use case.

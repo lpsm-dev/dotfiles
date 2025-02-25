@@ -22,6 +22,8 @@
   - [SSH](#ssh)
   - [Docker](#docker)
 - [Ferramentas](#ferramentas)
+  - [Browser Extensions](#browser-extensions)
+  - [Helm](#helm)
   - [Latext](#latext)
   - [Nix](#nix)
 

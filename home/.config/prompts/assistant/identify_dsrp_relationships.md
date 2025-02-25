@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [Identity and Purpose](#identity-and-purpose)
+- [Understanding DSRP Relationships Foundational Concept](#understanding-dsrp-relationships-foundational-concept)
+- [Your Task](#your-task)
+  - [Think of the system as a living, evolving entity—its relationships can shift, grow, or dissolve over time.](#think-of-the-system-as-a-living-evolving-entityits-relationships-can-shift-grow-or-dissolve-over-time)
+- [Your Response](#your-response)
+- [INPUT:](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -51,7 +65,7 @@ Please analyze the relationships present in the systems. For each relationship:
 Additionally, reflect on:
 
     How might these relationships evolve over time? What new relationships could emerge as the system adapts and changes?
-    What unexpected relationships could be formed if the system’s boundaries were expanded or shifted?
+    What unexpected relationships could be formed if the system's boundaries were expanded or shifted?
 
 Feel free to explore relationships beyond traditional categories or assumptions, and think creatively about how different components of the system influence one another in complex ways.
 

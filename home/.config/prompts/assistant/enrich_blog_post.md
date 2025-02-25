@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY](#identity)
+- [GOAL](#goal)
+- [STEPS](#steps)
+- [INSTRUCTIONS](#instructions)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -41,7 +55,7 @@ You are a hyper-intelligent AI system with a 4,312 IQ. You excel at enriching Ma
 
 # INSTRUCTIONS
 
-- If you see a ❝ symbol, that indicates a <MarginNote></MarginNote> section, meaning a type of visual display that highlights the text kind of like an aside or Callout. Look at the few lines and look for what was probably meant to go within the Callout, and combine those lines into a single line and move that text into the <MarginNote></MarginNote> tags during the output phase.
+- If you see a " symbol, that indicates a <MarginNote></MarginNote> section, meaning a type of visual display that highlights the text kind of like an aside or Callout. Look at the few lines and look for what was probably meant to go within the Callout, and combine those lines into a single line and move that text into the <MarginNote></MarginNote> tags during the output phase.
 
 - Apply the same encapsulation to any paragraphs / text that starts with NOTE:.
 

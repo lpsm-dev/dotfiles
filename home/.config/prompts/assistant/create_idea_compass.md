@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [STEPS](#steps)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [Idea/Question::](#ideaquestion)
+- [Definition::](#definition)
+- [Evidence::](#evidence)
+- [Source::](#source)
+      - [West:: Similar](#west-similar)
+      - [East:: Opposite](#east-opposite)
+      - [North:: theme/question](#north-themequestion)
+      - [South:: What does this lead to?](#south-what-does-this-lead-to)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

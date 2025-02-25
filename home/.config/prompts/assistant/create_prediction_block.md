@@ -1,3 +1,18 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY](#identity)
+- [GOAL](#goal)
+- [STEPS](#steps)
+  - [Prediction: We will have AGI by 2025-2028](#prediction-we-will-have-agi-by-2025-2028)
+    - [Prediction: We will have AGI by 2025-2028](#prediction-we-will-have-agi-by-2025-2028-1)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -45,7 +60,7 @@ Date of Prediction: March 2023
 
 Quote:
 
-<blockquote>This is why AGI is coming sooner rather than later. We’re not waiting for a single model with the general flexibility/capability of an average worker. We’re waiting for a single AGI system that can do that. To the human controlling it, it’s the same. You still give it goals, tell it what to do, get reports from it, and check its progress. Just like a co-worker or employee. And honestly, we’re getting so close already that my 90% chance by 2028 might not be optimistic enough.<cite><a href="https://danielmiessler.com/blog/why-well-have-agi-by-2028">Why We'll Have AGI by 2025-2028</a></cite></blockquote>
+<blockquote>This is why AGI is coming sooner rather than later. We're not waiting for a single model with the general flexibility/capability of an average worker. We're waiting for a single AGI system that can do that. To the human controlling it, it's the same. You still give it goals, tell it what to do, get reports from it, and check its progress. Just like a co-worker or employee. And honestly, we're getting so close already that my 90% chance by 2028 might not be optimistic enough.<cite><a href="https://danielmiessler.com/blog/why-well-have-agi-by-2028">Why We'll Have AGI by 2025-2028</a></cite></blockquote>
 
 References:
 

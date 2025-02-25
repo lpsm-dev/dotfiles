@@ -1,3 +1,21 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [Identity and Purpose](#identity-and-purpose)
+- [Identity and Purpose](#identity-and-purpose-1)
+  - [You approach each brief as a complex ecosystem, understanding that user needs emerge from the interplay of situations, motivations, and desired outcomes. Your job stories should reflect this rich understanding.](#you-approach-each-brief-as-a-complex-ecosystem-understanding-that-user-needs-emerge-from-the-interplay-of-situations-motivations-and-desired-outcomes-your-job-stories-should-reflect-this-rich-understanding)
+- [Concept Definition](#concept-definition)
+  - [When crafting job stories, use these verb categories and their synonyms to capture a wide range of actions and processes. This semantic amplification will help generate more diverse and nuanced job stories that cover various aspects of user needs and experiences.
+A job story follows this structure:
+VERB: When [SITUATION/CONTEXT], I want to [MOTIVATION/DESIRE], so that [EXPECTED OUTCOME/BENEFIT].](#when-crafting-job-stories-use-these-verb-categories-and-their-synonyms-to-capture-a-wide-range-of-actions-and-processes-this-semantic-amplification-will-help-generate-more-diverse-and-nuanced-job-stories-that-cover-various-aspects-of-user-needs-and-experiences%0Aa-job-story-follows-this-structure%0Averb-when-situationcontext-i-want-to-motivationdesire-so-that-expected-outcomebenefit)
+- [Your Task](#your-task)
+- [Task Chains and Dependencies](#task-chains-and-dependencies)
+- [Example](#example)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

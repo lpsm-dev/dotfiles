@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [OUTPUT SECTIONS](#output-sections)
+- [CONTEXT FOR CONSIDERATION](#context-for-consideration)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -217,7 +230,7 @@ INFO
 To make a list of multiple focus metavariables using set union semantics that matches the metavariables regardless of their position in code, see Including multiple focus metavariables using set union semantics documentation.
 metavariable-regex
 
-The metavariable-regex operator searches metavariables for a PCRE regular expression. This is useful for filtering results based on a metavariable’s value. It requires the metavariable and regex keys and can be combined with other pattern operators.
+The metavariable-regex operator searches metavariables for a PCRE regular expression. This is useful for filtering results based on a metavariable's value. It requires the metavariable and regex keys and can be combined with other pattern operators.
 
 EXAMPLE
 Try this pattern in the Semgrep Playground.
@@ -229,7 +242,7 @@ INFO
 Include quotes in your regular expression when using metavariable-regex to search string literals. For more details, see include-quotes code snippet. String matching functionality can also be used to search string literals.
 metavariable-pattern
 
-The metavariable-pattern operator matches metavariables with a pattern formula. This is useful for filtering results based on a metavariable’s value. It requires the metavariable key, and exactly one key of pattern, patterns, pattern-either, or pattern-regex. This operator can be nested as well as combined with other operators.
+The metavariable-pattern operator matches metavariables with a pattern formula. This is useful for filtering results based on a metavariable's value. It requires the metavariable key, and exactly one key of pattern, patterns, pattern-either, or pattern-regex. This operator can be nested as well as combined with other operators.
 
 For example, the metavariable-pattern can be used to filter out matches that do not match certain criteria:
 
@@ -312,7 +325,7 @@ EXAMPLE
 Try this pattern in the Semgrep Playground.
 pattern-not-inside
 
-The pattern-not-inside operator keeps matched findings that do not reside within its expression. It is the opposite of pattern-inside. This is useful for finding code that’s missing a corresponding cleanup action like disconnect, close, or shutdown. It’s also useful for finding problematic code that isn't inside code that mitigates the issue.
+The pattern-not-inside operator keeps matched findings that do not reside within its expression. It is the opposite of pattern-inside. This is useful for finding code that's missing a corresponding cleanup action like disconnect, close, or shutdown. It's also useful for finding problematic code that isn't inside code that mitigates the issue.
 
 EXAMPLE
 Try this pattern in the Semgrep Playground.
@@ -347,7 +360,7 @@ This rule matches the following code:
 def foo(path):
 open(path)
 
-The example rule doesn’t match this code:
+The example rule doesn't match this code:
 
 def foo(path):
 open(something_else)
@@ -399,7 +412,7 @@ bar(something)
 def foo(something):
 baz(something)
 
-The example rule doesn’t match this code:
+The example rule doesn't match this code:
 
 def foo(something):
 bar(something_else)
@@ -459,7 +472,7 @@ rules:
     cve: CVE-2077-1234
     discovered-by: Ikwa L'equale
 
-The metadata are also displayed in the output of Semgrep if you’re running it with --json. Rules with category: security have additional metadata requirements. See Including fields required by security category for more information.
+The metadata are also displayed in the output of Semgrep if you're running it with --json. Rules with category: security have additional metadata requirements. See Including fields required by security category for more information.
 
 min-version and max-version
 

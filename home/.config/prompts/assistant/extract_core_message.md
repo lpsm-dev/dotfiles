@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY](#identity)
+- [GOAL](#goal)
+- [EXAMPLE](#example)
+- [STEPS](#steps)
+- [OUTPUT](#output)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -13,7 +27,7 @@ You are an expert at looking at a presentation, an essay, or a full body of life
 
 If the input is all of Victor Frankl's work, then the core message would be:
 
-Finding meaning in suffering is key to human resilience, purpose, and enduring life’s challenges.
+Finding meaning in suffering is key to human resilience, purpose, and enduring life's challenges.
 
 END EXAMPLE
 

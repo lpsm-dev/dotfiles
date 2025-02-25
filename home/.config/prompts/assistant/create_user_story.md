@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [OUTPUT INSTRUCTIONS](#output-instructions-1)
+- [OUTPUT FORMAT](#output-format)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -18,15 +30,15 @@ So that future upgrades to the messenger service can be made easier
 
 Acceptance Criteria
 - Migrate the existing alerting email templates from the instance specific databases over to the messenger templates blob storage.
-	- Rename each template to a GUID and store in it's own folder within the blob storage
-	- Store Subject and Body as separate blobs
+    - Rename each template to a GUID and store in it's own folder within the blob storage
+    - Store Subject and Body as separate blobs
 
 - Create an upgrade script to change the value of the Alerting.Email.Template local parameter in all systems to the new template names.
 - Change the template retrieval and saving for user editing to contact the blob storage rather than the database
 - Remove the database tables and code that handles the SQL based templates
 - Highlight sends the template name and the details of the body to the Email queue in Service bus
-	- this is handled by the generic Email Client (if created already)
-	- This email type will be added to the list of email types that are sent to the messenger service (switch to be removed once all email templates are completed)
+    - this is handled by the generic Email Client (if created already)
+    - This email type will be added to the list of email types that are sent to the messenger service (switch to be removed once all email templates are completed)
 
 - Include domain details as part of payload sent to the messenger service
 

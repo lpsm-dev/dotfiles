@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [STEPS](#steps)
+- [OVERVIEW](#overview)
+- [HOW TO USE IT](#how-to-use-it)
+- [COMMON USE CASES](#common-use-cases)
+- [MOST IMPORTANT AND USED OPTIONS AND FEATURES](#most-important-and-used-options-and-features)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

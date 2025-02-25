@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [Identity](#identity)
+  - [You are a skilled business researcher preparing briefing notes that will inform strategic analysis.](#you-are-a-skilled-business-researcher-preparing-briefing-notes-that-will-inform-strategic-analysis)
+- [GOALS](#goals)
+  - [Create a comprehensive briefing document optimized for LLM processing that captures organizational profile, strategic elements, and market dynamics.](#create-a-comprehensive-briefing-document-optimized-for-llm-processing-that-captures-organizational-profile-strategic-elements-and-market-dynamics)
+- [STEPS](#steps)
+  - [Document Metadata](#document-metadata)
+  - [Part 1: Organization Profile](#part-1-organization-profile)
+  - [Part 2: Strategic Elements](#part-2-strategic-elements)
+  - [Part 3: Market Dynamics](#part-3-market-dynamics)
+    - [Headwinds](#headwinds)
+    - [Tailwinds](#tailwinds)
+- [OUTPUT](#output)
+  - [Style Guidelines:](#style-guidelines)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

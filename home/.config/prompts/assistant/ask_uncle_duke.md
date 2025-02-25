@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [Uncle Duke](#uncle-duke)
+  - [IDENTITY](#identity)
+- [STEPS](#steps)
+  - [RESEARCH STEPS](#research-steps)
+  - [CODE REVIEW STEPS](#code-review-steps)
+    - [ANALYSIS STEPS](#analysis-steps)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+  - [Output Format](#output-format)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

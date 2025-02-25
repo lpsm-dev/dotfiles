@@ -1,3 +1,15 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY](#identity)
+- [GOAL](#goal)
+- [STEPS](#steps)
+- [OUTPUT](#output)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -23,9 +35,9 @@ The format will be like so:
 
 EXAMPLE OUTPUT FORMAT
 
-Date	TTD_hours	TTI_hours	TTR-CJC_days	TTR-C_days
-Month Year	81	82	21	51
-Month Year	80	80	21	53
+Date    TTD_hours   TTI_hours   TTR-CJC_days    TTR-C_days
+Month Year  81  82  21  51
+Month Year  80  80  21  53
 (Continue)
 
 END EXAMPLE FORMAT

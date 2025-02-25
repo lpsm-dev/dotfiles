@@ -12,8 +12,14 @@
 <details>
   <summary><strong>Expandir</strong></summary>
 
-<!-- START doctoc -->
-<!-- END doctoc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Prompts](#prompts)
+  - [Assistant](#assistant)
+  - [Developer](#developer)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

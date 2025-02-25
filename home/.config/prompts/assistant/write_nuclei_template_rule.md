@@ -1,3 +1,48 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [OUTPUT SECTIONS](#output-sections)
+- [CONTEXT FOR CONSIDERATION](#context-for-consideration)
+    - [What are Nuclei Templates?](#what-are-nuclei-templates)
+- [Matchers](#matchers)
+    - [Types](#types)
+    - [Conditions](#conditions)
+    - [Negative Matchers](#negative-matchers)
+    - [Multiple Matchers](#multiple-matchers)
+    - [Matchers Condition](#matchers-condition)
+- [Extractors](#extractors)
+    - [Types](#types-1)
+- [Variables](#variables)
+- [Variable example using HTTP requests](#variable-example-using-http-requests)
+- [Variable example for network requests](#variable-example-for-network-requests)
+- [Helper Functions](#helper-functions)
+- [Preprocessors](#preprocessors)
+- [Start the requests for the template right here](#start-the-requests-for-the-template-right-here)
+    - [Redirects](#redirects)
+    - [Path](#path)
+- [This path will be replaced on execution with BaseURL](#this-path-will-be-replaced-on-execution-with-baseurl)
+- [If BaseURL is set to  https://abc.com then the](#if-baseurl-is-set-to--httpsabccom-then-the)
+- [path will get replaced to the following: https://abc.com/.git/config](#path-will-get-replaced-to-the-following-httpsabccomgitconfig)
+    - [Headers](#headers)
+    - [Body](#body)
+- [disable-cookie accepts boolean input and false as default](#disable-cookie-accepts-boolean-input-and-false-as-default)
+- [HTTP Intruder fuzzing with in template payload support.](#http-intruder-fuzzing-with-in-template-payload-support)
+    - [Connection pooling](#connection-pooling)
+  - [Request Tampering](#request-tampering)
+    - [Requests Annotation](#requests-annotation)
+- [Network Protocol](#network-protocol)
+- [Start the requests for the template right here](#start-the-requests-for-the-template-right-here-1)
+- [inputs is the list of inputs to send to the server](#inputs-is-the-list-of-inputs-to-send-to-the-server)
+- [Matchers / Extractor Parts](#matchers--extractor-parts)
+    - [Example Network Template](#example-network-template)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -47,14 +92,14 @@ Matchers allow different type of flexible comparisons on protocol responses. The
 ### Types
 Multiple matchers can be specified in a request. There are basically 7 types of matchers:
 ```
-Matcher Type	  Part Matched
-status         	Integer Comparisons of Part
-size	  	  	  Content Length of Part
-word		  	    Part for a protocol
-regex		  	    Part for a protocol
-binary	  	  	Part for a protocol
-dsl	   	  	    Part for a protocol
-xpath		  	    Part for a protocol
+Matcher Type      Part Matched
+status          Integer Comparisons of Part
+size              Content Length of Part
+word                Part for a protocol
+regex               Part for a protocol
+binary          Part for a protocol
+dsl             Part for a protocol
+xpath               Part for a protocol
 ```
 To match status codes for responses, you can use the following syntax.
 
@@ -91,7 +136,7 @@ matchers:
 ```
 Word and Regex matchers can be further configured depending on the needs of the users.
 
-XPath matchers use XPath queries to match XML and HTML responses. If the XPath query returns any results, it’s considered a match.
+XPath matchers use XPath queries to match XML and HTML responses. If the XPath query returns any results, it's considered a match.
 
 ```
 matchers:
@@ -111,13 +156,13 @@ matchers:
 ```
 Every part of a Protocol response can be matched with DSL matcher. Some examples:
 
-Response Part	  Description	              Example :
-content_length	Content-Length Header	    content_length >= 1024
-status_code	    Response Status Code    	status_code==200
-all_headers	    All all headers	          len(all_headers)
-body	          Body as string	          len(body)
-header_name	    header name with - converted to _	len(user_agent)
-raw             Headers + Response	      len(raw)
+Response Part     Description                 Example :
+content_length  Content-Length Header       content_length >= 1024
+status_code     Response Status Code        status_code==200
+all_headers     All all headers           len(all_headers)
+body              Body as string              len(body)
+header_name     header name with - converted to _   len(user_agent)
+raw             Headers + Response        len(raw)
 
 ### Conditions
 Multiple words and regexes can be specified in a single matcher and can be configured with different conditions like AND and OR.
@@ -398,79 +443,79 @@ Set the authorname as pd-bot
 Review details on helper functions for Nuclei
 Here is the list of all supported helper functions can be used in the RAW requests / Network requests.
 
-Helper function	Description	Example	Output
-aes_gcm(key, plaintext interface) []byte	AES GCM encrypts a string with key	{{hex_encode(aes_gcm(\"AES256Key-32Characters1234567890\", \"exampleplaintext\"))}}	ec183a153b8e8ae7925beed74728534b57a60920c0b009eaa7608a34e06325804c096d7eebccddea3e5ed6c4
-base64(src interface) string	Base64 encodes a string	base64(\"Hello\")	SGVsbG8=
-base64_decode(src interface) []byte	Base64 decodes a string	base64_decode(\"SGVsbG8=\")	Hello
-base64_py(src interface) string	Encodes string to base64 like python (with new lines)	base64_py(\"Hello\")	SGVsbG8=
+Helper function Description Example Output
+aes_gcm(key, plaintext interface) []byte    AES GCM encrypts a string with key  {{hex_encode(aes_gcm(\"AES256Key-32Characters1234567890\", \"exampleplaintext\"))}} ec183a153b8e8ae7925beed74728534b57a60920c0b009eaa7608a34e06325804c096d7eebccddea3e5ed6c4
+base64(src interface) string    Base64 encodes a string base64(\"Hello\")   SGVsbG8=
+base64_decode(src interface) []byte Base64 decodes a string base64_decode(\"SGVsbG8=\") Hello
+base64_py(src interface) string Encodes string to base64 like python (with new lines)   base64_py(\"Hello\")    SGVsbG8=
 
-bin_to_dec(binaryNumber number | string) float64	Transforms the input binary number into a decimal format	bin_to_dec(\"0b1010\")<br>bin_to_dec(1010)	10
-compare_versions(versionToCheck string, constraints …string) bool	Compares the first version argument with the provided constraints	compare_versions(\'v1.0.0\', \'\>v0.0.1\', \'\<v1.0.1\')	true
-concat(arguments …interface) string	Concatenates the given number of arguments to form a string	concat(\"Hello\", 123, \"world)	Hello123world
-contains(input, substring interface) bool	Verifies if a string contains a substring	contains(\"Hello\", \"lo\")	true
-contains_all(input interface, substrings …string) bool	Verifies if any input contains all of the substrings	contains(\"Hello everyone\", \"lo\", \"every\")	true
-contains_any(input interface, substrings …string) bool	Verifies if an input contains any of substrings	contains(\"Hello everyone\", \"abc\", \"llo\")	true
-date_time(dateTimeFormat string, optionalUnixTime interface) string	Returns the formatted date time using simplified or go style layout for the current or the given unix time	date_time(\"%Y-%M-%D %H:%m\")<br>date_time(\"%Y-%M-%D %H:%m\", 1654870680)<br>date_time(\"2006-01-02 15:04\", unix_time())	2022-06-10 14:18
-dec_to_hex(number number | string) string	Transforms the input number into hexadecimal format	dec_to_hex(7001)\"	1b59
-ends_with(str string, suffix …string) bool	Checks if the string ends with any of the provided substrings	ends_with(\"Hello\", \"lo\")	true
-generate_java_gadget(gadget, cmd, encoding interface) string	Generates a Java Deserialization Gadget	generate_java_gadget(\"dns\", \"{{interactsh-url}}\", \"base64\")	rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAABc3IADGphdmEubmV0LlVSTJYlNzYa/ORyAwAHSQAIaGFzaENvZGVJAARwb3J0TAAJYXV0aG9yaXR5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAEZmlsZXEAfgADTAAEaG9zdHEAfgADTAAIcHJvdG9jb2xxAH4AA0wAA3JlZnEAfgADeHD//////////3QAAHQAAHEAfgAFdAAFcHh0ACpjYWhnMmZiaW41NjRvMGJ0MHRzMDhycDdlZXBwYjkxNDUub2FzdC5mdW54
-generate_jwt(json, algorithm, signature, unixMaxAge) []byte	Generates a JSON Web Token (JWT) using the claims provided in a JSON string, the signature, and the specified algorithm	generate_jwt(\"{\\"name\\":\\"John Doe\\",\\"foo\\":\\"bar\\"}\", \"HS256\", \"hello-world\")	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJuYW1lIjoiSm9obiBEb2UifQ.EsrL8lIcYJR_Ns-JuhF3VCllCP7xwbpMCCfHin_WT6U
-gzip(input string) string	Compresses the input using GZip	base64(gzip(\"Hello\"))	+H4sIAAAAAAAA//JIzcnJBwQAAP//gonR9wUAAAA=
-gzip_decode(input string) string	Decompresses the input using GZip	gzip_decode(hex_decode(\"1f8b08000000000000fff248cdc9c907040000ffff8289d1f705000000\"))	Hello
-hex_decode(input interface) []byte	Hex decodes the given input	hex_decode(\"6161\")	aa
-hex_encode(input interface) string	Hex encodes the given input	hex_encode(\"aa\")	6161
-hex_to_dec(hexNumber number | string) float64	Transforms the input hexadecimal number into decimal format	hex_to_dec(\"ff\")<br>hex_to_dec(\"0xff\")	255
-hmac(algorithm, data, secret) string	hmac function that accepts a hashing function type with data and secret	hmac(\"sha1\", \"test\", \"scrt\")	8856b111056d946d5c6c92a21b43c233596623c6
-html_escape(input interface) string	HTML escapes the given input	html_escape(\"\<body\>test\</body\>\")	&lt;body&gt;test&lt;/body&gt;
-html_unescape(input interface) string	HTML un-escapes the given input	html_unescape(\"&lt;body&gt;test&lt;/body&gt;\")	\<body\>test\</body\>
-join(separator string, elements …interface) string	Joins the given elements using the specified separator	join(\"_\", 123, \"hello\", \"world\")	123_hello_world
-json_minify(json) string	Minifies a JSON string by removing unnecessary whitespace	json_minify(\"{ \\"name\\": \\"John Doe\\", \\"foo\\": \\"bar\\" }\")	{\"foo\":\"bar\",\"name\":\"John Doe\"}
-json_prettify(json) string	Prettifies a JSON string by adding indentation	json_prettify(\"{\\"foo\\":\\"bar\\",\\"name\\":\\"John Doe\\"}\")	{
+bin_to_dec(binaryNumber number | string) float64    Transforms the input binary number into a decimal format    bin_to_dec(\"0b1010\")<br>bin_to_dec(1010)  10
+compare_versions(versionToCheck string, constraints …string) bool Compares the first version argument with the provided constraints   compare_versions(\'v1.0.0\', \'\>v0.0.1\', \'\<v1.0.1\')    true
+concat(arguments …interface) string   Concatenates the given number of arguments to form a string concat(\"Hello\", 123, \"world) Hello123world
+contains(input, substring interface) bool   Verifies if a string contains a substring   contains(\"Hello\", \"lo\") true
+contains_all(input interface, substrings …string) bool    Verifies if any input contains all of the substrings    contains(\"Hello everyone\", \"lo\", \"every\") true
+contains_any(input interface, substrings …string) bool    Verifies if an input contains any of substrings contains(\"Hello everyone\", \"abc\", \"llo\")  true
+date_time(dateTimeFormat string, optionalUnixTime interface) string Returns the formatted date time using simplified or go style layout for the current or the given unix time  date_time(\"%Y-%M-%D %H:%m\")<br>date_time(\"%Y-%M-%D %H:%m\", 1654870680)<br>date_time(\"2006-01-02 15:04\", unix_time())  2022-06-10 14:18
+dec_to_hex(number number | string) string   Transforms the input number into hexadecimal format dec_to_hex(7001)\"  1b59
+ends_with(str string, suffix …string) bool    Checks if the string ends with any of the provided substrings   ends_with(\"Hello\", \"lo\")    true
+generate_java_gadget(gadget, cmd, encoding interface) string    Generates a Java Deserialization Gadget generate_java_gadget(\"dns\", \"{{interactsh-url}}\", \"base64\")   rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAABc3IADGphdmEubmV0LlVSTJYlNzYa/ORyAwAHSQAIaGFzaENvZGVJAARwb3J0TAAJYXV0aG9yaXR5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAEZmlsZXEAfgADTAAEaG9zdHEAfgADTAAIcHJvdG9jb2xxAH4AA0wAA3JlZnEAfgADeHD//////////3QAAHQAAHEAfgAFdAAFcHh0ACpjYWhnMmZiaW41NjRvMGJ0MHRzMDhycDdlZXBwYjkxNDUub2FzdC5mdW54
+generate_jwt(json, algorithm, signature, unixMaxAge) []byte Generates a JSON Web Token (JWT) using the claims provided in a JSON string, the signature, and the specified algorithm generate_jwt(\"{\\"name\\":\\"John Doe\\",\\"foo\\":\\"bar\\"}\", \"HS256\", \"hello-world\")   eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmb28iOiJiYXIiLCJuYW1lIjoiSm9obiBEb2UifQ.EsrL8lIcYJR_Ns-JuhF3VCllCP7xwbpMCCfHin_WT6U
+gzip(input string) string   Compresses the input using GZip base64(gzip(\"Hello\")) +H4sIAAAAAAAA//JIzcnJBwQAAP//gonR9wUAAAA=
+gzip_decode(input string) string    Decompresses the input using GZip   gzip_decode(hex_decode(\"1f8b08000000000000fff248cdc9c907040000ffff8289d1f705000000\")) Hello
+hex_decode(input interface) []byte  Hex decodes the given input hex_decode(\"6161\")    aa
+hex_encode(input interface) string  Hex encodes the given input hex_encode(\"aa\")  6161
+hex_to_dec(hexNumber number | string) float64   Transforms the input hexadecimal number into decimal format hex_to_dec(\"ff\")<br>hex_to_dec(\"0xff\")  255
+hmac(algorithm, data, secret) string    hmac function that accepts a hashing function type with data and secret hmac(\"sha1\", \"test\", \"scrt\")  8856b111056d946d5c6c92a21b43c233596623c6
+html_escape(input interface) string HTML escapes the given input    html_escape(\"\<body\>test\</body\>\")  &lt;body&gt;test&lt;/body&gt;
+html_unescape(input interface) string   HTML un-escapes the given input html_unescape(\"&lt;body&gt;test&lt;/body&gt;\")    \<body\>test\</body\>
+join(separator string, elements …interface) string    Joins the given elements using the specified separator  join(\"_\", 123, \"hello\", \"world\")  123_hello_world
+json_minify(json) string    Minifies a JSON string by removing unnecessary whitespace   json_minify(\"{ \\"name\\": \\"John Doe\\", \\"foo\\": \\"bar\\" }\")   {\"foo\":\"bar\",\"name\":\"John Doe\"}
+json_prettify(json) string  Prettifies a JSON string by adding indentation  json_prettify(\"{\\"foo\\":\\"bar\\",\\"name\\":\\"John Doe\\"}\")  {
  \\"foo\\": \\"bar\\",
  \\"name\\": \\"John Doe\\"
 }
-len(arg interface) int	Returns the length of the input	len(\"Hello\")	5
-line_ends_with(str string, suffix …string) bool	Checks if any line of the string ends with any of the provided substrings	line_ends_with(\"Hello
-Hi\", \"lo\")	true
-line_starts_with(str string, prefix …string) bool	Checks if any line of the string starts with any of the provided substrings	line_starts_with(\"Hi
-Hello\", \"He\")	true
-md5(input interface) string	Calculates the MD5 (Message Digest) hash of the input	md5(\"Hello\")	8b1a9953c4611296a827abf8c47804d7
-mmh3(input interface) string	Calculates the MMH3 (MurmurHash3) hash of an input	mmh3(\"Hello\")	316307400
-oct_to_dec(octalNumber number | string) float64	Transforms the input octal number into a decimal format	oct_to_dec(\"0o1234567\")<br>oct_to_dec(1234567)	342391
-print_debug(args …interface)	Prints the value of a given input or expression. Used for debugging.	print_debug(1+2, \"Hello\")	3 Hello
-rand_base(length uint, optionalCharSet string) string	Generates a random sequence of given length string from an optional charset (defaults to letters and numbers)	rand_base(5, \"abc\")	caccb
-rand_char(optionalCharSet string) string	Generates a random character from an optional character set (defaults to letters and numbers)	rand_char(\"abc\")	a
-rand_int(optionalMin, optionalMax uint) int	Generates a random integer between the given optional limits (defaults to 0 - MaxInt32)	rand_int(1, 10)	6
-rand_text_alpha(length uint, optionalBadChars string) string	Generates a random string of letters, of given length, excluding the optional cutset characters	rand_text_alpha(10, \"abc\")	WKozhjJWlJ
-rand_text_alphanumeric(length uint, optionalBadChars string) string	Generates a random alphanumeric string, of given length without the optional cutset characters	rand_text_alphanumeric(10, \"ab12\")	NthI0IiY8r
-rand_ip(cidr …string) string	Generates a random IP address	rand_ip(\"192.168.0.0/24\")	192.168.0.171
-rand_text_numeric(length uint, optionalBadNumbers string) string	Generates a random numeric string of given length without the optional set of undesired numbers	rand_text_numeric(10, 123)	0654087985
-regex(pattern, input string) bool	Tests the given regular expression against the input string	regex(\"H([a-z]+)o\", \"Hello\")	true
-remove_bad_chars(input, cutset interface) string	Removes the desired characters from the input	remove_bad_chars(\"abcd\", \"bc\")	ad
-repeat(str string, count uint) string	Repeats the input string the given amount of times	repeat(\"../\", 5)	../../../../../
-replace(str, old, new string) string	Replaces a given substring in the given input	replace(\"Hello\", \"He\", \"Ha\")	Hallo
-replace_regex(source, regex, replacement string) string	Replaces substrings matching the given regular expression in the input	replace_regex(\"He123llo\", \"(\\d+)\", \"\")	Hello
-reverse(input string) string	Reverses the given input	reverse(\"abc\")	cba
-sha1(input interface) string	Calculates the SHA1 (Secure Hash 1) hash of the input	sha1(\"Hello\")	f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0
-sha256(input interface) string	Calculates the SHA256 (Secure Hash 256) hash of the input	sha256(\"Hello\")	185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969
-starts_with(str string, prefix …string) bool	Checks if the string starts with any of the provided substrings	starts_with(\"Hello\", \"He\")	true
-to_lower(input string) string	Transforms the input into lowercase characters	to_lower(\"HELLO\")	hello
-to_unix_time(input string, layout string) int	Parses a string date time using default or user given layouts, then returns its Unix timestamp	to_unix_time(\"2022-01-13T16:30:10+00:00\")<br>to_unix_time(\"2022-01-13 16:30:10\")<br>to_unix_time(\"13-01-2022 16:30:10\". \"02-01-2006 15:04:05\")	1642091410
-to_upper(input string) string	Transforms the input into uppercase characters	to_upper(\"hello\")	HELLO
-trim(input, cutset string) string	Returns a slice of the input with all leading and trailing Unicode code points contained in cutset removed	trim(\"aaaHelloddd\", \"ad\")	Hello
-trim_left(input, cutset string) string	Returns a slice of the input with all leading Unicode code points contained in cutset removed	trim_left(\"aaaHelloddd\", \"ad\")	Helloddd
-trim_prefix(input, prefix string) string	Returns the input without the provided leading prefix string	trim_prefix(\"aaHelloaa\", \"aa\")	Helloaa
-trim_right(input, cutset string) string	Returns a string, with all trailing Unicode code points contained in cutset removed	trim_right(\"aaaHelloddd\", \"ad\")	aaaHello
-trim_space(input string) string	Returns a string, with all leading and trailing white space removed, as defined by Unicode	trim_space(\" Hello \")	\"Hello\"
-trim_suffix(input, suffix string) string	Returns input without the provided trailing suffix string	trim_suffix(\"aaHelloaa\", \"aa\")	aaHello
-unix_time(optionalSeconds uint) float64	Returns the current Unix time (number of seconds elapsed since January 1, 1970 UTC) with the added optional seconds	unix_time(10)	1639568278
-url_decode(input string) string	URL decodes the input string	url_decode(\"https:%2F%2Fprojectdiscovery.io%3Ftest=1\")	https://projectdiscovery.io?test=1
-url_encode(input string) string	URL encodes the input string	url_encode(\"https://projectdiscovery.io/test?a=1\")	https%3A%2F%2Fprojectdiscovery.io%2Ftest%3Fa%3D1
-wait_for(seconds uint)	Pauses the execution for the given amount of seconds	wait_for(10)	true
-zlib(input string) string	Compresses the input using Zlib	base64(zlib(\"Hello\"))	eJzySM3JyQcEAAD//wWMAfU=
-zlib_decode(input string) string	Decompresses the input using Zlib	zlib_decode(hex_decode(\"789cf248cdc9c907040000ffff058c01f5\"))	Hello
-resolve(host string, format string) string	Resolves a host using a dns type that you define	resolve(\"localhost\",4)	127.0.0.1
-ip_format(ip string, format string) string	It takes an input ip and converts it to another format according to this legend, the second parameter indicates the conversion index and must be between 1 and 11	ip_format(\"127.0.0.1\", 3)	0177.0.0.01
+len(arg interface) int  Returns the length of the input len(\"Hello\")  5
+line_ends_with(str string, suffix …string) bool   Checks if any line of the string ends with any of the provided substrings   line_ends_with(\"Hello
+Hi\", \"lo\")   true
+line_starts_with(str string, prefix …string) bool Checks if any line of the string starts with any of the provided substrings line_starts_with(\"Hi
+Hello\", \"He\")    true
+md5(input interface) string Calculates the MD5 (Message Digest) hash of the input   md5(\"Hello\")  8b1a9953c4611296a827abf8c47804d7
+mmh3(input interface) string    Calculates the MMH3 (MurmurHash3) hash of an input  mmh3(\"Hello\") 316307400
+oct_to_dec(octalNumber number | string) float64 Transforms the input octal number into a decimal format oct_to_dec(\"0o1234567\")<br>oct_to_dec(1234567)    342391
+print_debug(args …interface)  Prints the value of a given input or expression. Used for debugging.    print_debug(1+2, \"Hello\") 3 Hello
+rand_base(length uint, optionalCharSet string) string   Generates a random sequence of given length string from an optional charset (defaults to letters and numbers)   rand_base(5, \"abc\")   caccb
+rand_char(optionalCharSet string) string    Generates a random character from an optional character set (defaults to letters and numbers)   rand_char(\"abc\")  a
+rand_int(optionalMin, optionalMax uint) int Generates a random integer between the given optional limits (defaults to 0 - MaxInt32) rand_int(1, 10) 6
+rand_text_alpha(length uint, optionalBadChars string) string    Generates a random string of letters, of given length, excluding the optional cutset characters rand_text_alpha(10, \"abc\")    WKozhjJWlJ
+rand_text_alphanumeric(length uint, optionalBadChars string) string Generates a random alphanumeric string, of given length without the optional cutset characters  rand_text_alphanumeric(10, \"ab12\")    NthI0IiY8r
+rand_ip(cidr …string) string  Generates a random IP address   rand_ip(\"192.168.0.0/24\") 192.168.0.171
+rand_text_numeric(length uint, optionalBadNumbers string) string    Generates a random numeric string of given length without the optional set of undesired numbers rand_text_numeric(10, 123)  0654087985
+regex(pattern, input string) bool   Tests the given regular expression against the input string regex(\"H([a-z]+)o\", \"Hello\")    true
+remove_bad_chars(input, cutset interface) string    Removes the desired characters from the input   remove_bad_chars(\"abcd\", \"bc\")  ad
+repeat(str string, count uint) string   Repeats the input string the given amount of times  repeat(\"../\", 5)  ../../../../../
+replace(str, old, new string) string    Replaces a given substring in the given input   replace(\"Hello\", \"He\", \"Ha\")  Hallo
+replace_regex(source, regex, replacement string) string Replaces substrings matching the given regular expression in the input  replace_regex(\"He123llo\", \"(\\d+)\", \"\")   Hello
+reverse(input string) string    Reverses the given input    reverse(\"abc\")    cba
+sha1(input interface) string    Calculates the SHA1 (Secure Hash 1) hash of the input   sha1(\"Hello\") f7ff9e8b7bb2e09b70935a5d785e0cc5d9d0abf0
+sha256(input interface) string  Calculates the SHA256 (Secure Hash 256) hash of the input   sha256(\"Hello\")   185f8db32271fe25f561a6fc938b2e264306ec304eda518007d1764826381969
+starts_with(str string, prefix …string) bool  Checks if the string starts with any of the provided substrings starts_with(\"Hello\", \"He\")  true
+to_lower(input string) string   Transforms the input into lowercase characters  to_lower(\"HELLO\") hello
+to_unix_time(input string, layout string) int   Parses a string date time using default or user given layouts, then returns its Unix timestamp  to_unix_time(\"2022-01-13T16:30:10+00:00\")<br>to_unix_time(\"2022-01-13 16:30:10\")<br>to_unix_time(\"13-01-2022 16:30:10\". \"02-01-2006 15:04:05\")  1642091410
+to_upper(input string) string   Transforms the input into uppercase characters  to_upper(\"hello\") HELLO
+trim(input, cutset string) string   Returns a slice of the input with all leading and trailing Unicode code points contained in cutset removed  trim(\"aaaHelloddd\", \"ad\")   Hello
+trim_left(input, cutset string) string  Returns a slice of the input with all leading Unicode code points contained in cutset removed   trim_left(\"aaaHelloddd\", \"ad\")  Helloddd
+trim_prefix(input, prefix string) string    Returns the input without the provided leading prefix string    trim_prefix(\"aaHelloaa\", \"aa\")  Helloaa
+trim_right(input, cutset string) string Returns a string, with all trailing Unicode code points contained in cutset removed trim_right(\"aaaHelloddd\", \"ad\") aaaHello
+trim_space(input string) string Returns a string, with all leading and trailing white space removed, as defined by Unicode  trim_space(\" Hello \") \"Hello\"
+trim_suffix(input, suffix string) string    Returns input without the provided trailing suffix string   trim_suffix(\"aaHelloaa\", \"aa\")  aaHello
+unix_time(optionalSeconds uint) float64 Returns the current Unix time (number of seconds elapsed since January 1, 1970 UTC) with the added optional seconds unix_time(10)   1639568278
+url_decode(input string) string URL decodes the input string    url_decode(\"https:%2F%2Fprojectdiscovery.io%3Ftest=1\")    https://projectdiscovery.io?test=1
+url_encode(input string) string URL encodes the input string    url_encode(\"https://projectdiscovery.io/test?a=1\")    https%3A%2F%2Fprojectdiscovery.io%2Ftest%3Fa%3D1
+wait_for(seconds uint)  Pauses the execution for the given amount of seconds    wait_for(10)    true
+zlib(input string) string   Compresses the input using Zlib base64(zlib(\"Hello\")) eJzySM3JyQcEAAD//wWMAfU=
+zlib_decode(input string) string    Decompresses the input using Zlib   zlib_decode(hex_decode(\"789cf248cdc9c907040000ffff058c01f5\")) Hello
+resolve(host string, format string) string  Resolves a host using a dns type that you define    resolve(\"localhost\",4)    127.0.0.1
+ip_format(ip string, format string) string  It takes an input ip and converts it to another format according to this legend, the second parameter indicates the conversion index and must be between 1 and 11   ip_format(\"127.0.0.1\", 3) 0177.0.0.01
 
 Deserialization helper functions
 Nuclei allows payload generation for a few common gadget from ysoserial.
@@ -655,7 +700,7 @@ http:
 
 OOB Testing
 Understanding OOB testing with Nuclei Templates
-Since release of Nuclei v2.3.6, Nuclei supports using the interactsh API to achieve OOB based vulnerability scanning with automatic Request correlation built in. It’s as easy as writing {{interactsh-url}} anywhere in the request, and adding a matcher for interact_protocol. Nuclei will handle correlation of the interaction to the template & the request it was generated from allowing effortless OOB scanning.
+Since release of Nuclei v2.3.6, Nuclei supports using the interactsh API to achieve OOB based vulnerability scanning with automatic Request correlation built in. It's as easy as writing {{interactsh-url}} anywhere in the request, and adding a matcher for interact_protocol. Nuclei will handle correlation of the interaction to the template & the request it was generated from allowing effortless OOB scanning.
 
 
 Interactsh Placeholder
@@ -786,15 +831,15 @@ Variables start with {{ and end with }} and are case-sensitive.
 
 An example is provided below - https://example.com:443/foo/bar.php
 ```
-Variable	Value
-{{BaseURL}}	https://example.com:443/foo/bar.php
-{{RootURL}}	https://example.com:443
-{{Hostname}}	example.com:443
-{{Host}}	example.com
-{{Port}}	443
-{{Path}}	/foo
-{{File}}	bar.php
-{{Scheme}}	https
+Variable    Value
+{{BaseURL}} https://example.com:443/foo/bar.php
+{{RootURL}} https://example.com:443
+{{Hostname}}    example.com:443
+{{Host}}    example.com
+{{Port}}    443
+{{Path}}    /foo
+{{File}}    bar.php
+{{Scheme}}  https
 ```
 
 Some sample dynamic variable replacement examples:
@@ -881,7 +926,7 @@ http:
 
 
 ### Raw HTTP
-Another way to create request is using raw requests which comes with more flexibility and support of DSL helper functions, like the following ones (as of now it’s suggested to leave the Host header as in the example with the variable {{Hostname}}), All the Matcher, Extractor capabilities can be used with RAW requests in same the way described above.
+Another way to create request is using raw requests which comes with more flexibility and support of DSL helper functions, like the following ones (as of now it's suggested to leave the Host header as in the example with the variable {{Hostname}}), All the Matcher, Extractor capabilities can be used with RAW requests in same the way described above.
 
 ```
 http:
@@ -916,7 +961,7 @@ To make a request to the URL specified as input without any additional tampering
 # HTTP Payloads
 
 Overview
-Nuclei engine supports payloads module that allow to run various type of payloads in multiple format, It’s possible to define placeholders with simple keywords (or using brackets {{helper_function(variable)}} in case mutator functions are needed), and perform batteringram, pitchfork and clusterbomb attacks. The wordlist for these attacks needs to be defined during the request definition under the Payload field, with a name matching the keyword, Nuclei supports both file based and in template wordlist support and Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values.
+Nuclei engine supports payloads module that allow to run various type of payloads in multiple format, It's possible to define placeholders with simple keywords (or using brackets {{helper_function(variable)}} in case mutator functions are needed), and perform batteringram, pitchfork and clusterbomb attacks. The wordlist for these attacks needs to be defined during the request definition under the Payload field, with a name matching the keyword, Nuclei supports both file based and in template wordlist support and Finally all DSL functionalities are fully available and supported, and can be used to manipulate the final values.
 
 Payloads are defined using variable name and can be referenced in the request in between {{ }} marker.
 
@@ -950,8 +995,8 @@ For example, if you used clusterbomb or pitchfork as attack type and defined onl
 ### Attack modes:
 Nuclei engine supports multiple attack types, including batteringram as default type which generally used to fuzz single parameter, clusterbomb and pitchfork for fuzzing multiple parameters which works same as classical burp intruder.
 
-Type	batteringram	pitchfork	clusterbomb
-Support	✔	✔	✔
+Type    batteringram    pitchfork   clusterbomb
+Support ✔ ✔ ✔
 
 batteringram
 The battering ram attack type places the same payload value in all positions. It uses only one payload set. It loops through the payload set and replaces all positions with the payload value.
@@ -1474,7 +1519,7 @@ An example name value:
 
 host:
   - \"{{Hostname}}\"
-Nuclei can also do TLS connection to the target server. Just add tls:// as prefix before the Hostname and you’re good to go.
+Nuclei can also do TLS connection to the target server. Just add tls:// as prefix before the Hostname and you're good to go.
 
 
 host:
@@ -1498,7 +1543,7 @@ The reason behind introducing the port field is to provide users with more flexi
 
 
 $ nuclei -u scanme.sh:2222 -id xyz-ssh-exploit
-In this case, Nuclei will use port 2222 instead of the default port 22. If the user doesn’t specify any port in the input, port 22 will be used by default. However, this approach may not be straightforward to understand and can generate warnings in logs since one request is expected to fail.
+In this case, Nuclei will use port 2222 instead of the default port 22. If the user doesn't specify any port in the input, port 22 will be used by default. However, this approach may not be straightforward to understand and can generate warnings in logs since one request is expected to fail.
 
 Another issue with the previous design of writing network templates is that requests can be sent to unexpected ports. For example, if a web service is running on port 8443 and the user runs:
 
@@ -1524,10 +1569,10 @@ When exclude-ports is used, the default reserved ports list will be overwritten.
 # Matchers / Extractor Parts
 Valid part values supported by Network protocol for Matchers / Extractor are:
 
-Value	Description
-request	Network Request
-data	Final Data Read From Network Socket
-raw / body / all	All Data received from Socket
+Value   Description
+request Network Request
+data    Final Data Read From Network Socket
+raw / body / all    All Data received from Socket
 
 ### Example Network Template
 The final example template file for a hex encoded input to detect MongoDB running on servers with working matchers is provided below.
@@ -1569,7 +1614,7 @@ Think of request execution orchestration as a bridge between JavaScript and Nucl
 
 Practical Example: Vhost Enumeration
 
-To better illustrate the power of ﻿flow, let’s consider developing a template for vhost (virtual host) enumeration. This set of tasks typically requires writing a new tool from scratch. Here are the steps we need to follow:
+To better illustrate the power of ﻿flow, let's consider developing a template for vhost (virtual host) enumeration. This set of tasks typically requires writing a new tool from scratch. Here are the steps we need to follow:
 
 Retrieve the SSL certificate for the provided IP (using tlsx)
 Extract subject_cn (CN) from the certificate
@@ -1585,16 +1630,16 @@ for (let vhost of iterate(template[\"ssl_domains\"])) {
     http();
 }
 ```
-In this code, we’ve introduced 5 extra lines of JavaScript. This allows the template to perform vhost enumeration. The best part? You can run this at scale with all features of Nuclei, using supported inputs like ﻿ASN, ﻿CIDR, ﻿URL.
+In this code, we've introduced 5 extra lines of JavaScript. This allows the template to perform vhost enumeration. The best part? You can run this at scale with all features of Nuclei, using supported inputs like ﻿ASN, ﻿CIDR, ﻿URL.
 
-Let’s break down the JavaScript code:
+Let's break down the JavaScript code:
 
 ssl(): This function executes the SSL request.
 template[\"ssl_domains\"]: Retrieves the value of ssl_domains from the template context.
 iterate(): Helper function that iterates over any value type while handling empty or null values.
-set(\"vhost\", vhost): Creates a new variable vhost in the template and assigns the vhost variable’s value to it.
+set(\"vhost\", vhost): Creates a new variable vhost in the template and assigns the vhost variable's value to it.
 http(): This function conducts the HTTP request.
-By understanding and taking advantage of Nuclei’s flow, you can redefine the way you orchestrate request executions, making your templates much more powerful and efficient.
+By understanding and taking advantage of Nuclei's flow, you can redefine the way you orchestrate request executions, making your templates much more powerful and efficient.
 
 Here is working template for vhost enumeration using flow:
 
@@ -1646,7 +1691,7 @@ If you want to execute a specific request of a protocol (refer to nuclei-flow-dn
 
 The index of that request in the protocol (e.g.,dns(1), dns(2))
 The ID of that request in the protocol (e.g., dns(\"extract-vps\"), http(\"probe-http\"))
-For more advanced scenarios where multiple requests of a single protocol need to be executed, you can specify their index or ID one after the other (e.g., dns(“extract-vps”,“1”)).
+For more advanced scenarios where multiple requests of a single protocol need to be executed, you can specify their index or ID one after the other (e.g., dns("extract-vps","1")).
 
 This flexibility in using either index numbers or ID strings to call specific protocol requests provides controls for tailored execution, allowing you to build more complex and efficient workflows. more complex use cases multiple requests of a single protocol can be executed by just specifying their index or id one after another (ex: dns(\"extract-vps\",\"1\"))
 
@@ -1688,7 +1733,7 @@ template[\"ptrValue\"]  // returns value of ptrValue which was extracted using r
 ```
 
 
-Lot of times we don’t known what all data is available in template context and this can be easily found by printing it to stdout using log() function
+Lot of times we don't known what all data is available in template context and this can be easily found by printing it to stdout using log() function
 
 ```
 log(template)
@@ -1709,7 +1754,7 @@ uniq.Add(template[\"ssl_subject_cn\"]);
 uniq.Add(template[\"ssl_subject_an\"]);
 log(uniq.Values())
 ```
-And that’s it, this automatically converts any slice/array to map and removes duplicates from it and returns a slice/array of unique values
+And that's it, this automatically converts any slice/array to map and removes duplicates from it and returns a slice/array of unique values
 
 Similar to DSL helper functions . we can either use built in functions available with Javascript (ECMAScript 5.1) or use DSL helper functions and its upto user to decide which one to uses.
 

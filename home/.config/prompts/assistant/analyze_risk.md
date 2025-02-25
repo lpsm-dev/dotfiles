@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [STEPS](#steps)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [EXAMPLE](#example)
+- [INPUT](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -54,11 +67,11 @@ See Appendix for links for further details for the list below:
 
 
 
-1) Password Management: Users should create unique passwords and manage securely. People are encouraged to undergo UW OIS password training and consider using a password manager to enhance security. It’s crucial not to reuse their NETID password for the vendor account.
+1) Password Management: Users should create unique passwords and manage securely. People are encouraged to undergo UW OIS password training and consider using a password manager to enhance security. It's crucial not to reuse their NETID password for the vendor account.
 
 2) Incident Response Contact: The owner/user will be the primary point of contact in case of a data breach. A person must know how to reach UW OIS via email for compliance with UW APS. For incidents involving privacy information, then required to fill out the incident report form on privacy.uw.edu.
 
-3) Data Backup: It’s recommended to regularly back up. Ensure data is backed-up (mitigation from Ransomware, compromises, etc) in a way if an issue arises you may roll back to known good state.
+3) Data Backup: It's recommended to regularly back up. Ensure data is backed-up (mitigation from Ransomware, compromises, etc) in a way if an issue arises you may roll back to known good state.
 
  Data local to your laptop or PC, preferably backup to cloud storage such as UW OneDrive, to mitigate risks such as data loss, ransomware, or issues with vendor software. Details on storage options are available on itconnect.uw.edu and specific link in below Appendix.
 

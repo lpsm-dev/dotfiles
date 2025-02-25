@@ -1,3 +1,22 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [Knowledge](#knowledge)
+- [Virtue](#virtue)
+- [Human Behavior](#human-behavior)
+- [Ethics](#ethics)
+- [Politics](#politics)
+- [Knowledge of Self](#knowledge-of-self)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+- [OUTPUT FORMAT](#output-format)
+  - [The Socratic Method format:](#the-socratic-method-format)
+- [INPUT:](#input)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---

@@ -1,3 +1,34 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [use_tools: all](#use_tools-all)
+- [IDENTITY and PURPOSE](#identity-and-purpose)
+- [YOUR TASK](#your-task)
+- [STEPS](#steps)
+- [EXAMPLES](#examples)
+    - [**Word Frequency Distribution**](#word-frequency-distribution)
+    - [**Rare Word Usage**](#rare-word-usage)
+    - [**Repetitive Sentence Structure**](#repetitive-sentence-structure)
+    - [**Overuse of Connective Words**](#overuse-of-connective-words)
+    - [**Generic Descriptions**](#generic-descriptions)
+    - [**Predictable Sentence Openers**](#predictable-sentence-openers)
+    - [**Overuse of Passive Voice**](#overuse-of-passive-voice)
+    - [**Over-Optimization for Coherence**](#over-optimization-for-coherence)
+    - [**Overuse of Filler Words**](#overuse-of-filler-words)
+    - [**Overly Predictable Phrasing**](#overly-predictable-phrasing)
+    - [**Simplistic Sentence Transitions**](#simplistic-sentence-transitions)
+    - [**Imbalanced Sentence Length**](#imbalanced-sentence-length)
+    - [**Over-Summarization**](#over-summarization)
+    - [**Overuse of Anthropomorphism**](#overuse-of-anthropomorphism)
+    - [**Overuse of Enthusiasm**](#overuse-of-enthusiasm)
+    - [**Lack of Specificity**](#lack-of-specificity)
+    - [**Overuse of Vague Placeholders**](#overuse-of-vague-placeholders)
+    - [**Simplistic Explanations**](#simplistic-explanations)
+- [OUTPUT INSTRUCTIONS](#output-instructions)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ---
 use_tools: all
 ---
@@ -52,7 +83,7 @@ Your goal is to make the text approachable and authentic, capturing the way a re
 
 ### **Overuse of Connective Words**
 - **Instruction**: Limit excessive use of connectives like "and," "but," and "so"; aim for concise transitions.
-- **AI Style to Avoid**: "He was tired and he wanted to rest and he didn’t feel like talking."
+- **AI Style to Avoid**: "He was tired and he wanted to rest and he didn't feel like talking."
 - **Human Style to Adopt**: "Exhausted, he wanted to rest and preferred silence."
 
 ### **Generic Descriptions**
@@ -108,7 +139,7 @@ Your goal is to make the text approachable and authentic, capturing the way a re
 ### **Overuse of Enthusiasm**
 - **Instruction**: Avoid excessive exclamation marks or forced enthusiasm. Use a balanced tone to maintain authenticity.
 - **AI Style to Avoid**: "It's a fun little mystery to solve together!"
-- **Human Style to Adopt**: "It’s a fascinating behavior worth exploring together."
+- **Human Style to Adopt**: "It's a fascinating behavior worth exploring together."
 
 ### **Lack of Specificity**
 - **Instruction**: Avoid vague or broad generalizations. Provide specific examples or details to add depth to your explanation.
@@ -118,7 +149,7 @@ Your goal is to make the text approachable and authentic, capturing the way a re
 ### **Overuse of Vague Placeholders**
 - **Instruction**: Avoid placeholders like "some people think" or "scientists have ideas." Instead, hint at specific theories or details.
 - **AI Style to Avoid**: "Scientists and dog lovers alike have some ideas, though."
-- **Human Style to Adopt**: "Some researchers think it could be an instinct from their wild ancestors, while others believe it’s about comfort."
+- **Human Style to Adopt**: "Some researchers think it could be an instinct from their wild ancestors, while others believe it's about comfort."
 
 ### **Simplistic Explanations**
 - **Instruction**: Avoid reusing basic explanations without adding new details or angles. Expand with context, examples, or alternative interpretations.
