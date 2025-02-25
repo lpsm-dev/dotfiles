@@ -1,9 +1,10 @@
 <!-- BEGIN_DOCS -->
+
+[🇺🇸 English Version](README_en.md)
+
 <div align="center">
 
 <a name="readme-top"></a>
-
-[🇺🇸 English Version](README_en.md)
 
 Hello Human 👽! Bem-vindo ao meu repositório 👋
 
