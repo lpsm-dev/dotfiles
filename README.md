@@ -1,8 +1,7 @@
 <!-- BEGIN_DOCS -->
+<div align="center">
 
 [🇺🇸 English Version](README_en.md)
-
-<div align="center">
 
 <a name="readme-top"></a>
 
