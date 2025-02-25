@@ -1,6 +1,8 @@
 <!-- BEGIN_DOCS -->
 <div align="center">
 
+[◀ Voltar](../README.md)
+
 <a name="readme-top"></a>
 
 <img src="https://github.com/lpsm-dev/lpsm-dev/blob/9b4c077dbe6d850e40b08e53264d2b9cf76d8368/.github/assets/daft-punk.gif" width="350"/>
