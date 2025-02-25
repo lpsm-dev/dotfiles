@@ -1,6 +1,6 @@
 <!-- BEGIN_DOCS -->
 
-[◀ Voltar](../README.md)
+[◀ Voltar](README.md)
 
 <div align="center">
 
