@@ -15,13 +15,13 @@ Aqui você encontrará **minhas configurações pessoais** para o **setup do meu
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
 [![Built with Devbox](https://jetpack.io/img/devbox/shield_galaxy.svg)](https://jetpack.io/devbox/docs/contributor-quickstart/)
 
-📌 Curta esse repositório para acompanhar atualizações e novidades ( ≖‿ ≖ )
-
 </div>
 
 > [!NOTE]
 >
 > **AVISO**: Esse repositório está em constante evolução. Se você encontrar algum erro ou tiver sugestões, por favor, abra uma [issue](https://github.com/lpsm-dev/dotfiles/issues/new/choose) ou envie um [pull request](https://github.com/lpsm-dev/dotfiles/pulls).
+
+📌 Curta esse repositório para acompanhar atualizações e novidades ( ≖‿ ≖ )
 
 # Sumário
 
