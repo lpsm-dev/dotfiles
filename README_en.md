@@ -8,7 +8,7 @@
 
 Hello Human 👽! Welcome to my repository 👋
 
-<img src="https://github.com/lpsm-dev/lpsm-dev/blob/894a1209815a95f8a0e6e6adc4f4739b02555b57/.github/assets/dotfiles.png" width="350"/>
+<img src="https://github.com/lpsm-dev/lpsm-dev/blob/63ad476e77006a2924e16622bd005f4784ab9fb4/.github/assets/dotfiles-new.png" width="350"/>
 
 Here you'll find **my personal configurations** for **setting up my development environment**. Feel free to explore, collaborate, and share 🚀
 
