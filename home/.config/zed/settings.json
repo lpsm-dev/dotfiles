@@ -1,6 +1,6 @@
 {
   "features": {
-    "inline_completion_provider": "zed"
+    "edit_prediction_provider": "zed"
   },
   "assistant": {
     "default_model": {
@@ -31,40 +31,6 @@
     "light": "One Light",
     "dark": "One Dark"
   },
-  "YAML": {
-    "customTags": [
-      "!reference sequence",
-      "!And",
-      "!And sequence",
-      "!Base64",
-      "!Cidr",
-      "!Cidr sequence",
-      "!Condition",
-      "!Equals",
-      "!Equals sequence",
-      "!FindInMap",
-      "!FindInMap sequence",
-      "!GetAtt",
-      "!GetAZ",
-      "!If",
-      "!If sequence",
-      "!ImportValue",
-      "!ImportValue sequence",
-      "!Join",
-      "!Join sequence",
-      "!Not",
-      "!Not sequence",
-      "!Or",
-      "!Or sequence",
-      "!Ref",
-      "!Select",
-      "!Select sequence",
-      "!Split",
-      "!Split sequence",
-      "!Sub",
-      "!Sub sequence"
-    ]
-  },
   "project_panel": {
     "dock": "left",
     "git_status": true,
@@ -81,6 +47,15 @@
     "yaml-language-server": {
       "settings": {
         "yaml": {
+          "yamlVersion": "1.2",
+          "keyOrdering": false,
+          "format": {
+            "singleQuote": false,
+            "indent": 4
+          },
+          "schemas": {
+            "https://json.schemastore.org/yamllint.json": "*.yaml"
+          },
           "customTags": [
             "!And scalar",
             "!And mapping",
