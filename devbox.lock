@@ -52,51 +52,51 @@
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/02032da4af073d0f6110540c8677f16d4be0117f?lastModified=1741037377&narHash=sha256-SvtvVKHaUX4Owb%2BPasySwZsoc5VUeTf1px34BByiOxw%3D"
     },
-    "gitleaks@8.23.3": {
-      "last_modified": "2025-01-31T04:26:24Z",
-      "resolved": "github:NixOS/nixpkgs/9189ac18287c599860e878e905da550aa6dec1cd#gitleaks",
+    "gitleaks@8.24.0": {
+      "last_modified": "2025-02-23T09:42:26Z",
+      "resolved": "github:NixOS/nixpkgs/2d068ae5c6516b2d04562de50a58c682540de9bf#gitleaks",
       "source": "devbox-search",
-      "version": "8.23.3",
+      "version": "8.24.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/jsm9m4xddprywi0d345f8hbc7fsjk14b-gitleaks-8.23.3",
+              "path": "/nix/store/ygn7x8k9ld5ny0s4yrd9z7qwxz1a8vn3-gitleaks-8.24.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/jsm9m4xddprywi0d345f8hbc7fsjk14b-gitleaks-8.23.3"
+          "store_path": "/nix/store/ygn7x8k9ld5ny0s4yrd9z7qwxz1a8vn3-gitleaks-8.24.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/q1d9c2msb0vghcxc7z5q2wjp1iyyfgkb-gitleaks-8.23.3",
+              "path": "/nix/store/jjhc4iwcvji3nhx3aicqpjc8z8q6wmk8-gitleaks-8.24.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/q1d9c2msb0vghcxc7z5q2wjp1iyyfgkb-gitleaks-8.23.3"
+          "store_path": "/nix/store/jjhc4iwcvji3nhx3aicqpjc8z8q6wmk8-gitleaks-8.24.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/dm5df5v79s4p4nn833kkhq9dsljv0b22-gitleaks-8.23.3",
+              "path": "/nix/store/wnp47slw9xp1qsdzwn4km4rq1m2pk9qh-gitleaks-8.24.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/dm5df5v79s4p4nn833kkhq9dsljv0b22-gitleaks-8.23.3"
+          "store_path": "/nix/store/wnp47slw9xp1qsdzwn4km4rq1m2pk9qh-gitleaks-8.24.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/cq8vxx4zywm7j3fah18gygxvgd31pfq4-gitleaks-8.23.3",
+              "path": "/nix/store/d65ndjlff57lr8akgixlq6m1c25zrs73-gitleaks-8.24.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/cq8vxx4zywm7j3fah18gygxvgd31pfq4-gitleaks-8.23.3"
+          "store_path": "/nix/store/d65ndjlff57lr8akgixlq6m1c25zrs73-gitleaks-8.24.0"
         }
       }
     },
@@ -161,54 +161,6 @@
             }
           ],
           "store_path": "/nix/store/mysa4nbqz7i266qnrxng859gz436szjr-pre-commit-4.0.1"
-        }
-      }
-    },
-    "rsync@3.4.1": {
-      "last_modified": "2025-01-19T08:16:51Z",
-      "resolved": "github:NixOS/nixpkgs/50165c4f7eb48ce82bd063e1fb8047a0f515f8ce#rsync",
-      "source": "devbox-search",
-      "version": "3.4.1",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/szyb3yfsblppy5yzzda6162f6rmx331n-rsync-3.4.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/szyb3yfsblppy5yzzda6162f6rmx331n-rsync-3.4.1"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/vxbgmzc3v3kbx3s27pb3845qk1r38d4s-rsync-3.4.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/vxbgmzc3v3kbx3s27pb3845qk1r38d4s-rsync-3.4.1"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/g83fqqb9lhjhql0c26nxm1q66gcvr4g6-rsync-3.4.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/g83fqqb9lhjhql0c26nxm1q66gcvr4g6-rsync-3.4.1"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/0h7b0vynz1ygps1863h6mmcz61dhdkfv-rsync-3.4.1",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/0h7b0vynz1ygps1863h6mmcz61dhdkfv-rsync-3.4.1"
         }
       }
     },
