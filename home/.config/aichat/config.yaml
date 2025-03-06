@@ -4,32 +4,32 @@
 # ================================================
 # LLM CONFIGURATION
 # ================================================
-model: github:gpt-4o
-temperature: 0.2
+model: github:gpt-4o # Specify the LLM to use
+temperature: 0.2 # Set default temperature parameter
 
 # ================================================
 # BEHAVIOR CONFIGURATION
 # ================================================
-save: false
-keybindings: vi
-wrap: auto
-wrap_code: false
+save: false # Indicates whether to persist the message (messages.md)
+keybindings: vi # Choose keybinding style (emacs, vi)
+wrap: auto # Controls text wrapping (no, auto, <max-width>)
+wrap_code: false # Enables or disables wrapping of code blocks
 
 # ================================================
 # FUNCTION CALLING CONFIGURATION
 # ================================================
 # Visit https://github.com/sigoden/llm-functions for setup instructions
-function_calling: true
-mapping_tools:
+function_calling: true # Enables or disables function calling (Globally).
+mapping_tools: # Alias for a tool or toolset
   fs: "fs_cat,fs_ls,fs_mkdir,fs_rm,fs_write"
-use_tools: null
+use_tools: null # Which tools to use by default. (e.g. 'fs,web_search')
 
 # ================================================
 # PRELUDE CONFIGURATION
 # ================================================
-prelude: null
-repl_prelude: null
-agent_prelude: null
+prelude: null # Set a default role or session (role:<name>, session:<name>)
+repl_prelude: null # Overrides the `prelude` setting specifically for conversations started in REPL
+agent_prelude: null # Set a session to use when starting a agent. (e.g. temp, default)
 
 # ================================================
 # SESSION CONFIGURATION
@@ -48,18 +48,22 @@ summary_prompt: "This is a summary of the chat history as a recap: "
 # ================================================
 # See [RAG-Guide](https://github.com/sigoden/aichat/wiki/RAG-Guide) for more details.
 rag_embedding_model: nomic-embed-text:latest
-rag_reranker_model: null
+rag_reranker_model: null # Specifies the rerank model to use
 rag_chunk_size: 1500
 rag_chunk_overlap: 75
 # Define document loaders to control how RAG and `.file`/`--file` load files of specific formats.
 document_loaders:
-  docx: "pandoc --to plain $1"
+  # You can add custom loaders using the following syntax:
+  #   <file-extension>: <command-to-load-the-file>
+  # Note: Use `$1` for input file and `$2` for output file. If `$2` is omitted, use stdout as output.
+  #pdf: 'pdftotext $1 -'                         # Load .pdf file, see https://poppler.freedesktop.org to set up pdftotext
+  docx: "pandoc --to plain $1" # Load .docx file, see https://pandoc.org to set up pandoc
 
 # ================================================
 # APPEARANCE CONFIGURATION
 # ================================================
-highlight: true
-light_theme: false
+highlight: true # Controls syntax highlighting
+light_theme: false # Activates a light color theme when true. env: AICHAT_LIGHT_THEME
 # Custom REPL left/right prompts, see https://github.com/sigoden/aichat/wiki/Custom-REPL-Prompt for more details
 left_prompt: "{?agent {color.purple}{agent}}{!agent {color.green}{role}}{?rag {color.yellow}@{rag}}{color.reset}) "
 right_prompt: "{?consume_tokens {color.blue}{consume_tokens}({consume_percent}%)}{!consume_tokens {color.blue}{consume_tokens}} {?session {color.cyan}({session})}{color.reset}"
@@ -77,7 +81,8 @@ clients:
   # -------------------
   # LOCAL
   # -------------------
-  - type: ollama
+  - type: openai-compatible
+    name: ollama
     api_base: http://127.0.0.1:11434/v1
     models:
       - name: nomic-embed-text
