@@ -115,8 +115,8 @@ function setup_macos() {
 
 function setup_yazi_theme() {
     info "Setting up Yazi theme..."
-    THEME_PATH="$LOCAL_DOTFILES_PATH/.config/yazi/flavors/catppuccin-mocha"
-    PACKAGE_TOML="$LOCAL_DOTFILES_PATH/.config/yazi/package.toml"
+    THEME_PATH="$LOCAL_DOTFILES_HOME/.config/yazi/flavors/catppuccin-mocha"
+    PACKAGE_TOML="$LOCAL_DOTFILES_HOME/.config/yazi/package.toml"
 
     if [ ! -f "$PACKAGE_TOML" ]; then
         info "package.toml not found in $PACKAGE_TOML. Installing Yazi theme..."
