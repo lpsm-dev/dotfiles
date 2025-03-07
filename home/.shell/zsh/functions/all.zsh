@@ -12,6 +12,7 @@
 # ================================================
 # LOADING FILES
 # ================================================
+[ -f "$HOME/.shell/zsh/functions/lib/ai.zsh" ]      && source $HOME/.shell/zsh/functions/lib/ai.zsh
 [ -f "$HOME/.shell/zsh/functions/lib/aws.zsh" ]      && source $HOME/.shell/zsh/functions/lib/aws.zsh
 [ -f "$HOME/.shell/zsh/functions/lib/docker.zsh" ]   && source $HOME/.shell/zsh/functions/lib/docker.zsh
 [ -f "$HOME/.shell/zsh/functions/lib/git.zsh" ]      && source $HOME/.shell/zsh/functions/lib/git.zsh

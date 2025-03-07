@@ -10,6 +10,23 @@
 #
 
 # ================================================
+# AWS
+# ================================================
+export SLS_TELEMETRY_DISABLED=1
+export SLS_TRACKING_DISABLED=1
+
+# ================================================
+# GOOGLE CLOUD
+# ================================================
+export CLOUDSDK_CORE_DISABLE_USAGE_REPORTING=true
+
+# ================================================
+# INFRACOST
+# ================================================
+export INFRACOST_SELF_HOSTED_TELEMETRY=false
+export INFRACOST_SKIP_UPDATE_CHECK=true
+
+# ================================================
 # KREW
 # ================================================
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -23,9 +40,3 @@ export KUBE_EDITOR="nano"
 # K9S
 # ================================================
 export K9SCONFIG=$HOME/.config/k9s
-
-# ================================================
-# INFRACOST
-# ================================================
-export INFRACOST_SELF_HOSTED_TELEMETRY=false
-export INFRACOST_SKIP_UPDATE_CHECK=true

@@ -18,11 +18,14 @@ alias wtf="cowsay 'wtf bro, go back to work!'"
 # ================================================
 # SHORTCUTS
 # ================================================
+alias -- +x="chmod +x"
+alias _="ai_assistant"
+alias a="aichat --role chat"
+alias b="bat --style=grid,header-filename,numbers,snip"
 alias c="clear"
 alias cls="clear"
 alias tree="tree -C"
 alias ls="ls --color"
-alias -- +x="chmod +x"
 alias cpu="top -o cpu"
 alias mem="top -o rsize"
 alias now="date +'%Y-%m-%d %T'"
@@ -33,6 +36,7 @@ alias reload="exec ${SHELL} -l"
 alias path="echo -e ${PATH//:/\\n}"
 alias neo="neofetch"
 alias ff="fastfetch"
+alias w="which -a"
 
 # ================================================
 # NVIM
