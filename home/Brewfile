@@ -151,6 +151,7 @@ brew "pnpm"
 # -------------------
 # Shell & CLI
 # -------------------
+brew "argc"
 brew "atuin"
 brew "fzf"
 brew "gum"
