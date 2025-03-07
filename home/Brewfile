@@ -147,7 +147,6 @@ brew "rust"
 # Package Managers
 # -------------------
 brew "pnpm"
-brew "yarn"
 
 # -------------------
 # Shell & CLI
