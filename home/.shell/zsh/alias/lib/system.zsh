@@ -20,7 +20,7 @@ alias wtf="cowsay 'wtf bro, go back to work!'"
 # ================================================
 alias -- +x="chmod +x"
 alias _="ai_assistant"
-alias a="aichat --role chat"
+alias a="aichat"
 alias b="bat --style=grid,header-filename,numbers,snip"
 alias c="clear"
 alias cls="clear"
