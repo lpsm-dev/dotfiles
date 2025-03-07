@@ -119,7 +119,7 @@ function setup_yazi_theme() {
     PACKAGE_TOML="$LOCAL_DOTFILES_PATH/.config/yazi/package.toml"
 
     if [ ! -f "$PACKAGE_TOML" ]; then
-        info "package.toml not found. Installing Yazi theme..."
+        info "package.toml not found in $PACKAGE_TOML. Installing Yazi theme..."
         mkdir -p "$LOCAL_DOTFILES_PATH/.config/yazi/flavors"
         cd "$LOCAL_DOTFILES_PATH/.config/yazi/flavors" && ya pack -a yazi-rs/flavors:catppuccin-mocha
     elif grep -q "catppuccin-mocha.yazi" "$PACKAGE_TOML"; then
@@ -229,7 +229,7 @@ function setup_git_submodules() {
 # ==============================================
 # MAIN
 # ==============================================
-VERSION="0.0.4"
+VERSION="0.0.5"
 
 echo -e "${YELLOW}"
 cat << EOF
