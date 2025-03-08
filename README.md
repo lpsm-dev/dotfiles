@@ -82,6 +82,8 @@ Com esse ideia introduzida, a parte complicada e que me motivou a criar esse rep
 - **Documentar e compartilhar as configurações**: Utilizando um README.md para documentar e compartilhar as configurações e boas práticas adotadas no ambiente de desenvolvimento.
 - **Facilitar a colaboração e o aprendizado**: Compartilhando os dotfiles com outras pessoas para colaborar e aprender com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Benefícios
 
 Entre os principais benefícios de usar dotfiles, podemos destacar:
