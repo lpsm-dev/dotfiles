@@ -67,11 +67,6 @@ contribuir e compartilhar suas ideias 🚀
 
 Meu objetivo com esse repositório é compartilhar e documentar minhas configurações pessoais para o setup do meu ambiente de desenvolvimento com as ferramentas necessárias para o meu fluxo de trabalho no dia a dia.
 
-- **Automatizar a configuração do ambiente de desenvolvimento**: Utilizando scripts e ferramentas de automação para instalar e configurar as dependências e ferramentas necessárias para o desenvolvimento de software.
-- **Versionar e sincronizar os dotfiles**: Utilizando um sistema de controle de versão (Git) para versionar e sincronizar os arquivos de configuração entre diferentes máquinas e sistemas operacionais.
-- **Documentar e compartilhar as configurações**: Utilizando um README.md para documentar e compartilhar as configurações e boas práticas adotadas no ambiente de desenvolvimento.
-- **Facilitar a colaboração e o aprendizado**: Compartilhando os dotfiles com outras pessoas para colaborar e aprender com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
-
 ## Contexto e Motivação
 
 Por vezes, ao trocar de máquina ou sistema operacional, é necessário configurar novamente o seu ambiente de trabalho. Para facilitar esse processo, é possível utilizar a ideia de **dotfiles**, que são arquivos de configuração definidos pelo usuário do computador com o objetivo de armazenaf as preferências e configurações de diversos programas e ferramentas, como: shell, editor de texto, gerenciador de pacotes e entre outras.
@@ -79,6 +74,13 @@ Por vezes, ao trocar de máquina ou sistema operacional, é necessário configur
 Com esse ideia introduzida, a parte complicada e que me motivou a criar esse repositório é: "como eu posso resolver o problema de gerenciamento e automação do ciclo de vida desses arquivos de configuração, garantindo que eles sejam facilmente sincronizados entre diferentes máquinas, além de serem versionados e adaptos para outros sistemas operacionais?".
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Metas
+
+- **Automatizar a configuração do ambiente de desenvolvimento**: Utilizando scripts e ferramentas de automação para instalar e configurar as dependências e ferramentas necessárias para o desenvolvimento de software.
+- **Versionar e sincronizar os dotfiles**: Utilizando um sistema de controle de versão (Git) para versionar e sincronizar os arquivos de configuração entre diferentes máquinas e sistemas operacionais.
+- **Documentar e compartilhar as configurações**: Utilizando um README.md para documentar e compartilhar as configurações e boas práticas adotadas no ambiente de desenvolvimento.
+- **Facilitar a colaboração e o aprendizado**: Compartilhando os dotfiles com outras pessoas para colaborar e aprender com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
 
 # Benefícios
 
