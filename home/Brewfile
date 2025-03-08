@@ -127,6 +127,7 @@ brew "podman"
 # -------------------
 brew "direnv"
 brew "go-task"
+brew "golangci-lint"
 brew "pre-commit"
 brew "nvm"
 brew "pyenv"
@@ -142,6 +143,7 @@ brew "node"
 brew "openjdk"
 brew "python"
 brew "rust"
+
 
 # -------------------
 # Package Managers
