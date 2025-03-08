@@ -76,7 +76,7 @@ Quem atua na área de tecnologia sabe como é uma merda configurar um novo ambie
 Isso traz à tona o desafio que me inspirou a criar esse repositório: _Como posso facilitar o gerenciamento e a automação desses arquivos de configuração, garantindo que eles possam ser sincronizados em diferentes computadores,
 controlados por versão e compatíveis com vários sistemas operacionais?_
 
-Sendo assim, sejam muito bem-vindos a este repositório 🚀! Vamos derrumar tudo 🤝 kkkk
+Sendo assim, sejam muito bem-vindos a este repositório 🚀. Vamos derrumar tudo 🤝 kkkk
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
