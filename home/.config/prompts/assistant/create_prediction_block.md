@@ -2,9 +2,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+  - [use_tools: all](#use_tools-all)
 - [IDENTITY](#identity)
 - [GOAL](#goal)
 - [STEPS](#steps)
+  - [Prediction: We will have AGI by 2025-2028](#prediction-we-will-have-agi-by-2025-2028)
+    - [Prediction: We will have AGI by 2025-2028](#prediction-we-will-have-agi-by-2025-2028-1)
 - [OUTPUT INSTRUCTIONS](#output-instructions)
 - [INPUT](#input)
 

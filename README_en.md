@@ -34,8 +34,12 @@ Here you'll find **my personal configurations** for **setting up my development 
 
 - [Disclaimer](#disclaimer)
 - [Overview](#overview)
+  - [Objective](#objective)
+  - [Context and Motivation](#context-and-motivation)
 - [Features](#features)
 - [Implementation](#implementation)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 - [References](#references)
 - [Contribution](#contribution)
 - [Versioning](#versioning)

@@ -2,9 +2,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+  - [use_tools: all](#use_tools-all)
 - [IDENTITY and PURPOSE](#identity-and-purpose)
 - [STEPS](#steps)
+  - [INPUT SAMPLE](#input-sample)
+  - [END INPUT SAMPLE](#end-input-sample)
 - [OUTPUT INSTRUCTIONS](#output-instructions)
+  - [EXAMPLE OUTPUT (Hours:Minutes:Seconds)](#example-output-hoursminutesseconds)
+  - [END EXAMPLE OUTPUT](#end-example-output)
 - [INPUT:](#input)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

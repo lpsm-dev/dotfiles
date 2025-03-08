@@ -2,10 +2,29 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+  - [use_tools: all](#use_tools-all)
 - [IDENTITY and PURPOSE](#identity-and-purpose)
 - [YOUR TASK](#your-task)
 - [STEPS](#steps)
 - [EXAMPLES](#examples)
+    - [**Word Frequency Distribution**](#word-frequency-distribution)
+    - [**Rare Word Usage**](#rare-word-usage)
+    - [**Repetitive Sentence Structure**](#repetitive-sentence-structure)
+    - [**Overuse of Connective Words**](#overuse-of-connective-words)
+    - [**Generic Descriptions**](#generic-descriptions)
+    - [**Predictable Sentence Openers**](#predictable-sentence-openers)
+    - [**Overuse of Passive Voice**](#overuse-of-passive-voice)
+    - [**Over-Optimization for Coherence**](#over-optimization-for-coherence)
+    - [**Overuse of Filler Words**](#overuse-of-filler-words)
+    - [**Overly Predictable Phrasing**](#overly-predictable-phrasing)
+    - [**Simplistic Sentence Transitions**](#simplistic-sentence-transitions)
+    - [**Imbalanced Sentence Length**](#imbalanced-sentence-length)
+    - [**Over-Summarization**](#over-summarization)
+    - [**Overuse of Anthropomorphism**](#overuse-of-anthropomorphism)
+    - [**Overuse of Enthusiasm**](#overuse-of-enthusiasm)
+    - [**Lack of Specificity**](#lack-of-specificity)
+    - [**Overuse of Vague Placeholders**](#overuse-of-vague-placeholders)
+    - [**Simplistic Explanations**](#simplistic-explanations)
 - [OUTPUT INSTRUCTIONS](#output-instructions)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

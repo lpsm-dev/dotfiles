@@ -34,7 +34,11 @@ contribuir e compartilhar suas ideias 🚀
 
 - [Disclaimer](#disclaimer)
 - [Visão Geral](#vis%C3%A3o-geral)
+  - [Objetivo](#objetivo)
+  - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
 - [Implementação](#implementa%C3%A7%C3%A3o)
+  - [Pré-requisitos](#pr%C3%A9-requisitos)
+  - [Instalação](#instala%C3%A7%C3%A3o)
 - [Benefícios](#benef%C3%ADcios)
 - [Referências](#refer%C3%AAncias)
 - [Contribuição](#contribui%C3%A7%C3%A3o)

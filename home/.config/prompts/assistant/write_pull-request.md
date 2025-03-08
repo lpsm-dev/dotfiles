@@ -2,7 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+  - [use_tools: all](#use_tools-all)
 - [IDENTITY AND PURPOSE](#identity-and-purpose)
+  - [INPUT FORMAT](#input-format)
 - [OUTPUT INSTRUCTIONS](#output-instructions)
 - [OUTPUT FORMAT](#output-format)
 - [INPUT](#input)

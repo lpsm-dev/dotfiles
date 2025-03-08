@@ -2,6 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+  - [use_tools: all](#use_tools-all)
 - [IDENTITY AND GOALS](#identity-and-goals)
 - [STEPS](#steps)
 - [Find a home for Fabric](#find-a-home-for-fabric)
@@ -11,6 +12,15 @@
 - [Take any idea from `stdin` and send it to the `/write_essay` API!](#take-any-idea-from-stdin-and-send-it-to-the-write_essay-api)
 - [/extwis](#extwis)
 - [Paste in the transcript of a YouTube video of Riva Tez on David Perrel's podcast](#paste-in-the-transcript-of-a-youtube-video-of-riva-tez-on-david-perrels-podcast)
+  - [SUMMARY:](#summary)
+  - [IDEAS:](#ideas)
+  - [QUOTES:](#quotes)
+  - [HABITS:](#habits)
+  - [FACTS:](#facts)
+  - [REFERENCES:](#references)
+  - [$ cat ~/obsidian/Fabric/2024-03-02-stub-for-name.md](#-cat-obsidianfabric2024-03-02-stub-for-namemd)
+  - [generation_date: 2024-03-02 10:43
+tags: fabric-extraction stub-for-name extra-tag](#generation_date-2024-03-02-1043%0Atags-fabric-extraction-stub-for-name-extra-tag)
 - [OUTPUT](#output)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

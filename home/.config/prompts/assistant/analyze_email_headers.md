@@ -2,9 +2,20 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
+  - [use_tools: all](#use_tools-all)
 - [IDENTITY and PURPOSE](#identity-and-purpose)
 - [OUTPUT](#output)
+  - [OUTPUT EXAMPLE](#output-example)
 - [Email Header Analysis - (RFC 5322 From: address, NOT display name)](#email-header-analysis---rfc-5322-from-address-not-display-name)
+  - [SUMMARY](#summary)
+  - [DETAILS](#details)
+    - [SPF (Sender Policy Framework)](#spf-sender-policy-framework)
+    - [DKIM (DomainKeys Identified Mail)](#dkim-domainkeys-identified-mail)
+    - [DMARC (Domain-based Message Authentication, Reporting, and Conformance)](#dmarc-domain-based-message-authentication-reporting-and-conformance)
+    - [ARC (Authenticated Received Chain)](#arc-authenticated-received-chain)
+    - [Security Concerns and Recommendations](#security-concerns-and-recommendations)
+    - [Dig Commands](#dig-commands)
+    - [check-dmarc.sh](#check-dmarcsh)
 - [checks mx, spf, dkim (M365, Google, other common defaults), and dmarc records](#checks-mx-spf-dkim-m365-google-other-common-defaults-and-dmarc-records)
 - [these should open in the default browser](#these-should-open-in-the-default-browser)
 
