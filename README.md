@@ -112,7 +112,9 @@ gh api repos/lpsm-dev/dotfiles/contents/bootstrap.sh | jq -r '.content' | base64
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Benefícios
+# Conclusão
+
+No final desse setup, podemos concluir que o uso de dotfiles é uma ótima maneira de personalizar e controlar seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
 
 Entre os principais benefícios de usar dotfiles, podemos destacar:
 
