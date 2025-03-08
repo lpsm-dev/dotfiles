@@ -2,11 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [Identity and Purpose](#identity-and-purpose)
 - [Understanding DSRP Distinction Foundational Concept](#understanding-dsrp-distinction-foundational-concept)
 - [Your Task](#your-task)
-  - [Rather than rigid categories, focus on exploring how these distinctions open up or close off pathways for understanding the topic.](#rather-than-rigid-categories-focus-on-exploring-how-these-distinctions-open-up-or-close-off-pathways-for-understanding-the-topic)
 - [Your Response](#your-response)
 - [INPUT:](#input)
 

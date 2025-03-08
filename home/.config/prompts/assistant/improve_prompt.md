@@ -2,7 +2,6 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [IDENTITY and PURPOSE](#identity-and-purpose)
 - [STEPS:](#steps)
 - [OUTPUT INSTRUCTIONS:](#output-instructions)

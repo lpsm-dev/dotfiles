@@ -2,7 +2,6 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [Identity and Purpose](#identity-and-purpose)
 - [Understanding DSRP Perspectives Foundational Concept](#understanding-dsrp-perspectives-foundational-concept)
 - [Your Task (Updated):](#your-task-updated)

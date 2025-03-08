@@ -19,13 +19,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Processos](#processos)
-  - [SSH](#ssh)
-  - [Docker](#docker)
 - [Ferramentas](#ferramentas)
-  - [Browser Extensions](#browser-extensions)
-  - [Helm](#helm)
-  - [Latext](#latext)
-  - [Nix](#nix)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

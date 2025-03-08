@@ -34,13 +34,8 @@ contribuir e compartilhar suas ideias 🚀
 
 - [Disclaimer](#disclaimer)
 - [Visão Geral](#vis%C3%A3o-geral)
-  - [Objetivo](#objetivo)
-  - [Contexto e Motivação](#contexto-e-motiva%C3%A7%C3%A3o)
-- [Benefícios](#benef%C3%ADcios)
-- [Features](#features)
 - [Implementação](#implementa%C3%A7%C3%A3o)
-  - [Pré-requisitos](#pr%C3%A9-requisitos)
-  - [Instalação](#instala%C3%A7%C3%A3o)
+- [Benefícios](#benef%C3%ADcios)
 - [Referências](#refer%C3%AAncias)
 - [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Versionamento](#versionamento)
@@ -85,25 +80,6 @@ Sendo assim, sejam muito bem-vindos a este repositório 🚀
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Benefícios
-
-Entre os principais benefícios de usar dotfiles, podemos destacar:
-
-- **Personalização e Controle**: Os dotfiles permitem que você personalize e controle seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
-- **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
-- **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-# Features
-
-- Symlink dotfiles from this repository to your home directory
-- Install apps, fonts, and tools using Homebrew, uv, and the Mac App Store
-- Set up straightforward Python configuration using uv
-- Set up macOS Dock with most used apps
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 # Implementação
 
 ## Pré-requisitos
@@ -125,6 +101,16 @@ ou
 ```bash
 gh api repos/lpsm-dev/dotfiles/contents/bootstrap.sh | jq -r '.content' | base64 --decode > /tmp/bootstrap-dotfiles.sh && chmod +x /tmp/bootstrap-dotfiles.sh && bash /tmp/bootstrap-dotfiles.sh
 ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Benefícios
+
+Entre os principais benefícios de usar dotfiles, podemos destacar:
+
+- **Personalização e Controle**: Os dotfiles permitem que você personalize e controle seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
+- **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
+- **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -2,18 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [Instructional Video Transcript Extraction](#instructional-video-transcript-extraction)
-  - [Identity](#identity)
-  - [Goal](#goal)
-  - [Process](#process)
-  - [Output Format](#output-format)
-    - [Objectives](#objectives)
-    - [Instructions](#instructions)
-  - [Guidelines](#guidelines)
-  - [Example Output](#example-output)
-    - [Objectives](#objectives-1)
-    - [Instructions](#instructions-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 

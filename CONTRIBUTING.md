@@ -23,19 +23,9 @@ Obrigado por considerar contribuir com este projeto! Seguir nossas diretrizes fa
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Práticas](#pr%C3%A1ticas)
-  - [Geral](#geral)
-  - [Comunicação](#comunica%C3%A7%C3%A3o)
 - [Setup](#setup)
-  - [DevBox](#devbox)
-  - [Direnv](#direnv)
-  - [Task](#task)
 - [Commit Messages](#commit-messages)
-  - [Type](#type)
-  - [Scope](#scope)
-  - [Description](#description)
 - [MR Process](#mr-process)
-  - [Steps](#steps)
-  - [Reviewing](#reviewing)
 - [Versioning Process](#versioning-process)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

@@ -2,15 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [Identity and Purpose](#identity-and-purpose)
 - [Understanding DSRP Systems Foundational Concept](#understanding-dsrp-systems-foundational-concept)
 - [Your Task](#your-task)
-  - [For each system you identify, consider the following (but feel free to explore other aspects that seem relevant)
-    What is the overall system, and how would you describe its role or purpose?
-    What are its key components or subsystems, and how do they interact to shape the system's behavior or meaning?
-    How might this system interact with larger or external systems?
-    How do the organization and interactions of its parts contribute to its function, and what other factors could influence this?](#for-each-system-you-identify-consider-the-following-but-feel-free-to-explore-other-aspects-that-seem-relevant%0A----what-is-the-overall-system-and-how-would-you-describe-its-role-or-purpose%0A----what-are-its-key-components-or-subsystems-and-how-do-they-interact-to-shape-the-systems-behavior-or-meaning%0A----how-might-this-system-interact-with-larger-or-external-systems%0A----how-do-the-organization-and-interactions-of-its-parts-contribute-to-its-function-and-what-other-factors-could-influence-this)
 - [Your Response](#your-response)
 - [INPUT:](#input)
 

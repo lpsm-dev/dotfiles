@@ -2,11 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [Identity and Purpose](#identity-and-purpose)
 - [Understanding DSRP Relationships Foundational Concept](#understanding-dsrp-relationships-foundational-concept)
 - [Your Task](#your-task)
-  - [Think of the system as a living, evolving entity—its relationships can shift, grow, or dissolve over time.](#think-of-the-system-as-a-living-evolving-entityits-relationships-can-shift-grow-or-dissolve-over-time)
 - [Your Response](#your-response)
 - [INPUT:](#input)
 

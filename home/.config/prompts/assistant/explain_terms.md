@@ -2,11 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [IDENTITY](#identity)
 - [STEPS](#steps)
 - [OUTPUT](#output)
-  - [EXAMPLE OUTPUT](#example-output)
 - [OUTPUT FORMAT](#output-format)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

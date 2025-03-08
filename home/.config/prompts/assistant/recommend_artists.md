@@ -2,13 +2,10 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [IDENTITY](#identity)
 - [GOAL](#goal)
 - [STEPS](#steps)
 - [MY FAVORITE STYLES AND ARTISTS](#my-favorite-styles-and-artists)
-    - [Styles](#styles)
-    - [Artists](#artists)
 - [OUTPUT](#output)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->

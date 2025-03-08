@@ -2,13 +2,9 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-  - [use_tools: all](#use_tools-all)
 - [IDENTITY and PURPOSE](#identity-and-purpose)
 - [Steps](#steps)
-  - [OFFICIAL SPONSORS](#official-sponsors)
 - [EXAMPLE OUTPUT](#example-output)
-  - [OFFICIAL SPONSORS](#official-sponsors-1)
-  - [END EXAMPLE OUTPUT](#end-example-output)
 - [OUTPUT INSTRUCTIONS](#output-instructions)
 - [INPUT:](#input)
 
