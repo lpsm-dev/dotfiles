@@ -88,6 +88,8 @@ function setup_brew() {
 function setup_brew_deps() {
     info "Starting install Homebrew deps $pwd"
     brew bundle --file="$LOCAL_DOTFILES_HOME/Brewfile" --no-lock --verbose || true
+    info "Running Homebrew upgrade"
+    brew upgrade
     info "Running Homebrew cleanup"
     brew cleanup
 }
