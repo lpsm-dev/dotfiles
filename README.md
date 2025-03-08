@@ -9,7 +9,7 @@ Hello Human 👽! Bem-vindo ao meu repositório 👋
 
 <img src="https://github.com/lpsm-dev/lpsm-dev/blob/63ad476e77006a2924e16622bd005f4784ab9fb4/.github/assets/dotfiles-new.png" width="350"/>
 
-Aqui você encontrará **minhas configurações pessoais** para o **setup do meu ambiente de desenvolvimento**. Fique à vontade para explorar, colaborar e compartilhar 🚀
+Aqui você encontrará as configurações para o **setup do meu ambiente de desenvolvimento**. Fique à vontade para explorar, colaborar e compartilhar 🚀
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
 [![Semantic Release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://semantic-release.gitbook.io/semantic-release/usage/configuration)
