@@ -10,6 +10,15 @@
 #
 
 # ================================================
+# LOADING MACOS
+# ================================================
+XDG_CACHE_HOME="$HOME/.cache"
+XDG_CONFIG_HOME="$HOME/.config"
+XDG_DATA_HOME="$HOME/.local/share"
+XDG_DESKTOP_DIR="$HOME/"
+XDG_STATE_HOME="$HOME/.local/state"
+
+# ================================================
 # LOADING FILES
 # ================================================
 [ -f "$HOME/.shell/zsh/alias/all.zsh" ]             && source $HOME/.shell/zsh/alias/all.zsh

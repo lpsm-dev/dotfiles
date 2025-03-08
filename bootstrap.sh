@@ -201,7 +201,7 @@ function setup_ai_tools(){
 function setup_automations(){
     if ! crontab -l | grep -q "brew file update"; then
         info "Adding cronjob..."
-        (crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew file update'") | crontab -
+        (crontab -l 2>/dev/null; echo "30 12 * * * /bin/bash -c 'PATH=\"/opt/homebrew/bin:/usr/local/bin:$PATH\"; brew upgrade'") | crontab -
     else
         warn "Cronjob already exists"
     fi
