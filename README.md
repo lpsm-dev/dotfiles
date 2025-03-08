@@ -69,9 +69,7 @@ Meu objetivo com esse repositório é compartilhar e documentar minhas configura
 
 ## Contexto e Motivação
 
-Quem atua na área de tecnologia sabe como é uma merda configurar um novo ambiente de trabalho com todas as configurações que você precisa para um fluxo de trabalho descente. A instalação de todas as ferramentas, scripts e configurações geralmente é um processo longo, chato e frustrante ☠️.
-
-É aí que entram os dotfiles! Dotfiles são arquivos de configuração especiais criados pelos usuários para salvar suas preferências e configurações de vários programas e ferramentas, como o shell, editores de texto ou gerenciadores de pacotes.
+Quem atua na área de tecnologia sabe como é uma merda configurar um novo ambiente de trabalho com todas as configurações que você precisa para um fluxo de trabalho descente. A instalação de todas as ferramentas, scripts e configurações geralmente é um processo longo, chato e frustrante ☠️. É aí que entram os **dotfiles**! Dotfiles são arquivos de configuração especiais criados pelos usuários para salvar suas preferências e configurações de vários programas e ferramentas, como o shell, editores de texto ou gerenciadores de pacotes.
 
 Isso traz à tona o desafio que me inspirou a criar esse repositório: _Como posso facilitar o gerenciamento e a automação desses arquivos de configuração, garantindo que eles possam ser sincronizados em diferentes computadores,
 controlados por versão e compatíveis com vários sistemas operacionais?_
