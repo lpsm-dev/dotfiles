@@ -65,25 +65,23 @@ contribuir e compartilhar suas ideias 🚀
 
 ## Objetivo
 
-Meu objetivo com esse repositório é compartilhar e documentar minhas configurações pessoais para o setup do meu ambiente de desenvolvimento com as ferramentas necessárias para o meu fluxo de trabalho no dia a dia.
-
-## Contexto e Motivação
-
-Quem atua na área de tecnologia sabe como é uma merda configurar um novo ambiente de trabalho com todas as configurações que você precisa para um fluxo de trabalho descente. A instalação de todas as ferramentas, scripts e configurações geralmente é um processo longo, chato e frustrante ☠️. É aí que entram os **dotfiles**! Dotfiles são arquivos de configuração especiais criados pelos usuários para salvar suas preferências e configurações de vários programas e ferramentas, como o shell, editores de texto ou gerenciadores de pacotes.
-
-Isso traz à tona o desafio que me inspirou a criar esse repositório: _Como posso facilitar o gerenciamento e a automação desses arquivos de configuração, garantindo que eles possam ser sincronizados em diferentes computadores,
-controlados por versão e compatíveis com vários sistemas operacionais?_
-
-Sendo assim, sejam muito bem-vindos a este repositório 🚀
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-# Metas
+Meu objetivo com esse repositório é compartilhar e documentar minhas configurações pessoais para o setup do meu ambiente de desenvolvimento com as ferramentas necessárias para o meu fluxo de trabalho no dia a dia. No final das contas, eu quero:
 
 - **Automatizar a configuração do ambiente de desenvolvimento**: Utilizando scripts e ferramentas de automação para instalar e configurar as dependências e ferramentas necessárias para o desenvolvimento de software.
 - **Versionar e sincronizar os dotfiles**: Utilizando um sistema de controle de versão (Git) para versionar e sincronizar os arquivos de configuração entre diferentes máquinas e sistemas operacionais.
 - **Documentar e compartilhar as configurações**: Utilizando um README.md para documentar e compartilhar as configurações e boas práticas adotadas no ambiente de desenvolvimento.
 - **Facilitar a colaboração e o aprendizado**: Compartilhando os dotfiles com outras pessoas para colaborar e aprender com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
+
+## Contexto e Motivação
+
+Quem atua na área de tecnologia sabe como é uma merda configurar um novo ambiente de trabalho com todas as configurações que você precisa para um fluxo de trabalho descente. A instalação de todas as ferramentas, scripts e configurações geralmente é um processo longo, chato e frustrante ☠️.
+
+É aí que entram os **dotfiles**! Dotfiles são arquivos de configuração especiais criados pelos usuários para salvar suas preferências e configurações de vários programas e ferramentas, como o shell, editores de texto ou gerenciadores de pacotes.
+
+Isso traz à tona o desafio que me inspirou a criar esse repositório: _Como posso facilitar o gerenciamento e a automação desses arquivos de configuração, garantindo que eles possam ser sincronizados em diferentes computadores,
+controlados por versão e compatíveis com vários sistemas operacionais?_
+
+Sendo assim, sejam muito bem-vindos a este repositório 🚀
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
