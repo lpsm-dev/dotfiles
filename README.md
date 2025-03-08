@@ -89,7 +89,7 @@ Sendo assim, sejam muito bem-vindos a este repositório 🚀
 ## Pré-requisitos
 
 - Conectar-se à Internet.
-- Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Stor para o `mas` dar certo).
+- Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Store).
 - Abrir o `Terminal.app` para rodar o script de instalação.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
