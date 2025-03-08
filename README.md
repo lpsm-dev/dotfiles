@@ -96,6 +96,8 @@ Sendo assim, sejam muito bem-vindos a este repositório 🚀
 
 ## Instalação
 
+Para instalar os dotfiles, execute um dos seguintes comandos:
+
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
@@ -103,6 +105,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/boots
 ou
 
 ```bash
+gh auth login
 gh api repos/lpsm-dev/dotfiles/contents/bootstrap.sh | jq -r '.content' | base64 --decode > /tmp/bootstrap-dotfiles.sh && chmod +x /tmp/bootstrap-dotfiles.sh && bash /tmp/bootstrap-dotfiles.sh
 ```
 
