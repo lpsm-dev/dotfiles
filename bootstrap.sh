@@ -231,7 +231,7 @@ function setup_git_submodules() {
 # ==============================================
 # MAIN
 # ==============================================
-VERSION="0.0.4"
+VERSION="0.0.5"
 
 echo -e "${YELLOW}"
 cat << EOF
@@ -266,7 +266,6 @@ Darwin)
     setup_system_xcode
     setup_brew
     setup_git_project
-    setup_git_submodules
     setup_brew_deps
     setup_macos
     setup_terminal
