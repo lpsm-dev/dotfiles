@@ -64,7 +64,7 @@ contribuir e compartilhar suas ideias 🚀
 
 ## Objetivo
 
-O objetivo desse repositório é compartilhar e documentar as minhas configurações pessoais para o setup do meu ambiente de desenvolvimento, incluindo dotfiles, scripts e ferramentas de automação, que são usados para instalar e configurar as dependências e ferramentas necessárias para meu dia a dia de trabalho.
+O objetivo desse repositório é compartilhar e documentar minhas configurações pessoais para o setup do meu ambiente de desenvolvimento. Isso include: dotfiles, scripts e ferramentas de automação, que são usados para instalar e configurar as dependências e ferramentas necessárias para meu dia a dia de trabalho.
 
 - **Automatizar a configuração do ambiente de desenvolvimento**: Utilizando scripts e ferramentas de automação para instalar e configurar as dependências e ferramentas necessárias para o desenvolvimento de software.
 - **Versionar e sincronizar os dotfiles**: Utilizando um sistema de controle de versão (Git) para versionar e sincronizar os arquivos de configuração entre diferentes máquinas e sistemas operacionais.
