@@ -33,6 +33,7 @@
   },
   "project_panel": {
     "dock": "left",
+    "button": true,
     "git_status": true,
     "default_width": 500
   },
