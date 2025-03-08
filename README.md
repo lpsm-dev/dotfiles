@@ -91,6 +91,7 @@ Sendo assim, sejam muito bem-vindos a este repositório 🚀
 - Conectar-se à Internet.
 - Abrir o `System Preferences` e logar no iCloud (que fará com que você entre na App Store).
 - Abrir o `Terminal.app` para rodar o script de instalação.
+- Instalar o `gh` CLI (https://cli.github.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
