@@ -69,7 +69,6 @@ cask "mullvadvpn"
 cask "appcleaner"
 cask "clickup"
 cask "coconutbattery"
-cask "protonmail-import-export"
 cask "obs"
 
 # -------------------
