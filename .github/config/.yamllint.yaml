@@ -1,7 +1,7 @@
 ---
 extends: default
 ignore: |
-  *charts*
+  *aichat*
 rules:
   line-length:
     max: 400
