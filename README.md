@@ -108,6 +108,12 @@ Com esse ideia introduzida, a parte complicada e que me motivou a criar esse rep
 bash <(curl -fsSL https://raw.githubusercontent.com/lpsm-dev/dotfiles/main/bootstrap.sh)
 ```
 
+or
+
+```bash
+gh api repos/lpsm-dev/dotfiles/contents/bootstrap.sh | jq -r '.content' | base64 --decode > /tmp/bootstrap-dotfiles.sh && chmod +x /tmp/bootstrap-dotfiles.sh && bash /tmp/bootstrap-dotfiles.sh
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Referências
