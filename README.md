@@ -40,6 +40,7 @@ contribuir e compartilhar suas ideias 🚀
   - [Pré-requisitos](#pr%C3%A9-requisitos)
   - [Instalação](#instala%C3%A7%C3%A3o)
 - [Benefícios](#benef%C3%ADcios)
+- [Conclusão](#conclus%C3%A3o)
 - [Referências](#refer%C3%AAncias)
 - [Contribuição](#contribui%C3%A7%C3%A3o)
 - [Versionamento](#versionamento)
@@ -112,15 +113,19 @@ gh api repos/lpsm-dev/dotfiles/contents/bootstrap.sh | jq -r '.content' | base64
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-# Conclusão
-
-No final desse setup, podemos concluir que o uso de dotfiles é uma ótima maneira de personalizar e controlar seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
+# Benefícios
 
 Entre os principais benefícios de usar dotfiles, podemos destacar:
 
 - **Personalização e Controle**: Os dotfiles permitem que você personalize e controle seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
 - **Portabilidade e Backup**: Manter os dotfiles versionados em um repositório Git facilita a portabilidade e o backup de suas configurações, permitindo que você as sincronize facilmente entre diferentes máquinas e sistemas operacionais.
 - **Colaboração e Compartilhamento**: Compartilhar seus dotfiles com outras pessoas permite que você colabore e aprenda com a comunidade, além de ajudar a disseminar boas práticas e configurações úteis.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+# Conclusão
+
+No final desse setup, podemos concluir que o uso de dotfiles é uma ótima maneira de personalizar e controlar seu ambiente de trabalho, garantindo que ele atenda às suas necessidades e preferências individuais, independentemente do sistema operacional ou máquina que você esteja usando.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
