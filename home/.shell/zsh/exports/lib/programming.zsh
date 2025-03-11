@@ -45,3 +45,8 @@ export RUSTUP_HOME="$HOME/.config/rustup"
 # ================================================
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+
+# ================================================
+# WINDSURF
+# ================================================
+export PATH="/Users/lpsm/.codeium/windsurf/bin:$PATH"
