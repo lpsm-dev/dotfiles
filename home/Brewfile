@@ -34,6 +34,7 @@ cask "zen-browser"
 # Development
 # -------------------
 cask "cursor"
+cask "datagrip"
 cask "docker"
 cask "google-cloud-sdk"
 cask "kitty"
