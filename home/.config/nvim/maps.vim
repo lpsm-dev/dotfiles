@@ -15,6 +15,17 @@ nnoremap dw vb"_d
 " Select all
 nmap <C-a> gg<S-v>G
 
+" Copy to system clipboard
+vnoremap <leader>y "+y
+nnoremap <leader>y "+y
+nnoremap <leader>Y "+yg_
+
+" Paste from system clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
 " Save with root permission
 command! W w !sudo tee > /dev/null %
 
@@ -37,25 +48,3 @@ vnoremap <silent> # :<C-U>
 nmap te :tabedit
 nmap <S-Tab> :tabprev<Return>
 nmap <Tab> :tabnext<Return>
-
-"------------------------------
-" Windows
-
-" Split window
-nmap ss :split<Return><C-w>w
-nmap sv :vsplit<Return><C-w>w
-" Move window
-nmap <Space> <C-w>w
-map s<left> <C-w>h
-map s<up> <C-w>k
-map s<down> <C-w>j
-map s<right> <C-w>l
-map sh <C-w>h
-map sk <C-w>k
-map sj <C-w>j
-map sl <C-w>l
-" Resize window
-nmap <C-w><left> <C-w><
-nmap <C-w><right> <C-w>>
-nmap <C-w><up> <C-w>+
-nmap <C-w><down> <C-w>-
