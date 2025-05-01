@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
   "packages": [
     "direnv@2.36.0",
-    "gitleaks@8.24.2",
+    "gitleaks@8.24.3",
     "pre-commit@4.0.1",
     "yamllint@1.37.0"
   ],
