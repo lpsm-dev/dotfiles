@@ -33,6 +33,7 @@ cask "zen-browser"
 # -------------------
 # Development
 # -------------------
+cask "amazon-q"
 cask "cursor"
 cask "datagrip"
 cask "docker"
