@@ -114,10 +114,10 @@
 [credential]
   helper = osxkeychain
   useHttpPath = false
-[commit]
-  gpsign = true
-  gpgsign = true
-[gpg]
+#[commit]
+#  gpsign = true
+#  gpgsign = true
+#[gpg]
   format  = ssh
   program = /opt/homebrew/bin/gpg
 [help]
@@ -127,3 +127,6 @@
     smudge = git-lfs smudge -- %f
     process = git-lfs filter-process
     required = true
+[user]
+	email = lpsm-dev@protonmail.com
+	name = lpsm-dev

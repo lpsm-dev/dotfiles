@@ -1,4 +1,6 @@
 #!/usr/bin/env zsh
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
 #
 # ███████╗███████╗██╗  ██╗██████╗  ██████╗
@@ -32,3 +34,6 @@ XDG_STATE_HOME="$HOME/.local/state"
 if [ -f "$HOME/.shell/zsh/exports/lib/_secrets.zsh" ]; then
   source "$HOME/.shell/zsh/exports/lib/_secrets.zsh" > /dev/null 2>&1
 fi
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
