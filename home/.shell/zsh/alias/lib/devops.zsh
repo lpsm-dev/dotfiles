@@ -10,6 +10,11 @@
 #
 
 # ================================================
+# SETUP AWS
+# ================================================
+alias actx="aws configure list-profiles | fzf | xargs -I {} aws sso login --profile {}"
+
+# ================================================
 # SETUP DOCKER + DOCKER COMPOSE
 # ================================================
 alias d="docker $*"
