@@ -13,6 +13,7 @@
 # SETUP AWS
 # ================================================
 alias actx="aws configure list-profiles | fzf | xargs -I {} aws sso login --profile {}"
+alias eksctx='PROFILE=$(aws configure list-profiles | fzf) && aws sso login --profile $PROFILE && CLUSTER=$(aws eks list-clusters --profile $PROFILE | jq -r ".clusters[]" | fzf) && aws eks update-kubeconfig --name $CLUSTER --profile $PROFILE'
 
 # ================================================
 # SETUP DOCKER + DOCKER COMPOSE
