@@ -12,8 +12,8 @@
 # ================================================
 # SETUP AWS
 # ================================================
-alias actx="aws configure list-profiles | fzf | xargs -I {} aws sso login --profile {}"
-alias eksctx='PROFILE=$(aws configure list-profiles | fzf) && aws sso login --profile $PROFILE && CLUSTER=$(aws eks list-clusters --profile $PROFILE | jq -r ".clusters[]" | fzf) && aws eks update-kubeconfig --name $CLUSTER --profile $PROFILE'
+alias actx="PROFILE=\$(aws configure list-profiles | fzf) && aws sso login --profile \$PROFILE && export AWS_PROFILE=\$PROFILE && REGION=\$(echo -e 'us-east-1\nsa-east-1' | fzf) && export AWS_DEFAULT_REGION=\$REGION && echo \"AWS_PROFILE set to: \$AWS_PROFILE, AWS_DEFAULT_REGION set to: \$REGION\""
+alias eksctx='actx && CLUSTER=$(aws eks list-clusters | jq -r ".clusters[]" | fzf) && aws eks update-kubeconfig --name $CLUSTER --region $AWS_DEFAULT_REGION'
 
 # ================================================
 # SETUP DOCKER + DOCKER COMPOSE
@@ -35,6 +35,7 @@ alias k="kubectl --insecure-skip-tls-verify"
 alias kctx="kubectl config current-context"
 alias kview="kubectl config view"
 alias kns="kubectl get ns"
+alias kai="kubectl-ai"
 
 # ================================================
 # SETUP HELM
