@@ -9,7 +9,7 @@ Hello Human 👽! Bem-vindo ao meu repositório 👋
 
 <img src="https://github.com/lpsm-dev/lpsm-dev/blob/63ad476e77006a2924e16622bd005f4784ab9fb4/.github/assets/dotfiles-new.png" width="350"/>
 
-Aqui você vai encontrar tudo o que precisa para entender como eu configuro **meu ambiente de desenvolvimento**. Sinta-se à vontade para explorar,
+Aqui você vai encontrar tudo que precisa para entender como eu configuro **meu ambiente de desenvolvimento**. Sinta-se à vontade para explorar,
 contribuir e compartilhar suas ideias 🚀
 
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](https://www.conventionalcommits.org/en/v1.0.0/)
