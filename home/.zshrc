@@ -1,6 +1,4 @@
 #!/usr/bin/env zsh
-# Amazon Q pre block. Keep at the top of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 
 #
 # ███████╗███████╗██╗  ██╗██████╗  ██████╗
@@ -23,9 +21,9 @@ XDG_STATE_HOME="$HOME/.local/state"
 # ================================================
 # LOADING FILES
 # ================================================
-[ -f "$HOME/.shell/zsh/alias/all.zsh" ]             && source $HOME/.shell/zsh/alias/all.zsh
-[ -f "$HOME/.shell/zsh/functions/all.zsh" ]         && source $HOME/.shell/zsh/functions/all.zsh
-[ -f "$HOME/.shell/zsh/terminal/all.zsh" ]          && source $HOME/.shell/zsh/terminal/all.zsh
+[ -f "$HOME/.shell/zsh/alias/all.zsh" ]       && source $HOME/.shell/zsh/alias/all.zsh
+[ -f "$HOME/.shell/zsh/functions/all.zsh" ]   && source $HOME/.shell/zsh/functions/all.zsh
+[ -f "$HOME/.shell/zsh/terminal/all.zsh" ]    && source $HOME/.shell/zsh/terminal/all.zsh
 
 # ================================================
 # LOADING SPECIAL CASES
@@ -34,6 +32,3 @@ XDG_STATE_HOME="$HOME/.local/state"
 if [ -f "$HOME/.shell/zsh/exports/lib/_secrets.zsh" ]; then
   source "$HOME/.shell/zsh/exports/lib/_secrets.zsh" > /dev/null 2>&1
 fi
-
-# Amazon Q post block. Keep at the bottom of this file.
-[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
