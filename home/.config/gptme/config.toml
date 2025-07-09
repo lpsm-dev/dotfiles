@@ -3,4 +3,16 @@ about_user = "I am a curious human devops engineer."
 response_preference = "Basic concepts don't need to be explained."
 
 [env]
-MODEL = "openai/gpt-4o"
+MODEL = "ollama/gemma3:12b-it-qat"
+GPTME_CHECK = "false"
+GPTME_COSTS = "true"
+
+[mcp]
+enabled = true
+auto_start = true
+
+[[mcp.servers]]
+name = "duckduckgo"
+enabled = true
+command = "uvx"
+args = ["duckduckgo-mcp-server"]
