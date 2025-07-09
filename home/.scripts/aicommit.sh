@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# shellcheck disable=SC2034  # some colors are unused
 normal=$(tput sgr0)
 bold=$(tput bold)
 black=$(tput setaf 0)
@@ -11,8 +12,10 @@ magenta=$(tput setaf 5)
 cyan=$(tput setaf 6)
 white=$(tput setaf 7)
 
-if ! command -v aichat >/dev/null; then
-  printf "%sError: aichat not found in the system.\n" "$red"
+git add .
+
+if ! command -v lumen >/dev/null; then
+  printf "%sError: lumen not found in the system.\n" "$red"
   exit 127
 fi
 
@@ -22,8 +25,11 @@ if [ -z "$git_diff" ]; then
   exit 1
 fi
 
-commit_message="$(aichat --role commit --no-stream \
-  "$git_diff" | fmt --width 90)"
+if [ -n "$*" ]; then
+  commit_message="$(lumen draft --context "$*")"
+else
+  commit_message="$(lumen draft)"
+fi
 
 printf "%s$commit_message" "$white"
 printf "\n"
