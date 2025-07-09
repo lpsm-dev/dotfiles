@@ -54,3 +54,5 @@ case "$choice" in
   exit 1
   ;;
 esac
+
+git push
