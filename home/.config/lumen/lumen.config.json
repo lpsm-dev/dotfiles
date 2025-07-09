@@ -1,6 +1,6 @@
 {
   "provider": "ollama",
-  "model": "llama3.1:8b",
+  "model": "gemma3:12b-it-qat",
   "draft": {
     "commit_types": {
       "docs": "Documentation only changes",
