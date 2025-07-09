@@ -49,27 +49,27 @@ function is_command_not_in_path() { ! [ -x "$(command -v "$1")" ]; }
 function setup_system_updates() {
     info "Checking for new updates on macOS..."
     sudo softwareupdate -iaR || {
-      error "Failed to update macOS. Please check manually" && exit 1
+        error "Failed to update macOS. Please check manually" && exit 1
     }
 }
 
 function setup_system_xcode() {
-  info "Starting Xcode Command Line Tools setup..."
-  if ! xcode-select -p &>/dev/null; then
-    info "Installing Xcode Command Line Tools..."
-    sudo touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-    local PROD=$(softwareupdate -l | grep -B 1 -E 'Command Line Tools' | \
-      awk -F"*" '/^ +\\*/ {print $2}' | sed 's/^ *//' | tail -n1)
-    if [ -z "$PROD" ]; then
-      error "Error: CLI package not found"
-      exit 1
+    info "Starting Xcode Command Line Tools setup..."
+    if ! xcode-select -p &>/dev/null; then
+        info "Installing Xcode Command Line Tools..."
+        sudo touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+        local PROD=$(softwareupdate -l | grep -B 1 -E 'Command Line Tools' | \
+            awk -F"*" '/^ +\\*/ {print $2}' | sed 's/^ *//' | tail -n1)
+        if [ -z "$PROD" ]; then
+            error "Error: CLI package not found"
+            exit 1
+        fi
+        sudo softwareupdate -i "$PROD"
+        sudo rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
+        sudo xcodebuild -license accept
+    else
+        info "Xcode CLI is already installed"
     fi
-    sudo softwareupdate -i "$PROD"
-    sudo rm -f /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress
-    sudo xcodebuild -license accept
-  else
-    info "Xcode CLI is already installed"
-  fi
 }
 
 function setup_brew() {
@@ -77,11 +77,11 @@ function setup_brew() {
     if is_command_not_in_path brew; then
         info "Installing Homebrew..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    if [[ "$(uname -m)" == "arm64" ]]; then
-      eval "$(/opt/homebrew/bin/brew shellenv)"
-    fi
+        if [[ "$(uname -m)" == "arm64" ]]; then
+            eval "$(/opt/homebrew/bin/brew shellenv)"
+        fi
     else
-      warn "Homebrew is already installed"
+        warn "Homebrew is already installed"
     fi
 }
 
@@ -95,12 +95,12 @@ function setup_brew_deps() {
 }
 
 function setup_git_project() {
-  info "Starting git project setup $GIT_DOTFILES_URL in your local environment"
+    info "Starting git project setup $GIT_DOTFILES_URL in your local environment"
     if [ ! -d "$LOCAL_DOTFILES_PATH" ]; then
         info "Cloning $GIT_DOTFILES_URL to $LOCAL_DOTFILES_PATH"
         git clone --depth=1 $GIT_DOTFILES_URL $LOCAL_DOTFILES_PATH
     else
-      info "The dotfile project $GIT_DOTFILES_URL already exists at $LOCAL_DOTFILES_PATH. We will update the code"
+        info "The dotfile project $GIT_DOTFILES_URL already exists at $LOCAL_DOTFILES_PATH. We will update the code"
         cd $LOCAL_DOTFILES_PATH && git pull
     fi
 }
@@ -261,18 +261,20 @@ fi
 
 OS=$(uname -s)
 case $OS in
-Darwin)
-    setup_system_updates
-    setup_system_xcode
-    setup_brew
-    setup_git_project
-    setup_brew_deps
-    setup_macos
-    setup_terminal
-    setup_ai_tools
-    setup_automations
-    ;;
-*) error "Unsupported OS: ${os_name}" && exit 1 ;;
+    Darwin)
+        setup_system_updates
+        setup_system_xcode
+        setup_brew
+        setup_git_project
+        setup_brew_deps
+        setup_macos
+        setup_terminal
+        setup_ai_tools
+        setup_automations
+        ;;
+    *)
+        error "Unsupported OS: ${os_name}" && exit 1
+        ;;
 esac
 
 echo -e "${YELLOW}"
