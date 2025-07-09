@@ -62,7 +62,7 @@ cask "whatsapp"
 cask "bitwarden"
 cask "burp-suite"
 cask "malwarebytes"
-cask "mullvadvpn"
+cask "mullvad-vpn"
 
 # -------------------
 # Productivity
