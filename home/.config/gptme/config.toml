@@ -3,7 +3,8 @@ about_user = "I am a curious human devops engineer."
 response_preference = "Basic concepts don't need to be explained."
 
 [env]
-MODEL = "ollama/gemma3:12b-it-qat"
+MODEL = "local/gemma3:12b-it-qat"
+OPENAI_BASE_URL = "http://localhost:11434/v1"
 GPTME_CHECK = "false"
 GPTME_COSTS = "true"
 
@@ -16,3 +17,9 @@ name = "duckduckgo"
 enabled = true
 command = "uvx"
 args = ["duckduckgo-mcp-server"]
+
+[[mcp.servers]]
+name = "context7"
+enabled = true
+command = "npx"
+args = ["-y", "@upstash/context7-mcp@latest"]
