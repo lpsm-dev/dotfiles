@@ -55,8 +55,14 @@ contribuir e compartilhar suas ideias 🚀
 # Disclaimer
 
 > [!CAUTION]
-> Caso queira experimentar esses dotfiles, primeiro faça um fork desse repositório, reveja o código e remova o que entender não necessário.
-> Não use cegamente minhas configurações, a menos que saiba o que isso implica.
+> **⚠️ IMPORTANTE: Use com responsabilidade**
+>
+> Antes de usar esses dotfiles:
+> 1. **Faça um fork** deste repositório
+> 2. **Revise todo o código** para entender o que cada configuração faz
+> 3. **Remova ou modifique** qualquer configuração que não seja adequada para seu ambiente
+>
+> **Não execute cegamente** as configurações sem entender suas implicações. Cada sistema é único e pode ter necessidades específicas.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
