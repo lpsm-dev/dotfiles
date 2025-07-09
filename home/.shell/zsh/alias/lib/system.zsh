@@ -37,6 +37,7 @@ alias path="echo -e ${PATH//:/\\n}"
 alias neo="neofetch"
 alias ff="fastfetch"
 alias w="which -a"
+alias history="fc -El 1"
 
 # ================================================
 # NVIM
@@ -86,8 +87,9 @@ fi
 # ================================================
 # TERMINAL
 # ================================================
-alias cursor="cursor --reuse-window --add"
-alias ws="windsurf --reuse-window --add"
+command -v code >/dev/null && alias code="code --reuse-window --add"
+command -v cursor >/dev/null && alias cursor="cursor --reuse-window --add"
+command -v windsurf >/dev/null && alias ws="windsurf --reuse-window --add"
 
 # ================================================
 # MISCELLANEOUS
