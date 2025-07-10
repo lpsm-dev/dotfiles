@@ -12,7 +12,15 @@
 # ================================================
 # SETUP AWS
 # ================================================
-alias actx="PROFILE=\$(aws configure list-profiles | fzf) && aws sso login --profile \$PROFILE && export AWS_PROFILE=\$PROFILE && REGION=\$(echo -e 'us-east-1\nsa-east-1' | fzf) && export AWS_DEFAULT_REGION=\$REGION && echo \"AWS_PROFILE set to: \$AWS_PROFILE, AWS_DEFAULT_REGION set to: \$REGION\""
+alias actx="\
+  PROFILE=\$(aws configure list-profiles | fzf) && \
+  aws sso login --profile \$PROFILE && \
+  export AWS_PROFILE=\$PROFILE && \
+  REGION=\$(echo -e 'us-east-1\nsa-east-1' | fzf) && \
+  export AWS_DEFAULT_REGION=\$REGION && \
+  jq --arg profile \"\$PROFILE\" --arg region \"\$REGION\" 'walk(if type == \"object\" and has(\"AWS_PROFILE\") then .AWS_PROFILE = \$profile else . end) | walk(if type == \"object\" and has(\"AWS_REGION\") then .AWS_REGION = \$region else . end)' \$HOME/.cursor/mcp.json > \$HOME/.cursor/mcp.json.tmp && \
+  mv \$HOME/.cursor/mcp.json.tmp \$HOME/.cursor/mcp.json && \
+  echo \"AWS_PROFILE set to: \$AWS_PROFILE, AWS_DEFAULT_REGION set to: \$REGION, and .cursor/mcp.json updated\""
 alias eksctx='actx && CLUSTER=$(aws eks list-clusters | jq -r ".clusters[]" | fzf) && aws eks update-kubeconfig --name $CLUSTER --region $AWS_DEFAULT_REGION'
 
 # ================================================
